@@ -1,0 +1,617 @@
+/**
+ * REDELOG - Header, Navigation, Topbar & Footer Layout Styles
+ * Baseado no layout canônico da Redeplan
+ */
+
+/* ============================================================
+   1. TOPO INSTITUCIONAL (ECOSSISTEMA DE REDES & ACESSIBILIDADE)
+   ============================================================ */
+.top-bar {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: 0.35rem 0;
+  font-size: var(--font-size-xs);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+.top-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+}
+
+.top-bar-systems {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.top-bar-systems a {
+  color: var(--color-text-inverse);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xs);
+  transition: color var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.top-bar-systems a:hover {
+  color: var(--color-accent);
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+/* Redes Irmãs no Topo */
+.top-networks {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.top-networks-label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+
+.network-badge-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-xs);
+  color: var(--color-text-inverse);
+  font-size: 11px;
+  font-weight: var(--font-weight-semibold);
+  transition: all var(--transition-fast);
+}
+
+.network-badge-link:hover {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+.network-badge-link.active-network {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+/* Acessibilidade no Topo */
+.accessibility-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: var(--spacing-sm);
+}
+
+.a11y-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--color-text-inverse);
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--radius-xs);
+  transition: background var(--transition-fast);
+}
+
+.a11y-btn:hover {
+  background: var(--color-accent);
+}
+
+/* 2. CABEÇALHO PRINCIPAL & NAVBAR*/
+.site-header {
+  background-color: var(--color-bg-body);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: var(--shadow-xs);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  gap: var(--spacing-md);
+}
+
+/* Logos */
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo img {
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+}
+
+.partner-logo {
+  display: flex;
+  align-items: center;
+}
+
+.partner-logo img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Navegação Desktop */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-pill-wrapper {
+  background-color: var(--color-bg-surface);
+  border-radius: var(--radius-md);
+  padding: 4px;
+  border: 1px solid var(--color-border);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-muted);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-item.active .nav-link {
+  color: var(--color-accent);
+  background-color: var(--color-bg-body);
+  box-shadow: var(--shadow-xs);
+}
+
+.nav-link .dropdown-chevron {
+  font-size: 10px;
+  transition: transform var(--transition-fast);
+}
+
+.nav-item:hover .nav-link .dropdown-chevron,
+.nav-item.dropdown-open .nav-link .dropdown-chevron {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Menu Desktop */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 250px;
+  background-color: var(--color-bg-body);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: all var(--transition-normal);
+  z-index: 1010;
+}
+
+.nav-item:hover .dropdown-menu,
+.nav-item:focus-within .dropdown-menu,
+.nav-item.dropdown-open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+  transition: all var(--transition-fast);
+  border-left: 3px solid transparent;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--color-primary-surface);
+  color: var(--color-primary);
+  border-left-color: var(--color-accent);
+  font-weight: var(--font-weight-semibold);
+  padding-left: 1.45rem;
+}
+
+.dropdown-item.active {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-bold);
+  border-left-color: var(--color-accent);
+  background-color: var(--color-bg-surface);
+}
+
+/* Botão Mobile Hamburger */
+.mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+}
+
+.mobile-menu-btn span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-normal);
+}
+
+.mobile-menu-btn[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-btn[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-btn[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Gaveta Mobile Nav */
+.mobile-nav-drawer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(15, 23, 42, 0.6);
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.mobile-nav-drawer.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85%;
+  max-width: 380px;
+  height: 100%;
+  background-color: var(--color-bg-body);
+  box-shadow: -4px 0 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+}
+
+.mobile-nav-drawer.is-open .mobile-nav-panel {
+  transform: translateX(0);
+}
+
+.mobile-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.mobile-close-btn {
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+  padding: 0.5rem;
+}
+
+.mobile-nav-list {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-main);
+  background-color: var(--color-bg-surface);
+  border-radius: var(--radius-sm);
+  width: 100%;
+  text-align: left;
+}
+
+.mobile-submenu {
+  display: none;
+  padding: 0.5rem 0 0.5rem 1rem;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.mobile-nav-item.open .mobile-submenu,
+.mobile-nav-item.active .mobile-submenu,
+.mobile-submenu.active {
+  display: flex;
+}
+
+.mobile-submenu-toggle i {
+  transition: transform var(--transition-fast);
+}
+
+.mobile-nav-item.open .mobile-submenu-toggle i,
+.mobile-submenu-toggle.active i {
+  transform: rotate(180deg);
+}
+
+.mobile-submenu-item.active {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-bold);
+  background-color: var(--color-primary-surface);
+}
+
+.mobile-submenu-item {
+  display: block;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+  border-radius: var(--radius-xs);
+  transition: background var(--transition-fast);
+}
+
+.mobile-submenu-item:hover,
+.mobile-submenu-item:focus {
+  background-color: var(--color-primary-surface);
+  color: var(--color-primary);
+}
+
+/* ============================================================
+   3. BREADCRUMBS (CAMINHO DE NAVEGAÇÃO)
+   ============================================================ */
+.breadcrumbs-bar {
+  background-color: var(--color-bg-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.75rem 0;
+  font-size: 0.875rem;
+}
+
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--color-text-muted);
+}
+
+.breadcrumb-item a {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb-item a:hover {
+  color: var(--color-accent);
+}
+
+.breadcrumb-separator {
+  color: var(--color-text-light);
+  font-size: 0.75rem;
+}
+
+.breadcrumb-item.current {
+  color: var(--color-text-main);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* ============================================================
+   4. CONTEÚDO PRINCIPAL
+   ============================================================ */
+.main-content {
+  min-height: calc(100vh - 450px);
+  padding: var(--spacing-2xl) 0;
+}
+
+/* ============================================================
+   5. RODAPÉ INSTITUCIONAL (PADRÃO REDEPLAN)
+   ============================================================ */
+.site-footer {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  margin-top: var(--spacing-3xl);
+  font-size: 0.875rem;
+}
+
+.footer-top {
+  padding: var(--spacing-3xl) 0 var(--spacing-xl) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1.1fr 1fr 1.3fr;
+  gap: var(--spacing-2xl);
+}
+
+.footer-col-title {
+  color: var(--color-text-inverse);
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.footer-col-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-accent);
+  border-radius: var(--radius-full);
+}
+
+.footer-brand-logo {
+  max-width: 170px;
+  height: auto;
+  margin-bottom: var(--spacing-md);
+  filter: brightness(0) invert(1);
+}
+
+.footer-desc {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Redes Sociais */
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-text-inverse);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+}
+
+.social-icon-btn:hover {
+  background: var(--color-accent);
+  transform: translateY(-2px);
+  color: var(--color-text-inverse);
+}
+
+/* Links do Rodapé */
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-link-item a {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.875rem;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-link-item a:hover {
+  color: var(--color-accent);
+  padding-left: 4px;
+}
+
+/* Contatos no Rodapé */
+.footer-contact-info p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.footer-contact-info a {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+  text-decoration: underline;
+}
+
+.footer-contact-info a:hover {
+  color: var(--color-text-inverse);
+}
+
+/* Logos do Ecossistema no Rodapé */
+.footer-networks-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-network-logo img {
+  height: 28px;
+  width: auto;
+  opacity: 0.85;
+  transition: opacity var(--transition-fast);
+}
+
+.footer-network-logo img:hover {
+  opacity: 1;
+}
+
+/* Linha Final de Copyright */
+.footer-bottom {
+  padding: 1.25rem 0;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+

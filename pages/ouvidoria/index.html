@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ouvidoria da REDELOG e da Subsecretaria de Logística do Estado do Rio de Janeiro. Canal oficial para sugestões, elogios, solicitações, reclamações e denúncias com garantia de sigilo.">
+  <title>Ouvidoria | REDELOG RJ</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos Modulares Sem Frameworks -->
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/pages.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+
+  <link rel="icon" type="image/png" href="../../assets/logos/redelog-icon.png">
+</head>
+<body>
+
+  <!-- Link de Acessibilidade Direto ao Conteúdo -->
+  <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+  <!-- 1. TOPO INSTITUCIONAL DO ECOSSISTEMA -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-systems">
+        <a href="https://www.compras.rj.gov.br/mercatto/aplicacao/asp/seg/logon.asp?Sessao=S&Idioma=" target="_blank"><i class="fa-solid fa-boxes-stacked"></i> SIGA</a>
+        <a href="https://pca.rj.gov.br/login" target="_blank"><i class="fa-solid fa-chart-line"></i> PCA</a>
+      </div>
+
+      <div class="top-bar-right">
+        <div class="top-networks">
+          <a href="../redelog/compras-centralizadas.html"><i class="fa-solid fa-cart-shopping"></i> Compras Centralizadas</a>
+          <a href="../redelog/logistica-em-dados.html"><i class="fa-solid fa-database"></i> Logística em Dados</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. CABEÇALHO PRINCIPAL E NAVBAR -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="brand-group">
+        <a href="../../index.html" class="brand-logo" title="REDELOG - Início">
+          <img src="../../assets/logos/redelog-logo.png" alt="Logotipo da REDELOG - Rede Logística do Estado do Rio de Janeiro">
+        </a>
+      </div>
+
+      <nav class="desktop-nav" aria-label="Navegação Principal">
+        <div class="nav-pill-wrapper">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="../../index.html" class="nav-link">INÍCIO</a>
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <a href="../redelog/sobre.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                REDELOG <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu REDELOG">
+                <li><a class="dropdown-item" href="../redelog/sobre.html">Sobre a Redelog</a></li>
+                <li><a class="dropdown-item" href="../redelog/quem-somos.html">Quem Somos</a></li>
+                <li><a class="dropdown-item" href="../redelog/informes.html">Informes Oficiais</a></li>
+                <li><a class="dropdown-item" href="../redelog/compras-centralizadas.html">Compras Centralizadas</a></li>
+                <li><a class="dropdown-item" href="../redelog/logistica-em-dados.html">Logística em Dados</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <a href="../biblioteca/sublog.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                BIBLIOTECA <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Biblioteca">
+                <li><a class="dropdown-item" href="../biblioteca/sublog.html">Sobre a SUBLOG</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/cadernos-logisticos.html">Cadernos Logísticos</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/panorama.html">Panorama das Contratações</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/audiencias-consultas.html">Audiências e Consultas</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/relatorio-redes.html">Relatório Redes</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <a href="../base-de-conhecimento/index.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                BASE DE CONHECIMENTO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Base de Conhecimento">
+                <li><a class="dropdown-item" href="../base-de-conhecimento/index.html">Ciclo das Contratações</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-planejamento.html">Fase de Planejamento</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-preparatoria.html">Fase Preparatória</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-externa.html">Fase Externa</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/gestao-contratual.html">Gestão Contratual</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/gestao-bens-servicos.html">Gestão de Bens e Serviços</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <a href="../capacitacao/trilha-de-aprendizagem.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                CAPACITAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Capacitação">
+                <li><a class="dropdown-item" href="../capacitacao/fique-por-dentro.html">Fique por Dentro</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/trilha-de-aprendizagem.html">Trilha de Aprendizagem</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/cursos-internos.html">Cursos Internos</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/cursos-externos.html">Cursos Externos</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/videos-tutoriais.html">Vídeos Tutoriais</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <a href="../legislacao/licitacoes.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                LEGISLAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Legislação">
+                <li><a class="dropdown-item" href="../legislacao/licitacoes.html">Licitações (Lei 14.133/21)</a></li>
+                <li><a class="dropdown-item" href="../legislacao/contratos.html">Gestão Contratual</a></li>
+                <li><a class="dropdown-item" href="../legislacao/transportes.html">Transportes e Frotas</a></li>
+                <li><a class="dropdown-item" href="../legislacao/bens-moveis.html">Bens Móveis</a></li>
+                <li><a class="dropdown-item" href="../legislacao/assuntos-diversos.html">Assuntos Diversos</a></li>
+                <li><a class="dropdown-item" href="../legislacao/compendio.html">Compêndio Completo</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="../contatos/index.html" class="nav-link">CONTATOS</a>
+            </li>
+
+            <li class="nav-item active">
+              <a href="../ouvidoria/index.html" class="nav-link">OUVIDORIA</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="divider-line"></div>
+  </header>
+
+  <!-- GAVETA DE NAVEGAÇÃO MOBILE -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-panel" id="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <img src="../../assets/logos/redelog-logo.png" alt="REDELOG" style="height: 34px;">
+        <button class="mobile-close-btn" aria-label="Fechar menu">&times;</button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="../../index.html" class="mobile-nav-link">INÍCIO</a></li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            REDELOG <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../redelog/sobre.html" class="mobile-submenu-item">Sobre a Redelog</a>
+            <a href="../redelog/quem-somos.html" class="mobile-submenu-item">Quem Somos</a>
+            <a href="../redelog/informes.html" class="mobile-submenu-item">Informes Oficiais</a>
+            <a href="../redelog/compras-centralizadas.html" class="mobile-submenu-item">Compras Centralizadas</a>
+            <a href="../redelog/logistica-em-dados.html" class="mobile-submenu-item">Logística em Dados</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            BIBLIOTECA <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../biblioteca/sublog.html" class="mobile-submenu-item">Sobre a SUBLOG</a>
+            <a href="../biblioteca/cadernos-logisticos.html" class="mobile-submenu-item">Cadernos Logísticos</a>
+            <a href="../biblioteca/panorama.html" class="mobile-submenu-item">Panorama das Contratações</a>
+            <a href="../biblioteca/audiencias-consultas.html" class="mobile-submenu-item">Audiências e Consultas</a>
+            <a href="../biblioteca/relatorio-redes.html" class="mobile-submenu-item">Relatório Redes</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            BASE DE CONHECIMENTO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../base-de-conhecimento/index.html" class="mobile-submenu-item">Visão Geral do Ciclo</a>
+            <a href="../base-de-conhecimento/fase-planejamento.html" class="mobile-submenu-item">Fase de Planejamento</a>
+            <a href="../base-de-conhecimento/fase-preparatoria.html" class="mobile-submenu-item">Fase Preparatória</a>
+            <a href="../base-de-conhecimento/fase-externa.html" class="mobile-submenu-item">Fase Externa</a>
+            <a href="../base-de-conhecimento/gestao-contratual.html" class="mobile-submenu-item">Gestão Contratual</a>
+            <a href="../base-de-conhecimento/gestao-bens-servicos.html" class="mobile-submenu-item">Gestão de Bens e Serviços</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            CAPACITAÇÃO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../capacitacao/fique-por-dentro.html" class="mobile-submenu-item">Fique por Dentro</a>
+            <a href="../capacitacao/trilha-de-aprendizagem.html" class="mobile-submenu-item">Trilha de Aprendizagem</a>
+            <a href="../capacitacao/cursos-internos.html" class="mobile-submenu-item">Cursos Internos</a>
+            <a href="../capacitacao/cursos-externos.html" class="mobile-submenu-item">Cursos Externos</a>
+            <a href="../capacitacao/videos-tutoriais.html" class="mobile-submenu-item">Vídeos Tutoriais</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            LEGISLAÇÃO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../legislacao/licitacoes.html" class="mobile-submenu-item">Licitações (Lei 14.133/21)</a>
+            <a href="../legislacao/contratos.html" class="mobile-submenu-item">Gestão Contratual</a>
+            <a href="../legislacao/transportes.html" class="mobile-submenu-item">Transportes e Frotas</a>
+            <a href="../legislacao/bens-moveis.html" class="mobile-submenu-item">Bens Móveis</a>
+            <a href="../legislacao/assuntos-diversos.html" class="mobile-submenu-item">Assuntos Diversos</a>
+            <a href="../legislacao/compendio.html" class="mobile-submenu-item">Compêndio Completo</a>
+          </div>
+        </li>
+
+        <li><a href="../contatos/index.html" class="mobile-nav-link">CONTATOS DA REDE</a></li>
+        <li><a href="../ouvidoria/index.html" class="mobile-nav-link active">OUVIDORIA INTERNA</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="conteudo-principal">
+    <div class="container section-padding">
+
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Caminho de navegação">
+        <ol class="breadcrumbs-list">
+          <li class="breadcrumbs-item"><a href="../../index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+          <li class="breadcrumbs-item active" aria-current="page">Ouvidoria</li>
+        </ol>
+      </nav>
+
+      <!-- Cabeçalho da Página -->
+      <div class="page-header-block">
+        <h1 class="page-title">Ouvidoria Setorial da REDELOG</h1>
+        <p class="page-subtitle">Canal democrático e transparente de escuta para servidores estaduais, fornecedores públicos e cidadãos fluminenses.</p>
+      </div>
+
+      <!-- Tipos de Manifestação (Cards de Orientação) -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; margin-bottom: 3rem;">
+        
+        <div class="card" style="padding: 1.5rem; text-align: center; border-top: 4px solid #2563eb;">
+          <i class="fa-regular fa-lightbulb" style="font-size: 2rem; color: #2563eb; margin-bottom: 0.75rem;"></i>
+          <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.35rem;">Sugestão</h4>
+          <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.4; margin: 0;">Ideia ou proposta de melhoria para os cadernos, sistemas ou fluxos de compras.</p>
+        </div>
+
+        <div class="card" style="padding: 1.5rem; text-align: center; border-top: 4px solid #059669;">
+          <i class="fa-regular fa-thumbs-up" style="font-size: 2rem; color: #059669; margin-bottom: 0.75rem;"></i>
+          <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.35rem;">Elogio</h4>
+          <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.4; margin: 0;">Demonstração de apreço ou satisfação com o suporte técnico recebido da rede.</p>
+        </div>
+
+        <div class="card" style="padding: 1.5rem; text-align: center; border-top: 4px solid #d97706;">
+          <i class="fa-regular fa-circle-question" style="font-size: 2rem; color: #d97706; margin-bottom: 0.75rem;"></i>
+          <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.35rem;">Solicitação LAI</h4>
+          <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.4; margin: 0;">Pedido de acesso a dados e informações públicas (Lei Federal nº 12.527/11).</p>
+        </div>
+
+        <div class="card" style="padding: 1.5rem; text-align: center; border-top: 4px solid #dc2626;">
+          <i class="fa-solid fa-triangle-exclamation" style="font-size: 2rem; color: #dc2626; margin-bottom: 0.75rem;"></i>
+          <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.35rem;">Reclamação</h4>
+          <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.4; margin: 0;">Manifestação de desagrado sobre atrasos, falhas ou prestação inadequada de serviço.</p>
+        </div>
+
+        <div class="card" style="padding: 1.5rem; text-align: center; border-top: 4px solid #7c3aed;">
+          <i class="fa-solid fa-shield-halved" style="font-size: 2rem; color: #7c3aed; margin-bottom: 0.75rem;"></i>
+          <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.35rem;">Denúncia</h4>
+          <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.4; margin: 0;">Notificação de ato ilícito ou violação de conduta ética com garantia de sigilo total.</p>
+        </div>
+
+      </div>
+
+      <!-- Banner de Sigilo e Fala.BR RJ -->
+      <section style="background: linear-gradient(135deg, #0b2545 0%, #134074 100%); color: #fff; padding: 2.5rem; border-radius: var(--radius-xl); margin-bottom: 3.5rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap;">
+          <div style="max-width: 680px;">
+            <span style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: var(--radius-pill); display: inline-block; margin-bottom: 0.75rem;">Plataforma Oficial do Estado</span>
+            <h3 style="color: #ffffff; font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">Sistema Integrado Fala.BR - Governo do RJ</h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+              Você também pode registrar sua manifestação diretamente no sistema unificado de ouvidorias gerido pela Controladoria-Geral do Estado (CGE-RJ), com opção de anonimato completo e acompanhamento por número de protocolo e chave de segurança.
+            </p>
+          </div>
+          <div>
+            <a href="https://falabr.cgu.gov.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background: #38bdf8; color: #0b2545; border-color: #38bdf8; font-weight: 700;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar Fala.BR RJ</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulário de Manifestação Setorial -->
+      <div class="card" style="max-width: 800px; margin: 0 auto 3.5rem auto; padding: 2.5rem;">
+        <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--color-text-main);">
+          <i class="fa-solid fa-bullhorn" style="color: var(--color-primary-blue);"></i> Registro de Manifestação na Ouvidoria Setorial
+        </h3>
+        <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 2rem;">
+          Seu relato será apurado com rigor e independência pela equipe de conformidade da SUBLOG/SEPLAG. O prazo de resposta regimental é de até 20 dias úteis.
+        </p>
+
+        <form id="ouvidoriaForm" style="display: flex; flex-direction: column; gap: 1.25rem;">
+          
+          <div>
+            <label for="tipoManifestacao" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--color-text-main);">Tipo de Manifestação *</label>
+            <select id="tipoManifestacao" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-family: inherit; font-size: 0.95rem; background: #fff;">
+              <option value="">Selecione o tipo...</option>
+              <option value="sugestao">Sugestão de Aprimoramento</option>
+              <option value="elogio">Elogio a Servidor ou Equipe</option>
+              <option value="reclamacao">Reclamação Operacional</option>
+              <option value="informacao">Solicitação de Informação (LAI)</option>
+              <option value="denuncia">Denúncia de Irregularidade / Integridade</option>
+            </select>
+          </div>
+
+          <div style="background: var(--color-bg-light); padding: 1rem 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+            <label style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem; cursor: pointer; color: var(--color-text-main); font-weight: 600;">
+              <input type="checkbox" id="anonimoCheck" style="width: 18px; height: 18px;">
+              Desejo registrar esta manifestação de forma anônima (sem informar meus dados pessoais)
+            </label>
+            <small style="display: block; color: var(--color-text-muted); margin-top: 0.25rem; font-size: 0.8rem;">
+              Nota: Manifestações anônimas não recebem resposta individual direta, mas são integralmente apuradas.
+            </small>
+          </div>
+
+          <div id="dadosPessoaisGroup" style="display: flex; flex-direction: column; gap: 1.25rem;">
+            <div>
+              <label for="ouvidoriaNome" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--color-text-main);">Nome Completo</label>
+              <input type="text" id="ouvidoriaNome" placeholder="Digite seu nome (ou deixe em branco se anônimo)" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-family: inherit; font-size: 0.95rem;">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div>
+                <label for="ouvidoriaEmail" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--color-text-main);">E-mail para Resposta</label>
+                <input type="email" id="ouvidoriaEmail" placeholder="seu.email@exemplo.com" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-family: inherit; font-size: 0.95rem;">
+              </div>
+              <div>
+                <label for="ouvidoriaTelefone" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--color-text-main);">Telefone de Contato</label>
+                <input type="tel" id="ouvidoriaTelefone" placeholder="(21) 99999-9999" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-family: inherit; font-size: 0.95rem;">
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label for="ouvidoriaAssunto" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--color-text-main);">Assunto Resumido *</label>
+            <input type="text" id="ouvidoriaAssunto" required placeholder="Título da sua manifestação" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-family: inherit; font-size: 0.95rem;">
+          </div>
+
+          <div>
+            <label for="ouvidoriaTexto" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--color-text-main);">Relato Detalhado dos Fatos *</label>
+            <textarea id="ouvidoriaTexto" required rows="6" placeholder="Descreva os fatos com clareza, indicando datas, órgãos envolvidos, números de processo SEI ou pregão, quando aplicável..." style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-family: inherit; font-size: 0.95rem; resize: vertical;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" style="padding: 0.85rem; font-weight: 600; font-size: 1rem;">
+            <i class="fa-solid fa-paper-plane"></i> Protocolar Manifestação
+          </button>
+
+          <div id="ouvidoriaFeedback" style="display: none; padding: 1.25rem; border-radius: var(--radius-md); margin-top: 0.5rem; text-align: center; font-size: 0.95rem; line-height: 1.5;"></div>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- RODAPÉ GOVERNAMENTAL -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-col footer-col-brand">
+          <img src="../../assets/logos/redelog-logo.png" alt="REDELOG" class="footer-logo">
+          <p class="footer-description">
+            A <strong>REDELOG</strong> integra, capacita e conecta os profissionais das áreas de compras, licitações, contratos e patrimônio do Estado do Rio de Janeiro.
+          </p>
+          <div class="footer-governo-badge">
+            <span>Governo do Estado do Rio de Janeiro</span>
+            <small>Secretaria de Estado de Planejamento e Gestão - SEPLAG</small>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Redelog</h4>
+          <ul class="footer-links">
+            <li><a href="../redelog/sobre.html">Sobre a Redelog</a></li>
+            <li><a href="../redelog/quem-somos.html">Quem Somos</a></li>
+            <li><a href="../redelog/informes.html">Informes Oficiais</a></li>
+            <li><a href="../redelog/compras-centralizadas.html">Compras Centralizadas</a></li>
+            <li><a href="../redelog/logistica-em-dados.html">Logística em Dados</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Conhecimento & Suporte</h4>
+          <ul class="footer-links">
+            <li><a href="../base-de-conhecimento/index.html">Ciclo das Contratações</a></li>
+            <li><a href="../biblioteca/cadernos-logisticos.html">Cadernos Logísticos</a></li>
+            <li><a href="../legislacao/licitacoes.html">Legislação e Decretos</a></li>
+            <li><a href="../capacitacao/trilha-de-aprendizagem.html">Trilha de Capacitação</a></li>
+            <li><a href="../contatos/index.html">Fale com a SUBLOG</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Sistemas Corporativos</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.compras.rj.gov.br" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Portal SIGA-RJ</a></li>
+            <li><a href="https://pca.rj.gov.br" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Portal PCA-RJ</a></li>
+            <li><a href="https://sei.rj.gov.br" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Sistema SEI-RJ</a></li>
+            <li><a href="https://www.comprasnet.gov.br" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> PNCP Nacional</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">
+          &copy; 2025 REDELOG - Rede de Logística do Estado do Rio de Janeiro. Todos os direitos reservados.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="../ouvidoria/index.html">Ouvidoria Geral</a>
+          <a href="../redelog/sobre.html#termos">Termos de Uso</a>
+          <a href="../redelog/sobre.html#privacidade">Privacidade de Dados</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../../js/navigation.js"></script>
+  <script src="../../js/components.js"></script>
+  <script src="../../js/main.js"></script>
+
+  <!-- Script de Envio do Formulário de Ouvidoria -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('ouvidoriaForm');
+      const feedback = document.getElementById('ouvidoriaFeedback');
+      const anonimoCheck = document.getElementById('anonimoCheck');
+      const dadosPessoaisGroup = document.getElementById('dadosPessoaisGroup');
+
+      if (anonimoCheck && dadosPessoaisGroup) {
+        anonimoCheck.addEventListener('change', function () {
+          if (this.checked) {
+            dadosPessoaisGroup.style.display = 'none';
+          } else {
+            dadosPessoaisGroup.style.display = 'flex';
+          }
+        });
+      }
+
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const protocolo = 'RLOG-' + Math.floor(100000 + Math.random() * 900000) + '/' + new Date().getFullYear();
+          feedback.style.display = 'block';
+          feedback.style.background = '#dcfce7';
+          feedback.style.color = '#15803d';
+          feedback.style.border = '1px solid #bbf7d0';
+          feedback.innerHTML = '<strong><i class="fa-solid fa-circle-check"></i> Manifestação protocolada com sucesso!</strong><br>Número de Protocolo: <strong style="font-size: 1.1rem; letter-spacing: 0.5px;">' + protocolo + '</strong><br><small>Guarde este número para consultar o andamento em nosso canal de atendimento.</small>';
+          form.reset();
+          if (dadosPessoaisGroup) dadosPessoaisGroup.style.display = 'flex';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

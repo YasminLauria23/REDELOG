@@ -1,0 +1,174 @@
+/**
+ * REDELOG - Responsive Styles & Breakpoints
+ * Suporte a 1920px, 1440px, 1024px, 768px, 480px, 375px
+ */
+
+/* ============================================================
+   1. TELAS GRANDES & NOTEBOOKS (MAX-WIDTH: 1200px)
+   ============================================================ */
+@media screen and (max-width: 1200px) {
+  .nav-link {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.825rem;
+  }
+
+  .partner-logo img {
+    height: 36px;
+  }
+
+  .brand-logo img {
+    height: 40px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+  }
+}
+
+/* ============================================================
+   2. TABLETS & TELAS MÉDIAS (MAX-WIDTH: 991px)
+   ============================================================ */
+@media screen and (max-width: 991px) {
+  /* Ativação do Menu Mobile */
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .mobile-nav-drawer {
+    display: block;
+  }
+
+  /* Simplificação do Topo */
+  .top-bar-systems {
+    display: none;
+  }
+
+  .top-bar-inner {
+    justify-content: flex-end;
+  }
+
+  /* Mosaico Hero se transforma em lista empilhada */
+  .hero-mosaic {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .mosaic-item {
+    min-height: 220px !important;
+    height: auto;
+  }
+
+  .mosaic-item.item-large {
+    min-height: 260px !important;
+  }
+
+  /* Processos e Fases */
+  .process-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .law-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .law-action-btn {
+    width: 100%;
+    margin-top: var(--spacing-sm);
+  }
+}
+
+/* ============================================================
+   3. SMARTPHONES & TELAS PEQUENAS (MAX-WIDTH: 768px)
+   ============================================================ */
+@media screen and (max-width: 768px) {
+  :root {
+    --container-padding: 1rem;
+  }
+
+  h1 { font-size: 1.85rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+
+  .partner-logo {
+    display: none; /* Em telas móveis foca na marca principal */
+  }
+
+  .brand-logo img {
+    height: 38px;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .networks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .links-resource-box {
+    padding: var(--spacing-md);
+  }
+
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-field {
+    min-width: 100%;
+  }
+
+  .tab-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ============================================================
+   4. SMARTPHONES ULTRA-COMPACTOS (MAX-WIDTH: 480px)
+   ============================================================ */
+@media screen and (max-width: 480px) {
+  .top-networks {
+    display: none; /* Preserva os botões de acessibilidade */
+  }
+
+  .top-bar-right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .page-hero {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .page-hero-title {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .step-number-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 1.15rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem;
+  }
+}

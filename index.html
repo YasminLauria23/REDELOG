@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rede Logística do Estado do Rio de Janeiro - REDELOG. Integração, capacitação e governança para servidores das funções logísticas do Poder Executivo Estadual.">
+  <title>REDE DE LOGÍSTICA - REDELOG | Governo do Estado do Rio de Janeiro</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos Modulares Sem Frameworks -->
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <link rel="icon" type="image/png" href="./assets/logos/redelog-icon.png">
+</head>
+<body>
+
+  <!-- Link de Acessibilidade Direto ao Conteúdo -->
+  <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+  <!-- 1. TOPO INSTITUCIONAL DO ECOSSISTEMA -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-systems">
+        <a href="https://www.compras.rj.gov.br/mercatto/aplicacao/asp/seg/logon.asp?Sessao=S&Idioma=" target="_blank"><i class="fa-solid fa-boxes-stacked"></i> SIGA</a>
+        <a href="https://pca.rj.gov.br/login" target="_blank"><i class="fa-solid fa-chart-line"></i> PCA</a>
+      </div>
+
+      <div class="top-bar-right">
+        <div class="top-networks">
+          <a href="./pages/redelog/compras-centralizadas.html"><i class="fa-solid fa-cart-shopping"></i> Compras Centralizadas</a>
+        <a href="./pages/redelog/logistica-em-dados.html"><i class="fa-solid fa-database"></i> Logística em Dados</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. CABEÇALHO PRINCIPAL E NAVBAR -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Logotipo Redelog -->
+      <div class="brand-group">
+        <a href="./index.html" class="brand-logo" title="REDELOG - Início">
+          <img src="./assets/logos/redelog-logo.png" alt="Logotipo da REDELOG - Rede Logística do Estado do Rio de Janeiro">
+        </a>
+      </div>
+
+      <!-- Menu Desktop -->
+      <nav class="desktop-nav" aria-label="Navegação Principal">
+        <div class="nav-pill-wrapper">
+          <ul class="nav-list">
+            <li class="nav-item active">
+              <a href="./index.html" class="nav-link">INÍCIO</a>
+            </li>
+
+            <!-- Dropdown REDELOG -->
+            <li class="nav-item has-dropdown">
+              <a href="./pages/redelog/sobre.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                REDELOG <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu REDELOG">
+                <li><a class="dropdown-item" href="./pages/redelog/sobre.html">Sobre a Redelog</a></li>
+                <li><a class="dropdown-item" href="./pages/redelog/quem-somos.html">Quem Somos</a></li>
+                <li><a class="dropdown-item" href="./pages/redelog/informes.html">Informes Oficiais</a></li>
+                <li><a class="dropdown-item" href="./pages/redelog/compras-centralizadas.html">Compras Centralizadas</a></li>
+                <li><a class="dropdown-item" href="./pages/redelog/logistica-em-dados.html">Logística em Dados</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown BIBLIOTECA -->
+            <li class="nav-item has-dropdown">
+              <a href="./pages/biblioteca/sublog.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                BIBLIOTECA <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Biblioteca">
+                <li><a class="dropdown-item" href="./pages/biblioteca/sublog.html">Sobre a SUBLOG</a></li>
+                <li><a class="dropdown-item" href="./pages/biblioteca/cadernos-logisticos.html">Cadernos Logísticos</a></li>
+                <li><a class="dropdown-item" href="./pages/biblioteca/panorama.html">Panorama das Contratações</a></li>
+                <li><a class="dropdown-item" href="./pages/biblioteca/audiencias-consultas.html">Audiências e Consultas</a></li>
+                <li><a class="dropdown-item" href="./pages/biblioteca/relatorio-redes.html">Relatório Redes</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown BASE DE CONHECIMENTO -->
+            <li class="nav-item has-dropdown">
+              <a href="./pages/base-de-conhecimento/index.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                BASE DE CONHECIMENTO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Base de Conhecimento">
+                <li><a class="dropdown-item" href="./pages/base-de-conhecimento/index.html">Ciclo das Contratações</a></li>
+                <li><a class="dropdown-item" href="./pages/base-de-conhecimento/fase-planejamento.html">Fase de Planejamento</a></li>
+                <li><a class="dropdown-item" href="./pages/base-de-conhecimento/fase-preparatoria.html">Fase Preparatória</a></li>
+                <li><a class="dropdown-item" href="./pages/base-de-conhecimento/fase-externa.html">Fase Externa</a></li>
+                <li><a class="dropdown-item" href="./pages/base-de-conhecimento/gestao-contratual.html">Gestão Contratual</a></li>
+                <li><a class="dropdown-item" href="./pages/base-de-conhecimento/gestao-bens-servicos.html">Gestão de Bens e Serviços</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown CAPACITAÇÃO -->
+            <li class="nav-item has-dropdown">
+              <a href="./pages/capacitacao/trilha-de-aprendizagem.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                CAPACITAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Capacitação">
+                <li><a class="dropdown-item" href="./pages/capacitacao/fique-por-dentro.html">Fique por Dentro</a></li>
+                <li><a class="dropdown-item" href="./pages/capacitacao/trilha-de-aprendizagem.html">Trilha de Aprendizagem</a></li>
+                <li><a class="dropdown-item" href="./pages/capacitacao/cursos-internos.html">Cursos Internos</a></li>
+                <li><a class="dropdown-item" href="./pages/capacitacao/cursos-externos.html">Cursos Externos</a></li>
+                <li><a class="dropdown-item" href="./pages/capacitacao/videos-tutoriais.html">Vídeos Tutoriais</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown LEGISLAÇÃO -->
+            <li class="nav-item has-dropdown">
+              <a href="./pages/legislacao/licitacoes.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                LEGISLAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Legislação">
+                <li><a class="dropdown-item" href="./pages/legislacao/licitacoes.html">Licitações (Lei 14.133/21)</a></li>
+                <li><a class="dropdown-item" href="./pages/legislacao/contratos.html">Gestão Contratual</a></li>
+                <li><a class="dropdown-item" href="./pages/legislacao/transportes.html">Transportes e Frotas</a></li>
+                <li><a class="dropdown-item" href="./pages/legislacao/bens-moveis.html">Bens Móveis</a></li>
+                <li><a class="dropdown-item" href="./pages/legislacao/assuntos-diversos.html">Assuntos Diversos</a></li>
+                <li><a class="dropdown-item" href="./pages/legislacao/compendio.html">Compêndio Completo</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="./pages/contatos/index.html" class="nav-link">CONTATOS</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="./pages/ouvidoria/index.html" class="nav-link">OUVIDORIA</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+        <!-- Botão Mobile Hamburger -->
+        <button class="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-nav-panel">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    </div>
+
+    <!-- Linha Decorativa do Governo -->
+    <div class="divider-line"></div>
+  </header>
+
+  <!-- GAVETA DE NAVEGAÇÃO MOBILE -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-panel" id="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <img src="./assets/logos/redelog-logo.png" alt="REDELOG" style="height: 34px;">
+        <button class="mobile-close-btn" aria-label="Fechar menu">&times;</button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="./index.html" class="mobile-nav-link">INÍCIO</a></li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            REDELOG <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="./pages/redelog/sobre.html" class="mobile-submenu-item">Sobre a Redelog</a>
+            <a href="./pages/redelog/quem-somos.html" class="mobile-submenu-item">Quem Somos</a>
+            <a href="./pages/redelog/informes.html" class="mobile-submenu-item">Informes Oficiais</a>
+            <a href="./pages/redelog/compras-centralizadas.html" class="mobile-submenu-item">Compras Centralizadas</a>
+            <a href="./pages/redelog/logistica-em-dados.html" class="mobile-submenu-item">Logística em Dados</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            BIBLIOTECA <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="./pages/biblioteca/sublog.html" class="mobile-submenu-item">Sobre a SUBLOG</a>
+            <a href="./pages/biblioteca/cadernos-logisticos.html" class="mobile-submenu-item">Cadernos Logísticos</a>
+            <a href="./pages/biblioteca/panorama.html" class="mobile-submenu-item">Panorama das Contratações</a>
+            <a href="./pages/biblioteca/audiencias-consultas.html" class="mobile-submenu-item">Audiências e Consultas</a>
+            <a href="./pages/biblioteca/relatorio-redes.html" class="mobile-submenu-item">Relatório Redes</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            BASE DE CONHECIMENTO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="./pages/base-de-conhecimento/index.html" class="mobile-submenu-item">Visão Geral do Ciclo</a>
+            <a href="./pages/base-de-conhecimento/fase-planejamento.html" class="mobile-submenu-item">Fase de Planejamento</a>
+            <a href="./pages/base-de-conhecimento/fase-preparatoria.html" class="mobile-submenu-item">Fase Preparatória</a>
+            <a href="./pages/base-de-conhecimento/fase-externa.html" class="mobile-submenu-item">Fase Externa</a>
+            <a href="./pages/base-de-conhecimento/gestao-contratual.html" class="mobile-submenu-item">Gestão Contratual</a>
+            <a href="./pages/base-de-conhecimento/gestao-bens-servicos.html" class="mobile-submenu-item">Gestão de Bens e Serviços</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            CAPACITAÇÃO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="./pages/capacitacao/fique-por-dentro.html" class="mobile-submenu-item">Fique por Dentro</a>
+            <a href="./pages/capacitacao/trilha-de-aprendizagem.html" class="mobile-submenu-item">Trilha de Aprendizagem</a>
+            <a href="./pages/capacitacao/cursos-internos.html" class="mobile-submenu-item">Cursos Internos</a>
+            <a href="./pages/capacitacao/cursos-externos.html" class="mobile-submenu-item">Cursos Externos</a>
+            <a href="./pages/capacitacao/videos-tutoriais.html" class="mobile-submenu-item">Vídeos Tutoriais</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            LEGISLAÇÃO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="./pages/legislacao/licitacoes.html" class="mobile-submenu-item">Licitações (Lei 14.133/21)</a>
+            <a href="./pages/legislacao/contratos.html" class="mobile-submenu-item">Gestão Contratual</a>
+            <a href="./pages/legislacao/transportes.html" class="mobile-submenu-item">Transportes e Frotas</a>
+            <a href="./pages/legislacao/bens-moveis.html" class="mobile-submenu-item">Bens Móveis</a>
+            <a href="./pages/legislacao/assuntos-diversos.html" class="mobile-submenu-item">Assuntos Diversos</a>
+            <a href="./pages/legislacao/compendio.html" class="mobile-submenu-item">Compêndio Completo</a>
+          </div>
+        </li>
+
+        <li><a href="./pages/contatos/index.html" class="mobile-nav-link">CONTATOS DA REDE</a></li>
+        <li><a href="./pages/ouvidoria/index.html" class="mobile-nav-link">OUVIDORIA INTERNA</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="conteudo-principal" class="main-content">
+    <div class="container">
+
+      <!-- 3. HERO MOSAIC (PADRÃO MOSAICO VISUAL REDEPLAN) -->
+      <section class="hero-mosaic" aria-label="Destaques Principais da Redelog">
+        <!-- Destaque 1 (Grande, 2 linhas) -->
+        <a href="./pages/pca/index.html" class="mosaic-item item-large" style="background-image: url('./assets/images/hero-pca.jpeg');">
+          <div class="mosaic-content">
+            <span class="badge-tag badge-outline-white">Governança Logística</span>
+            <h2 class="mosaic-title">Plano de Contratações Anual (PCA RJ)</h2>
+            <p class="mosaic-desc">Consolidação e integração do planejamento das contratações públicas de bens, serviços e obras em todo o Estado do Rio de Janeiro.</p>
+          </div>
+        </a>
+
+        <!-- Destaque 2 (Largo) -->
+        <a href="./pages/redelog/compras-centralizadas.html" class="mosaic-item item-wide" style="background-image: url('./assets/images/compras-cent.jpeg');">
+          <div class="mosaic-content">
+           <!--<span class="badge-tag badge-accent">Economia de Escala</span>--> 
+            <h3 class="mosaic-title">Compras Centralizadas</h3>
+            <!--<p class="mosaic-desc">Atas de registro de preços vigentes, categorias estratégicas e suprimento padronizado para os órgãos estaduais.</p>-->
+          </div>
+        </a>
+
+        <!-- Destaque 3 -->
+        <a href="./pages/redelog/logistica-em-dados.html" class="mosaic-item" style="background-image: url('./assets/images/logist-dados.jpeg');">
+          <div class="mosaic-content">
+            <span class="badge-tag badge-gold">Inteligência</span>
+            <h3 class="mosaic-title">Logística em Dados & RjPreços</h3>
+            <p class="mosaic-desc">Painéis analíticos e pesquisa de preços de mercado em tempo real.</p>
+          </div>
+        </a>
+
+        <!-- Destaque 4 -->
+        <a href="./pages/base-de-conhecimento/index.html" class="mosaic-item" style="background-image: url('./assets/images/catelog.jpeg');">
+          <div class="mosaic-content">
+            <span class="badge-tag badge-primary">Padronização</span>
+            <h3 class="mosaic-title">CatELogRj & Base de Conhecimento</h3>
+            <p class="mosaic-desc">Modelos, manuais e procedimentos completos para cada fase da contratação.</p>
+          </div>
+        </a>
+      </section>
+
+      <!-- 4. APRESENTAÇÃO INSTITUCIONAL DA REDELOG -->
+      <section class="section-header">
+        <h2 class="section-title">O QUE É A REDELOG?</h2>
+        <p class="section-description">
+          A <strong>Rede Logística do Estado do Rio de Janeiro (REDELOG)</strong>, instituída pelo 
+          <a href="https://leisestaduais.com.br/rj/decreto-n-46050-2017-rio-de-janeiro-cria-sem-aumento-de-despesa-a-rede-logistica-do-poder-executivo-do-estado-do-rio-de-janeiro-redelog-e-da-outras-providencias" target="_blank" class="highlight-link">Decreto Estadual nº 46.050/2017</a> 
+          e atualizada pelo <a href="https://leisestaduais.com.br/rj/decreto-n-48178-2022-rio-de-janeiro-altera-o-decreto-no-46-050-de-26-de-julho-de-2017" target="_blank" class="highlight-link">Decreto nº 48.178/2022</a> e pelo 
+          <a href="https://leisestaduais.com.br/rj/decreto-n-48650-2023-rio-de-janeiro-dispoe-sobre-a-governanca-logistica-e-a-governanca-das-contratacoes-no-ambito-da-administracao-publica-estadual-direta-autarquica-e-fundacional" target="_blank" class="highlight-link">Decreto nº 48.650/2023</a>, 
+          é a estratégia de governança e cooperação técnica da SEPLAG com todos os órgãos e entidades do Poder Executivo Estadual.
+        </p>
+        <p class="section-description">
+          Seu objetivo é integrar e capacitar os servidores que atuam no levantamento de demandas, licitações, gestão de contratos, controle de estoques, patrimônio imobiliário/mobiliário e gestão de frotas e transportes.
+        </p>
+      </section>
+
+      <!-- 5. AS 5 REDES FUNCIONAIS DA REDELOG -->
+      <section class="mb-3xl">
+        <div class="section-header">
+          <span class="section-subtitle">Estrutura de Atuação Especializada</span>
+          <h2 class="section-title">REDES FUNCIONAIS DA REDELOG</h2>
+          <p class="section-description">
+            A atuação operacional da Redelog é desdobrada em cinco redes funcionais, cada uma coordenada por especialistas temáticos com o objetivo de apoiar os gestores setoriais.
+          </p>
+        </div>
+
+        <div class="networks-grid">
+          <!-- Redecompras -->
+          <article class="network-card">
+            <div class="network-icon">
+              <i class="fa-solid fa-cart-flatbed"></i>
+            </div>
+            <h3 class="network-name">Redecompras</h3>
+            <p class="network-desc">Coordenação de compras governamentais, procedimentos sob a Nova Lei de Licitações (Lei 14.133/21), editais e compras centralizadas.</p>
+            <a href="./pages/redelog/quem-somos.html#redecompras" class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <!-- Redepreg -->
+          <article class="network-card">
+            <div class="network-icon">
+              <i class="fa-solid fa-gavel"></i>
+            </div>
+            <h3 class="network-name">Redepreg</h3>
+            <p class="network-desc">Integração e qualificação dos pregoeiros, agentes de contratação e comissões de contratação de todo o Estado.</p>
+            <a href="./pages/redelog/quem-somos.html#redepreg" class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <!-- Redecontratos -->
+          <article class="network-card">
+            <div class="network-icon">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+            <h3 class="network-name">Redecontratos</h3>
+            <p class="network-desc">Diretrizes e padronização para a gestão, acompanhamento, repactuação e fiscalização técnica e administrativa de contratos públicos.</p>
+            <a href="./pages/redelog/quem-somos.html#redecontratos" class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <!-- Redebens -->
+          <article class="network-card">
+            <div class="network-icon">
+              <i class="fa-solid fa-couch"></i>
+            </div>
+            <h3 class="network-name">Redebens</h3>
+            <p class="network-desc">Gestão e controle do patrimônio móvel e materiais do Estado, operação do sistema SBM RJ, inventários e desfazimento.</p>
+            <a href="./pages/redelog/quem-somos.html#redebens" class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <!-- Redetrans -->
+          <article class="network-card">
+            <div class="network-icon">
+              <i class="fa-solid fa-van-shuttle"></i>
+            </div>
+            <h3 class="network-name">Redetrans</h3>
+            <p class="network-desc">Gestão estratégica de transportes oficiais, frotas próprias e locadas, controle de combustíveis e logística veicular.</p>
+            <a href="./pages/redelog/quem-somos.html#redetrans" class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </section>
+
+      <!-- 6. CICLO DAS CONTRATAÇÕES - AS 5 FASES DA LOGÍSTICA (ESTILO BOLINHA REDEPLAN) -->
+      <section class="mb-3xl">
+        <div class="section-header">
+          <span class="section-subtitle">Fluxo Contratual Integrado</span>
+          <h2 class="section-title">BASE DE CONHECIMENTO & FASES DA CONTRATAÇÃO</h2>
+          <p class="section-description">
+            Acompanhe o passo a passo completo da governança e instrução processual de contratações públicas sob a égide da Lei Federal nº 14.133/2021 e decretos do Rio de Janeiro.
+          </p>
+        </div>
+
+        <div class="process-steps-grid">
+          <div class="process-step-card">
+            <span class="step-number-circle">1</span>
+            <h3 class="step-title">Fase de Planejamento</h3>
+            <p class="step-text">Consolidação do DFD (Documento de Formalização de Demanda), padronização no Catálogo e inclusão no Plano de Contratações Anual (PCA RJ).</p>
+            <div class="mt-md">
+              <a href="./pages/base-de-conhecimento/fase-planejamento.html" class="btn btn-outline btn-sm">Acessar Modelos & Guias</a>
+            </div>
+          </div>
+
+          <div class="process-step-card">
+            <span class="step-number-circle">2</span>
+            <h3 class="step-title">Fase Preparatória</h3>
+            <p class="step-text">Elaboração do DOD, Estudo Técnico Preliminar (ETP), Matriz de Riscos, Termo de Referência (TR), Pesquisa de Preços e Parecer Jurídico.</p>
+            <div class="mt-md">
+              <a href="./pages/base-de-conhecimento/fase-preparatoria.html" class="btn btn-outline btn-sm">Acessar Modelos & Guias</a>
+            </div>
+          </div>
+
+          <div class="process-step-card">
+            <span class="step-number-circle">3</span>
+            <h3 class="step-title">Fase Externa</h3>
+            <p class="step-text">Publicação do Edital convocatório, realização da sessão pública do certame, julgamento de propostas, habilitação e homologação.</p>
+            <div class="mt-md">
+              <a href="./pages/base-de-conhecimento/fase-externa.html" class="btn btn-outline btn-sm">Acessar Modelos & Guias</a>
+            </div>
+          </div>
+
+          <div class="process-step-card">
+            <span class="step-number-circle">4</span>
+            <h3 class="step-title">Gestão Contratual</h3>
+            <p class="step-text">Formalização do contrato, empenho, designação de fiscais e gestores, atesto, liquidação, pagamentos e controle de garantias.</p>
+            <div class="mt-md">
+              <a href="./pages/base-de-conhecimento/gestao-contratual.html" class="btn btn-outline btn-sm">Acessar Modelos & Guias</a>
+            </div>
+          </div>
+
+          <div class="process-step-card">
+            <span class="step-number-circle">5</span>
+            <h3 class="step-title">Gestão de Bens & Serviços</h3>
+            <p class="step-text">Administração do ciclo de vida dos bens materiais, tombamento no SBM RJ, estoques, alienação, além da gestão de frotas e transportes.</p>
+            <div class="mt-md">
+              <a href="./pages/base-de-conhecimento/gestao-bens-servicos.html" class="btn btn-outline btn-sm">Acessar Modelos & Guias</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. INFORMES E NOTÍCIAS RECENTES (ESTILO NOTICIAS-GRID REDEPLAN) -->
+      <section class="mb-3xl">
+        <div class="section-header">
+          <span class="section-subtitle">Comunicação e Orientações Técnicas</span>
+          <h2 class="section-title">ÚLTIMOS INFORMES DA REDELOG</h2>
+          <p class="section-description">Fique por dentro das atualizações normativas, comunicados operacionais dos sistemas e prazos do calendário logístico.</p>
+        </div>
+
+        <div class="news-grid">
+          <!-- Informe 006 -->
+          <article class="news-card">
+            <div class="news-thumb">
+              <img src="./assets/images/hero-pca.jpeg" alt="Painel Gerencial PCA RJ">
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="badge-tag badge-accent">PCA RJ</span>
+                <span><i class="fa-regular fa-calendar"></i> 24 de Outubro</span>
+              </div>
+              <h3 class="news-title">
+                <a href="./pages/redelog/informes.html#informe-006">Informe nº 006: Divulgação do Painel Gerencial do Sistema PCA RJ</a>
+              </h3>
+              <p class="news-excerpt">Disponibilização do Painel Gerencial que consolida todas as informações das etapas de elaboração e formalização das demandas estaduais.</p>
+              <div class="news-footer">
+                <a href="./pages/redelog/informes.html#informe-006" class="highlight-link">Ler Informe Completo &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Informe 005 -->
+          <article class="news-card">
+            <div class="news-thumb">
+              <img src="./assets/images/logist-dados.jpeg" alt="Ambiente de Treinamento PCA">
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="badge-tag badge-primary">Capacitação</span>
+                <span><i class="fa-regular fa-calendar"></i> 16 de Maio</span>
+              </div>
+              <h3 class="news-title">
+                <a href="./pages/redelog/informes.html#informe-005">Informe nº 005: Ambiente de Treinamento do Sistema PCA RJ</a>
+              </h3>
+              <p class="news-excerpt">Ambiente homologado para que os servidores dos órgãos realizem simulações práticas sem impactar a base de produção do Estado.</p>
+              <div class="news-footer">
+                <a href="./pages/redelog/informes.html#informe-005" class="highlight-link">Ler Informe Completo &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Informe 003 -->
+          <article class="news-card">
+            <div class="news-thumb">
+              <img src="./assets/images/compras-cent.jpeg" alt="Novo Almoxarifado Virtual">
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="badge-tag badge-gold">Compras Centralizadas</span>
+                <span><i class="fa-regular fa-calendar"></i> 03 de Abril</span>
+              </div>
+              <h3 class="news-title">
+                <a href="./pages/redelog/informes.html#informe-003">Informe nº 003: Ata de Registro de Preços do Novo Almoxarifado Virtual</a>
+              </h3>
+              <p class="news-excerpt">Entrada em vigor da ARP nº 001/2025 para fornecimento "just-in-time" de materiais de consumo administrativo aos órgãos estaduais.</p>
+              <div class="news-footer">
+                <a href="./pages/redelog/informes.html#informe-003" class="highlight-link">Ler Informe Completo &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center mt-xl">
+          <a href="./pages/redelog/informes.html" class="btn btn-primary">Ver Todos os Informes Oficiais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </section>
+
+      <!-- 8. CANAL REDELOG & MULTIMÍDIA (VÍDEOS E CAPACITAÇÕES) -->
+      <section class="mb-3xl">
+        <div class="section-header">
+          <span class="section-subtitle">Capacitação Multimídia</span>
+          <h2 class="section-title">CANAL REDELOG & PARCEIROS</h2>
+          <p class="section-description">Assista a videoaulas, palestras, workshops e tutoriais operacionais nos canais oficiais.</p>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="badge-tag badge-accent">Vídeo Oficial</span>
+              </div>
+              <h3 class="news-title">Aspectos Legais e Operacionais do PCA</h3>
+              <p class="news-excerpt">Instruções sobre como preencher o Documento de Formalização de Demanda e os fluxos de aprovação na plataforma estadual.</p>
+              <a href="https://www.youtube.com/@redelog/videos" target="_blank" class="btn btn-outline btn-sm"><i class="fa-brands fa-youtube" style="color: #e11d48;"></i> Assistir no YouTube</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="badge-tag badge-primary">SBM RJ</span>
+              </div>
+              <h3 class="news-title">Gestão de Bens Móveis no SBM RJ</h3>
+              <p class="news-excerpt">Passo a passo demonstrando operações de tombamento, transferência patrimonial, inventário anual e desfazimento de bens.</p>
+              <a href="https://www.youtube.com/@redelog/videos" target="_blank" class="btn btn-outline btn-sm"><i class="fa-brands fa-youtube" style="color: #e11d48;"></i> Assistir no YouTube</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="badge-tag badge-gold">PGE-RJ</span>
+              </div>
+              <h3 class="news-title">Nova Lei de Licitações (Lei 14.133/21)</h3>
+              <p class="news-excerpt">Ciclo especial da Procuradoria Geral do Estado do Rio de Janeiro sobre jurisprudência e minutas padronizadas de editais.</p>
+              <a href="https://youtube.com/playlist?list=PLNQ5maRkYoV4IMUXqCcXlQTw9Sf56wdCr" target="_blank" class="btn btn-outline btn-sm"><i class="fa-brands fa-youtube" style="color: #e11d48;"></i> Acessar Playlist</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 9. LINKS ÚTEIS E MATERIAIS DE APOIO (PADRÃO .varios-links DA REDEPLAN) -->
+      <section class="links-resource-box">
+        <h3 class="links-resource-title"><i class="fa-solid fa-folder-open"></i> Acesso Rápido a Manuais, Decretos e Plataformas da Logística:</h3>
+        <ul class="resource-list">
+          <li class="resource-item">
+            <a href="./pages/legislacao/licitacoes.html"><i class="fa-solid fa-scale-balanced"></i> Decreto Estadual nº 48.650/2023 - Governança das Contratações e Logística do Estado do Rio de Janeiro</a>
+          </li>
+          <li class="resource-item">
+            <a href="./pages/pca/index.html"><i class="fa-solid fa-file-pdf"></i> Decreto nº 48.760/2023 & Decreto nº 49.129/2024 - Sistema e Regulamentação do PCA RJ</a>
+          </li>
+          <li class="resource-item">
+            <a href="./pages/biblioteca/cadernos-logisticos.html"><i class="fa-solid fa-book-bookmark"></i> Cadernos de Logística Pública - Orientações Técnicas e Boas Práticas</a>
+          </li>
+          <li class="resource-item">
+            <a href="https://pncp.gov.br/app/pca?pagina=1" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Consulta Pública ao Plano de Contratações Anual do RJ no Portal Nacional de Contratações Públicas (PNCP)</a>
+          </li>
+          <li class="resource-item">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7HQgPNYia3UzxeuyWsmzsVWhHm-EULpLmEnFczxi7fNTVGQ/viewform" target="_blank"><i class="fa-solid fa-user-pen"></i> Formulário Oficial de Atualização de Gestores Setoriais da Redelog (Processo SEI-120001/000927/2026)</a>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 10. RODAPÉ INSTITUCIONAL (ESTILO 4 COLUNAS REDEPLAN) -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <!-- Coluna 1: Identidade da Redelog -->
+        <div>
+          <img src="./assets/logos/redelog-logo.png" alt="REDELOG" class="footer-brand-logo">
+          <p class="footer-desc">
+            <strong>Secretaria de Estado de Planejamento e Gestão (SEPLAG)</strong><br>
+            Subsecretaria de Logística (SUBLOG)<br>
+            Governo do Estado do Rio de Janeiro
+          </p>
+          <div class="footer-social-links" aria-label="Redes sociais da Redelog">
+            <a href="https://www.youtube.com/@redelog/videos" target="_blank" class="social-icon-btn" title="Canal YouTube da Redelog"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/seplagrj/" target="_blank" class="social-icon-btn" title="Instagram SEPLAG RJ"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://linkedin.com/in/comprascentraisrj" target="_blank" class="social-icon-btn" title="LinkedIn Compras Centralizadas"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:redelog@planejamento.rj.gov.br" class="social-icon-btn" title="Contato via E-mail"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Navegação Interna -->
+        <div>
+          <h4 class="footer-col-title">Redelog</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="./pages/redelog/sobre.html">Sobre a Rede</a></li>
+            <li class="footer-link-item"><a href="./pages/redelog/quem-somos.html">Quem Somos & Redes Funcionais</a></li>
+            <li class="footer-link-item"><a href="./pages/redelog/informes.html">Informes Oficiais</a></li>
+            <li class="footer-link-item"><a href="./pages/redelog/compras-centralizadas.html">Compras Centralizadas</a></li>
+            <li class="footer-link-item"><a href="./pages/pca/index.html">Plano de Contratações Anual (PCA)</a></li>
+            <li class="footer-link-item"><a href="./pages/base-de-conhecimento/index.html">Base de Conhecimento</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Links do Ecossistema RJ -->
+        <div>
+          <h4 class="footer-col-title">Ecossistema SEPLAG</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="https://redeplan.planejamento.rj.gov.br/" target="_blank">Rede de Planejamento (REDEPLAN)</a></li>
+            <li class="footer-link-item"><a href="https://redor.planejamento.rj.gov.br/" target="_blank">Rede de Orçamento (REDOR)</a></li>
+            <li class="footer-link-item"><a href="https://redinv.planejamento.rj.gov.br/" target="_blank">Rede de Investimentos (REDINV)</a></li>
+            <li class="footer-link-item"><a href="https://www.ceperj.rj.gov.br/" target="_blank">Escola de Governo (CEPERJ)</a></li>
+            <li class="footer-link-item"><a href="./pages/ouvidoria/index.html">Ouvidoria Interna e Transparência</a></li>
+          </ul>
+
+          <div class="footer-networks-bar">
+            <a href="https://redor.planejamento.rj.gov.br/" target="_blank" class="footer-network-logo" title="Redor"><img src="./assets/logos/redor-negativo.svg" alt="Redor"></a>
+            <a href="https://redinv.planejamento.rj.gov.br/" target="_blank" class="footer-network-logo" title="Redinv"><img src="./assets/logos/redinv-negativo.svg" alt="Redinv"></a>
+            <a href="https://redeplan.planejamento.rj.gov.br/" target="_blank" class="footer-network-logo" title="Redeplan"><img src="./assets/logos/redeplan-negativo.svg" alt="Redeplan"></a>
+          </div>
+        </div>
+
+        <!-- Coluna 4: Endereço e Contatos -->
+        <div class="footer-contact-info">
+          <h4 class="footer-col-title">Contato & Endereço</h4>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Av. Erasmo Braga, nº 118 – 8º andar<br>
+            Centro, Rio de Janeiro/RJ – CEP 20020-000
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i> Redelog: <a href="mailto:redelog@planejamento.rj.gov.br">redelog@planejamento.rj.gov.br</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i> Gabinete Sublog: <a href="mailto:sublog.seplag@planejamento.rj.gov.br">sublog.seplag@planejamento.rj.gov.br</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i> Atendimento Ouvidoria: (21) 2333-3322
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Linha de Direitos Autorais -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="current-year">2026</span> Rede de Logística do Estado do Rio de Janeiro (REDELOG) | SEPLAG-RJ. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Vanilla JS Sem Frameworks -->
+  <script src="./js/navigation.js"></script>
+  <script src="./js/components.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
