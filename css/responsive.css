@@ -21,8 +21,8 @@
   }
 
   .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-xl);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl) var(--spacing-lg);
   }
 }
 
@@ -125,8 +125,8 @@
   }
 
   .footer-grid {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-xl);
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl) var(--spacing-md);
   }
 
   .links-resource-box {
@@ -187,6 +187,11 @@
     width: 40px;
     height: 40px;
     font-size: 1.15rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
   }
 
   .footer-bottom {
