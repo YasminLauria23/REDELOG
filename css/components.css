@@ -127,7 +127,7 @@
   grid-template-columns: 1.35fr 1.65fr;
   gap: 14px;
   margin-bottom: var(--spacing-3xl);
-  min-height: 440px;
+  min-height: 480px;
 }
 
 /* ============================================================
@@ -297,7 +297,7 @@
 .hero-actions-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
   gap: 12px;
   flex: 1;
 }
@@ -328,14 +328,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.85rem 1.15rem;
+  padding: 0.65rem 1rem;
   overflow: hidden;
   position: relative;
 }
 
 .banner-img {
   max-width: 95%;
-  max-height: 95px;
+  max-height: 80px;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -349,7 +349,7 @@
 
 /* Faixa / Overlay integrado com o título no rodapé do banner */
 .banner-footer {
-  padding: 0.65rem 1rem;
+  padding: 0.55rem 0.95rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -466,6 +466,41 @@
 }
 
 .hero-banner.banner-rjprecos:hover .banner-footer {
+  background-color: #dbeafe;
+  color: var(--color-primary);
+}
+
+/* 5. Logística em Foco (Fundo Branco + Barra Lateral com Cores da Logo) */
+.hero-banner.banner-foco {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-color: #cbd5e1;
+  border-left: none;
+}
+
+.hero-banner.banner-foco::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #193574 0%, #008b4c 100%);
+  z-index: 3;
+}
+
+.hero-banner.banner-foco .banner-img {
+  max-width: 250px;
+  max-height: 75px;
+}
+
+.hero-banner.banner-foco .banner-footer {
+  background-color: #eaf2fc;
+  color: var(--color-primary-dark);
+  border-top: 1px solid #dbeafe;
+}
+
+.hero-banner.banner-foco:hover .banner-footer {
   background-color: #dbeafe;
   color: var(--color-primary);
 }

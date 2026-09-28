@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Logística em Foco - REDELOG. Conteúdos, diretrizes e novidades da gestão logística do Estado do Rio de Janeiro.">
+  <title>Logística em Foco | Rede Logística do Estado do Rio de Janeiro</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos Modulares Sem Frameworks -->
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/pages.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+
+  <link rel="icon" type="image/png" href="../../assets/logos/redelog-icon.png">
+</head>
+<body>
+
+  <!-- Link de Acessibilidade -->
+  <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+  <!-- 1. TOPO INSTITUCIONAL DO ECOSSISTEMA -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-systems">
+        <a href="https://www.compras.rj.gov.br/mercatto/aplicacao/asp/seg/logon.asp?Sessao=S&Idioma=" target="_blank"><i class="fa-solid fa-boxes-stacked"></i> SIGA</a>
+        <a href="https://pca.rj.gov.br/login" target="_blank"><i class="fa-solid fa-chart-line"></i> PCA</a>
+      </div>
+
+      <div class="top-bar-right">
+        <div class="top-networks">
+          <a href="../redelog/compras-centralizadas.html"><i class="fa-solid fa-cart-shopping"></i> Compras Centralizadas</a>
+          <a href="../redelog/logistica-em-dados.html"><i class="fa-solid fa-database"></i> Logística em Dados</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. CABEÇALHO PRINCIPAL E NAVBAR -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="brand-group">
+        <a href="../../index.html" class="brand-logo" title="REDELOG - Início">
+          <img src="../../assets/logos/redelog-logo.png" alt="Logotipo da REDELOG - Rede Logística do Estado do Rio de Janeiro">
+        </a>
+      </div>
+
+      <nav class="desktop-nav" aria-label="Navegação Principal">
+        <div class="nav-pill-wrapper">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="../../index.html" class="nav-link">INÍCIO</a>
+            </li>
+
+            <li class="nav-item has-dropdown active">
+              <a href="../redelog/sobre.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                REDELOG <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu REDELOG">
+                <li><a class="dropdown-item" href="../redelog/sobre.html">Sobre a Redelog</a></li>
+                <li><a class="dropdown-item" href="../redelog/quem-somos.html">Quem Somos</a></li>
+                <li><a class="dropdown-item" href="../redelog/informes.html">Informes Oficiais</a></li>
+                <li><a class="dropdown-item" href="../redelog/compras-centralizadas.html">Compras Centralizadas</a></li>
+                <li><a class="dropdown-item" href="../redelog/logistica-em-dados.html">Logística em Dados</a></li>
+                <li><a class="dropdown-item active-dropdown" href="../redelog/logistica-em-foco.html">Logística em Foco</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <a href="../biblioteca/sublog.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                BIBLIOTECA <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Biblioteca">
+                <li><a class="dropdown-item" href="../biblioteca/sublog.html">Sobre a SUBLOG</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/cadernos-logisticos.html">Cadernos Logísticos</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/panorama.html">Panorama das Contratações</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/audiencias-consultas.html">Audiências e Consultas</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/relatorio-redes.html">Relatório Redes</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <a href="../base-de-conhecimento/index.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                BASE DE CONHECIMENTO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Base de Conhecimento">
+                <li><a class="dropdown-item" href="../base-de-conhecimento/index.html">Ciclo das Contratações</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-planejamento.html">Fase de Planejamento</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-preparatoria.html">Fase Preparatória</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-externa.html">Fase Externa</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/gestao-contratual.html">Gestão Contratual</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/gestao-bens-servicos.html">Gestão de Bens e Serviços</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <a href="../capacitacao/trilha-de-aprendizagem.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                CAPACITAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Capacitação">
+                <li><a class="dropdown-item" href="../capacitacao/fique-por-dentro.html">Fique por Dentro</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/trilha-de-aprendizagem.html">Trilha de Aprendizagem</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/cursos-internos.html">Cursos Internos</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/cursos-externos.html">Cursos Externos</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/videos-tutoriais.html">Vídeos Tutoriais</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <a href="../legislacao/licitacoes.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                LEGISLAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Legislação">
+                <li><a class="dropdown-item" href="../legislacao/licitacoes.html">Licitações (Lei 14.133/21)</a></li>
+                <li><a class="dropdown-item" href="../legislacao/contratos.html">Gestão Contratual</a></li>
+                <li><a class="dropdown-item" href="../legislacao/transportes.html">Transportes e Frotas</a></li>
+                <li><a class="dropdown-item" href="../legislacao/bens-moveis.html">Bens Móveis</a></li>
+                <li><a class="dropdown-item" href="../legislacao/assuntos-diversos.html">Assuntos Diversos</a></li>
+                <li><a class="dropdown-item" href="../legislacao/compendio.html">Compêndio Completo</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="../contatos/index.html" class="nav-link">CONTATOS</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../ouvidoria/index.html" class="nav-link">OUVIDORIA</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="divider-line"></div>
+  </header>
+
+  <!-- GAVETA DE NAVEGAÇÃO MOBILE -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-panel" id="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <img src="../../assets/logos/redelog-logo.png" alt="REDELOG" style="height: 34px;">
+        <button class="mobile-close-btn" aria-label="Fechar menu">&times;</button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="../../index.html" class="mobile-nav-link">INÍCIO</a></li>
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            REDELOG <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../redelog/sobre.html" class="mobile-submenu-item">Sobre a Redelog</a>
+            <a href="../redelog/quem-somos.html" class="mobile-submenu-item">Quem Somos</a>
+            <a href="../redelog/informes.html" class="mobile-submenu-item">Informes Oficiais</a>
+            <a href="../redelog/compras-centralizadas.html" class="mobile-submenu-item">Compras Centralizadas</a>
+            <a href="../redelog/logistica-em-dados.html" class="mobile-submenu-item">Logística em Dados</a>
+            <a href="../redelog/logistica-em-foco.html" class="mobile-submenu-item">Logística em Foco</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="conteudo-principal" class="main-content">
+    <div class="container">
+      
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-trail" aria-label="Caminho da página" style="margin-top: var(--spacing-xl); margin-bottom: var(--spacing-md); font-size: 0.85rem; color: var(--color-text-muted);">
+        <a href="../../index.html" style="color: var(--color-primary);"><i class="fa-solid fa-house"></i> Início</a> &gt; 
+        <span>REDELOG</span> &gt; 
+        <strong style="color: var(--color-text-main);">Logística em Foco</strong>
+      </nav>
+
+      <!-- Card Centralizado Provisório -->
+      <section class="placeholder-section" style="display: flex; justify-content: center; align-items: center; padding: var(--spacing-3xl) 0 var(--spacing-3xl) 0;">
+        <div class="placeholder-card" style="max-width: 640px; width: 100%; background: #ffffff; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--color-border); padding: 3rem 2rem; text-align: center;">
+          
+          <!-- Logo Logística em Foco -->
+          <div style="margin-bottom: 2rem;">
+            <img src="../../assets/images/btn-logistica-em-foco.png" alt="Logística em Foco" style="max-width: 260px; height: auto; display: inline-block;">
+          </div>
+
+          <!-- Ícone / Indicador de Construção -->
+          <div style="display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: var(--radius-full); background: #edf4fc; color: var(--color-primary); font-size: 1.75rem; margin-bottom: 1.5rem;">
+            <i class="fa-solid fa-person-digging"></i>
+          </div>
+
+          <!-- Título Requisitado -->
+          <h1 style="font-size: 1.65rem; color: var(--color-primary-dark); font-weight: var(--font-weight-bold); margin-bottom: 0.75rem;">
+            Estamos trabalhando nesta página
+          </h1>
+
+          <!-- Mensagem Requisitada -->
+          <p style="font-size: 1rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 2rem;">
+            Em breve, disponibilizaremos novos conteúdos sobre Logística em Foco.
+          </p>
+
+          <!-- Ação para retornar -->
+          <div>
+            <a href="../../index.html" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-arrow-left"></i> Voltar para a Página Inicial
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- RODAPÉ INSTITUCIONAL (ESTILO REDELOG / REDEPLAN) -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <!-- Coluna 1: Identidade da Redelog e Redes Sociais -->
+        <div class="footer-col-brand">
+          <h3 class="footer-brand-title">REDELOG - Rede Logística</h3>
+          <p class="footer-desc">
+            Secretaria de Planejamento e Gestão do Estado do Rio de Janeiro
+          </p>
+          <div class="footer-social-links" aria-label="Redes sociais da Redelog">
+            <a href="https://www.youtube.com/@redelog/videos" target="_blank" class="footer-social-icon" title="Canal YouTube da Redelog" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/seplagrj/" target="_blank" class="footer-social-icon" title="Instagram SEPLAG RJ" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://t.me/redelog" target="_blank" class="footer-social-icon" title="Telegram Redelog" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="http://linkedin.com/in/comprascentraisrj" target="_blank" class="footer-social-icon" title="LinkedIn Compras Centralizadas" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: REDELOG -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">REDELOG</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../redelog/sobre.html">Sobre a Rede</a></li>
+            <li class="footer-link-item"><a href="../redelog/quem-somos.html">Quem Somos</a></li>
+            <li class="footer-link-item"><a href="../redelog/informes.html">Informes</a></li>
+            <li class="footer-link-item"><a href="../redelog/compras-centralizadas.html">Compras Centralizadas</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/sublog.html">Biblioteca_</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: BASE DE CONHECIMENTO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">BASE DE CONHECIMENTO</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../base-de-conhecimento/fase-planejamento.html">Fase de Planejamento</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/fase-preparatoria.html">Fase Preparatória</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/fase-externa.html">Fase Externa</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/gestao-contratual.html">Gestão Contratual</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/gestao-bens-servicos.html">Gestão de Bens e Serviços</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: CAPACITAÇÃO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">CAPACITAÇÃO</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../capacitacao/fique-por-dentro.html">Fique por Dentro</a></li>
+            <li class="footer-link-item"><a href="../capacitacao/trilha-de-aprendizagem.html">Trilhas de Aprendizagem</a></li>
+            <li class="footer-link-item"><a href="../capacitacao/cursos-internos.html">Cursos Internos</a></li>
+            <li class="footer-link-item"><a href="../capacitacao/cursos-externos.html">Cursos Externos</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 5: LEGISLAÇÃO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">LEGISLAÇÃO</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../legislacao/licitacoes.html">Licitações</a></li>
+            <li class="footer-link-item"><a href="../legislacao/contratos.html">Gestão Contratual</a></li>
+            <li class="footer-link-item"><a href="../legislacao/transportes.html">Transportes</a></li>
+            <li class="footer-link-item"><a href="../legislacao/bens-moveis.html">Bens Móveis</a></li>
+            <li class="footer-link-item"><a href="../legislacao/assuntos-diversos.html">Assuntos Diversos</a></li>
+            <li class="footer-link-item"><a href="../legislacao/compendio.html">Compêndio</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 6: CONTATOS DA REDE -->
+        <div class="footer-col footer-col-contact">
+          <h4 class="footer-col-title">CONTATOS DA REDE</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Av. Erasmo Braga, nº 118 – 8º andar</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:redelog@planejamento.rj.gov.br">redelog@planejamento.rj.gov.br</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:sublog.seplag@planejamento.rj.gov.br">sublog.seplag@planejamento.rj.gov.br</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Linha de Direitos Autorais -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="current-year">2026</span> Rede de Logística do Estado do Rio de Janeiro (REDELOG) | SEPLAG-RJ. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Vanilla JS Sem Frameworks -->
+  <script src="../../js/navigation.js"></script>
+  <script src="../../js/components.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>
