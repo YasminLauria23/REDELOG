@@ -248,56 +248,124 @@
 
       <!-- 3. HERO MOSAIC (PADRÃO MOSAICO VISUAL REDEPLAN) -->
       <section class="hero-mosaic" aria-label="Destaques Principais da Redelog">
-        <!-- Destaque 1 (Grande, 2 linhas) -->
-        <a href="./pages/pca/index.html" class="mosaic-item item-large" style="background-image: url('./assets/images/hero-pca.jpeg');">
-          <div class="mosaic-content">
-            <span class="badge-tag badge-outline-white">Governança Logística</span>
-            <h2 class="mosaic-title">Plano de Contratações Anual (PCA RJ)</h2>
-            <p class="mosaic-desc">Consolidação e integração do planejamento das contratações públicas de bens, serviços e obras em todo o Estado do Rio de Janeiro.</p>
-          </div>
-        </a>
+        <!-- Lado Esquerdo: Carrossel de Banners Institucionais da Redelog (Estilo RedePREG) -->
+        <div class="hero-carousel-wrapper" aria-label="Carrossel de Destaques da Redelog">
+          <div class="hero-carousel" id="heroCarousel">
+            <div class="carousel-track">
+              <!-- Slide 1 -->
+              <div class="carousel-slide active">
+                <img src="./assets/images/carousel-slide-1.jpg" alt="Destaque Redelog" class="carousel-img">
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-slide">
+                <img src="./assets/images/carousel-slide-2.jpg" alt="Destaque Redelog" class="carousel-img">
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-slide">
+                <img src="./assets/images/carousel-slide-3.jpg" alt="Destaque Redelog" class="carousel-img">
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-slide">
+                <img src="./assets/images/carousel-slide-4.jpg" alt="Destaque Redelog" class="carousel-img">
+              </div>
+            </div>
 
-        <!-- Destaque 2 (Largo) -->
-        <a href="./pages/redelog/compras-centralizadas.html" class="mosaic-item item-wide" style="background-image: url('./assets/images/compras-cent.jpeg');">
-          <div class="mosaic-content">
-           <!--<span class="badge-tag badge-accent">Economia de Escala</span>--> 
-            <h3 class="mosaic-title">Compras Centralizadas</h3>
-            <!--<p class="mosaic-desc">Atas de registro de preços vigentes, categorias estratégicas e suprimento padronizado para os órgãos estaduais.</p>-->
-          </div>
-        </a>
+            <!-- Setas de Navegação (Estilo RedePREG) -->
+            <button class="carousel-arrow carousel-prev" id="carouselPrev" aria-label="Slide anterior">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel-arrow carousel-next" id="carouselNext" aria-label="Próximo slide">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
 
-        <!-- Destaque 3 -->
-        <a href="./pages/redelog/logistica-em-dados.html" class="mosaic-item" style="background-image: url('./assets/images/logist-dados.jpeg');">
-          <div class="mosaic-content">
-            <span class="badge-tag badge-gold">Inteligência</span>
-            <h3 class="mosaic-title">Logística em Dados & RjPreços</h3>
-            <p class="mosaic-desc">Painéis analíticos e pesquisa de preços de mercado em tempo real.</p>
+            <!-- Indicadores / Dots -->
+            <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Navegação pelos slides">
+              <button class="carousel-dot active" data-index="0" aria-label="Ir para slide 1"></button>
+              <button class="carousel-dot" data-index="1" aria-label="Ir para slide 2"></button>
+              <button class="carousel-dot" data-index="2" aria-label="Ir para slide 3"></button>
+              <button class="carousel-dot" data-index="3" aria-label="Ir para slide 4"></button>
+            </div>
           </div>
-        </a>
+        </div>
 
-        <!-- Destaque 4 -->
-        <a href="./pages/base-de-conhecimento/index.html" class="mosaic-item" style="background-image: url('./assets/images/catelog.jpeg');">
-          <div class="mosaic-content">
-            <span class="badge-tag badge-primary">Padronização</span>
-            <h3 class="mosaic-title">CatELogRj & Base de Conhecimento</h3>
-            <p class="mosaic-desc">Modelos, manuais e procedimentos completos para cada fase da contratação.</p>
+        <!-- Lado Direito: Área de Acessos Rápidos com Título e Grid 2x2 de Banners -->
+        <div class="hero-actions-column">
+          <div class="hero-actions-header">
+            <h2 class="hero-actions-title">Acessos Rápidos</h2>
+            <span class="hero-actions-badge">Sistemas & Portais</span>
           </div>
-        </a>
+
+          <div class="hero-actions-grid" aria-label="Acessos Rápidos da Redelog">
+            <!-- Banner 1: Compras Centralizadas -->
+            <a href="./pages/redelog/compras-centralizadas.html" class="hero-banner banner-compras" title="Compras Centralizadas">
+              <div class="banner-body">
+                <img src="./assets/images/btn-compras-centralizadas.jpg" alt="Compras Centralizadas" class="banner-img">
+              </div>
+              <div class="banner-footer">
+                <span class="banner-title">Compras Centralizadas</span>
+                <i class="fa-solid fa-arrow-right banner-icon"></i>
+              </div>
+            </a>
+
+            <!-- Banner 2: Gestão em Números -->
+            <a href="https://gestaoemnumeros.planejamento.rj.gov.br/inicio" class="hero-banner banner-logistica banner-gestao" title="Gestão em Números" target="_blank" rel="noopener noreferrer">
+              <div class="banner-body">
+                <img src="./assets/images/btn-gestao-em-numeros.png" alt="Gestão em Números" class="banner-img">
+              </div>
+              <div class="banner-footer">
+                <span class="banner-title">Gestão em Números</span>
+                <i class="fa-solid fa-arrow-up-right-from-square banner-icon"></i>
+              </div>
+            </a>
+
+            <!-- Banner 3: CatálogoRJ -->
+            <a href="https://redelog.rj.gov.br/redelog/catalogo-eletronico-de-padronizacao-de-logistica-do-estado-do-rio-de-janeiro/" target="_blank" rel="noopener noreferrer" class="hero-banner banner-catelog" title="CatálogoRJ - Catálogo Eletrônico de Padronização">
+              <div class="banner-body">
+                <img src="./assets/images/btn-catelog.png" alt="CatELogRJ - Catálogo Eletrônico de Padronização" class="banner-img">
+              </div>
+              <div class="banner-footer">
+                <span class="banner-title">CatálogoRJ</span>
+                <i class="fa-solid fa-arrow-up-right-from-square banner-icon"></i>
+              </div>
+            </a>
+
+            <!-- Banner 4: RJ Preços -->
+            <a href="https://qlik.rj.gov.br/public/sense/app/8a69d862-063e-4b40-887f-fe908b59f027/sheet/9338a257-739f-415e-8ef5-2930ca8a3048/state/analysis" target="_blank" rel="noopener noreferrer" class="hero-banner banner-rjprecos" title="RJ Preços - Painel de Preços de Mercado">
+              <div class="banner-body">
+                <img src="./assets/images/btn-rjprecos.png" alt="RJ Preços" class="banner-img">
+              </div>
+              <div class="banner-footer">
+                <span class="banner-title">RJ Preços</span>
+                <i class="fa-solid fa-arrow-up-right-from-square banner-icon"></i>
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
 
       <!-- 4. APRESENTAÇÃO INSTITUCIONAL DA REDELOG -->
-      <section class="section-header">
-        <h2 class="section-title">O QUE É A REDELOG?</h2>
-        <p class="section-description">
-          A <strong>Rede Logística do Estado do Rio de Janeiro (REDELOG)</strong>, instituída pelo 
-          <a href="https://leisestaduais.com.br/rj/decreto-n-46050-2017-rio-de-janeiro-cria-sem-aumento-de-despesa-a-rede-logistica-do-poder-executivo-do-estado-do-rio-de-janeiro-redelog-e-da-outras-providencias" target="_blank" class="highlight-link">Decreto Estadual nº 46.050/2017</a> 
-          e atualizada pelo <a href="https://leisestaduais.com.br/rj/decreto-n-48178-2022-rio-de-janeiro-altera-o-decreto-no-46-050-de-26-de-julho-de-2017" target="_blank" class="highlight-link">Decreto nº 48.178/2022</a> e pelo 
-          <a href="https://leisestaduais.com.br/rj/decreto-n-48650-2023-rio-de-janeiro-dispoe-sobre-a-governanca-logistica-e-a-governanca-das-contratacoes-no-ambito-da-administracao-publica-estadual-direta-autarquica-e-fundacional" target="_blank" class="highlight-link">Decreto nº 48.650/2023</a>, 
-          é a estratégia de governança e cooperação técnica da SEPLAG com todos os órgãos e entidades do Poder Executivo Estadual.
-        </p>
-        <p class="section-description">
-          Seu objetivo é integrar e capacitar os servidores que atuam no levantamento de demandas, licitações, gestão de contratos, controle de estoques, patrimônio imobiliário/mobiliário e gestão de frotas e transportes.
-        </p>
+      <section class="about-redelog-section">
+        <div class="about-redelog-container">
+          <!-- Lado Esquerdo: Imagem da RedeLog e Redes Funcionais -->
+          <div class="about-redelog-media">
+            <img src="./assets/images/redelog-teia.jpg" alt="RedeLog e as redes funcionais: RedePreg, RedeTrans, RedeContratos, RedeBens e RedeCompras" class="about-redelog-img">
+          </div>
+
+          <!-- Lado Direito: Texto Institucional -->
+          <div class="about-redelog-content">
+            <h2 class="about-redelog-title">O QUE É A REDELOG?</h2>
+            <div class="about-redelog-divider"></div>
+            <p class="about-redelog-text">
+              A Rede Logística – Redelog tem como objetivo integrar os servidores que desempenham funções logísticas no Poder Executivo do Estado do Rio de Janeiro, oferecendo oportunidades de comunicação, de troca de informações e de capacitação.
+            </p>
+            <p class="about-redelog-text">
+              Fazem parte da Redelog as redes funcionais Redepreg, Redetrans, Redecontratos, Redebens e Redecompras.
+            </p>
+            <div class="about-redelog-actions">
+              <a href="./pages/redelog/sobre.html" class="btn btn-primary">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- 5. AS 5 REDES FUNCIONAIS DA REDELOG -->
@@ -311,55 +379,55 @@
         </div>
 
         <div class="networks-grid">
-          <!-- Redecompras -->
-          <article class="network-card">
-            <div class="network-icon">
-              <i class="fa-solid fa-cart-flatbed"></i>
+          <!-- 1 — Redecompras -->
+          <a href="https://redelog.rj.gov.br/redecompras/" target="_blank" rel="noopener noreferrer" class="network-card" title="Redecompras">
+            <div class="network-logo-wrapper">
+              <img src="./assets/logos/logo-redecompras.jpg" alt="Logo Redecompras" class="network-logo-img">
             </div>
             <h3 class="network-name">Redecompras</h3>
-            <p class="network-desc">Coordenação de compras governamentais, procedimentos sob a Nova Lei de Licitações (Lei 14.133/21), editais e compras centralizadas.</p>
-            <a href="./pages/redelog/quem-somos.html#redecompras" class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
+            <p class="network-desc">A Rede de Gestores de Compras – Redecompras tem como enfoque a troca de informações entre os gestores setoriais que atuam com o(s) novo(s) sistema(s) informatizado(s) de compras e contratações e os técnicos dessas ferramentas que atuam no Órgão Central de Logística.</p>
+            <span class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
 
-          <!-- Redepreg -->
-          <article class="network-card">
-            <div class="network-icon">
-              <i class="fa-solid fa-gavel"></i>
+          <!-- 2 — Redepreg -->
+          <a href="https://redelog.rj.gov.br/redepreg/" target="_blank" rel="noopener noreferrer" class="network-card" title="Redepreg">
+            <div class="network-logo-wrapper">
+              <img src="./assets/logos/logo-redepreg.jpeg" alt="Logo Redepreg" class="network-logo-img">
             </div>
             <h3 class="network-name">Redepreg</h3>
-            <p class="network-desc">Integração e qualificação dos pregoeiros, agentes de contratação e comissões de contratação de todo o Estado.</p>
-            <a href="./pages/redelog/quem-somos.html#redepreg" class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
+            <p class="network-desc">A REDEPREG tem como objetivos estabelecer diretrizes para a atuação dos pregoeiros, padronizar os procedimentos relativos às suas atribuições, promover a certificação, a capacitação e manter mecanismos de comunicação entre eles. Para o exercício das atribuições de Pregoeiro nos órgãos e entidades da Administração Pública Direta e Indireta do Poder Executivo do Governo do Estado o servidor deverá estar admitido na REDEPREG.</p>
+            <span class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
 
-          <!-- Redecontratos -->
-          <article class="network-card">
-            <div class="network-icon">
-              <i class="fa-solid fa-file-signature"></i>
+          <!-- 3 — Redecontratos -->
+          <a href="https://redelog.rj.gov.br/redecontratos/" target="_blank" rel="noopener noreferrer" class="network-card" title="Redecontratos">
+            <div class="network-logo-wrapper">
+              <img src="./assets/logos/logo-redecontratos.png" alt="Logo Redecontratos" class="network-logo-img">
             </div>
             <h3 class="network-name">Redecontratos</h3>
-            <p class="network-desc">Diretrizes e padronização para a gestão, acompanhamento, repactuação e fiscalização técnica e administrativa de contratos públicos.</p>
-            <a href="./pages/redelog/quem-somos.html#redecontratos" class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
+            <p class="network-desc">A Rede de Gerenciadores de Contratos – REDECONTRATOS tem como objetivos: padronizar os procedimentos relativos às atividades de gestão de contratos administrativos, fornecer aos gestores a orientação necessária para a boa execução de suas responsabilidades, no âmbito dos Órgãos e Entidades do Poder Executivo do Estado do Rio de Janeiro.</p>
+            <span class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
 
-          <!-- Redebens -->
-          <article class="network-card">
-            <div class="network-icon">
-              <i class="fa-solid fa-couch"></i>
+          <!-- 4 — Redebens -->
+          <a href="https://redelog.rj.gov.br/redebens/" target="_blank" rel="noopener noreferrer" class="network-card" title="Redebens">
+            <div class="network-logo-wrapper">
+              <img src="./assets/logos/logo-redebens.jpeg" alt="Logo Redebens" class="network-logo-img">
             </div>
             <h3 class="network-name">Redebens</h3>
-            <p class="network-desc">Gestão e controle do patrimônio móvel e materiais do Estado, operação do sistema SBM RJ, inventários e desfazimento.</p>
-            <a href="./pages/redelog/quem-somos.html#redebens" class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
+            <p class="network-desc">A Rede de Gestores de Bens Móveis – Redebens tem como objetivo integrar os servidores que desempenham funções relacionadas à gestão de bens móveis no Poder Executivo do Estado do Rio de Janeiro. Este canal visa a informar e orientar os servidores sobre as ações a serem executadas na gestão do acervo móvel, além de divulgar a relação de inservíveis disponibilizados, conforme previsto no art. 84 do Decreto nº 49.289/2024.</p>
+            <span class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
 
-          <!-- Redetrans -->
-          <article class="network-card">
-            <div class="network-icon">
-              <i class="fa-solid fa-van-shuttle"></i>
+          <!-- 5 — Redetrans -->
+          <a href="https://redelog.rj.gov.br/redetrans/" target="_blank" rel="noopener noreferrer" class="network-card" title="Redetrans">
+            <div class="network-logo-wrapper">
+              <img src="./assets/logos/logo-redetrans.jpeg" alt="Logo Redetrans" class="network-logo-img">
             </div>
             <h3 class="network-name">Redetrans</h3>
-            <p class="network-desc">Gestão estratégica de transportes oficiais, frotas próprias e locadas, controle de combustíveis e logística veicular.</p>
-            <a href="./pages/redelog/quem-somos.html#redetrans" class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
+            <p class="network-desc">A Rede de Gerenciadores de Transportes Oficiais – REDETRANS tem a finalidade de integrar os servidores no desempenho de suas funções relacionadas à gestão de transportes e combustíveis no âmbito dos Órgãos e Entidades do Poder Executivo do Estado do Rio de Janeiro. Este canal apoiará os órgãos com informações, diretrizes e padronização de procedimentos por meio de orientação normativa fundamentada no Decreto 47.298/2020.</p>
+            <span class="network-link">Ver Atribuições <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
         </div>
       </section>
 

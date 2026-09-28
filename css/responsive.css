@@ -59,13 +59,25 @@
     gap: var(--spacing-md);
   }
 
-  .mosaic-item {
-    min-height: 220px !important;
+  .mosaic-item.item-large,
+  .hero-carousel-wrapper {
+    min-height: 280px !important;
+    height: 320px;
+  }
+
+  .hero-actions-column {
     height: auto;
   }
 
-  .mosaic-item.item-large {
-    min-height: 260px !important;
+  .hero-actions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: var(--spacing-md);
+  }
+
+  .hero-banner {
+    min-height: 140px;
   }
 
   /* Processos e Fases */
@@ -154,6 +166,15 @@
     padding: var(--spacing-xl) 0;
   }
 
+  .hero-actions-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .hero-banner {
+    min-height: 100px;
+  }
+
   .page-hero-title {
     font-size: 1.5rem;
   }
@@ -171,4 +192,46 @@
   .footer-bottom {
     font-size: 0.75rem;
   }
+
+  .hero-carousel-wrapper {
+    min-height: 220px !important;
+    height: 240px;
+  }
+
+  .carousel-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 0.85rem;
+  }
+
+  .networks-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  /* Seção O Que É A Redelog no Mobile (Imagem no topo, texto abaixo) */
+  .about-redelog-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    text-align: left;
+  }
+
+  .about-redelog-img {
+    max-width: 320px;
+  }
+
+  .about-redelog-title {
+    font-size: 1.45rem;
+  }
+
+  .about-redelog-text {
+    font-size: 0.95rem;
+  }
+
+  .about-redelog-actions .btn {
+    width: auto;
+  }
 }
+
+

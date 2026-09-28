@@ -152,11 +152,130 @@
     }
   }
 
+  // ============================================================
+  // CARROSSEL INSTITUCIONAL HERO (LADO ESQUERDO)
+  // ============================================================
+  function initHeroCarousel() {
+    const carousel = document.getElementById('heroCarousel');
+    if (!carousel) return;
+
+    const track = carousel.querySelector('.carousel-track');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const prevBtn = document.getElementById('carouselPrev');
+    const nextBtn = document.getElementById('carouselNext');
+    const dotsContainer = document.getElementById('carouselDots');
+    const dots = dotsContainer ? dotsContainer.querySelectorAll('.carousel-dot') : [];
+
+    if (!track || slides.length === 0) return;
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    let autoplayTimer = null;
+    const autoplayDelay = 5000;
+
+    function updateCarousel(index) {
+      if (index < 0) {
+        currentIndex = totalSlides - 1;
+      } else if (index >= totalSlides) {
+        currentIndex = 0;
+      } else {
+        currentIndex = index;
+      }
+
+      track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+
+      slides.forEach(function (slide, i) {
+        slide.classList.toggle('active', i === currentIndex);
+      });
+
+      dots.forEach(function (dot, i) {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    }
+
+    function nextSlide() {
+      updateCarousel(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      updateCarousel(currentIndex - 1);
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        nextSlide();
+        resetAutoplay();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        prevSlide();
+        resetAutoplay();
+      });
+    }
+
+    dots.forEach(function (dot) {
+      dot.addEventListener('click', function () {
+        const targetIndex = parseInt(dot.getAttribute('data-index'), 10);
+        if (!isNaN(targetIndex)) {
+          updateCarousel(targetIndex);
+          resetAutoplay();
+        }
+      });
+    });
+
+    function startAutoplay() {
+      stopAutoplay();
+      autoplayTimer = setInterval(nextSlide, autoplayDelay);
+    }
+
+    function stopAutoplay() {
+      if (autoplayTimer) {
+        clearInterval(autoplayTimer);
+        autoplayTimer = null;
+      }
+    }
+
+    function resetAutoplay() {
+      stopAutoplay();
+      startAutoplay();
+    }
+
+    carousel.addEventListener('mouseenter', stopAutoplay);
+    carousel.addEventListener('mouseleave', startAutoplay);
+
+    // Suporte a swipe em telas touch
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carousel.addEventListener('touchstart', function (e) {
+      touchStartX = e.changedTouches[0].screenX;
+      stopAutoplay();
+    }, { passive: true });
+
+    carousel.addEventListener('touchend', function (e) {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchStartX - touchEndX > 40) {
+        nextSlide();
+      } else if (touchEndX - touchStartX > 40) {
+        prevSlide();
+      }
+      startAutoplay();
+    }, { passive: true });
+
+    // Inicia autoplay
+    startAutoplay();
+  }
+
   function initComponents() {
     initAccordions();
     initTabs();
     initFilterSearch();
     initAccessibility();
+    initHeroCarousel();
   }
 
   if (document.readyState === 'loading') {
