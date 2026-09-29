@@ -20,6 +20,11 @@
     height: 40px;
   }
 
+  .networks-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+  }
+
   .footer-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-xl) var(--spacing-lg);
@@ -94,6 +99,11 @@
     width: 100%;
     margin-top: var(--spacing-sm);
   }
+
+  .networks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
 }
 
 /* ============================================================
@@ -121,7 +131,8 @@
   }
 
   .networks-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
   }
 
   .footer-grid {
