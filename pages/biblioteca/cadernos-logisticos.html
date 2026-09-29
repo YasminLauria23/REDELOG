@@ -232,120 +232,53 @@
   </div>
 
   <!-- CONTEÚDO PRINCIPAL -->
-  <main id="conteudo-principal">
-    <div class="container section-padding">
+  <main id="conteudo-principal" class="editorial-page-wrapper">
+    <div class="container editorial-body">
 
-      <!-- Cabeçalho da Página -->
-      <div class="page-header-block">
-        <h1 class="page-title">Cadernos de Logística Pública</h1>
-        <p class="page-subtitle">Guias técnicos e modelos padronizados elaborados pela SUBLOG para orientar os órgãos estaduais na especificação, contratação e fiscalização de serviços comuns.</p>
-      </div>
+      <!-- Cabeçalho Centralizado RedePlan -->
+      <header class="editorial-header">
+        <h1 class="editorial-title">CADERNOS LOGÍSTICOS</h1>
+        <div class="editorial-title-divider divider-blue"></div>
+      </header>
 
-      <!-- Barra de Filtros -->
-      <div class="filter-bar mb-8">
-        <div class="filter-group">
-          <label for="filter-search" class="filter-label"><i class="fa-solid fa-magnifying-glass"></i> Filtrar cadernos por tema:</label>
-          <input type="text" id="filter-search" class="filter-input search-input" placeholder="Digite termos como limpeza, vigilância, frotas, sustentabilidade..." data-target="#cadernos-grid">
+      <!-- Conteúdo Editorial Oficial -->
+      <div class="editorial-content">
+        <p class="editorial-p">
+          Acesse nossos Cadernos Logísticos elaborados pela Subsecretaria de Logística (SUBLOG):
+        </p>
+
+        <div class="editorial-info-card mb-6">
+          <ul style="list-style-type: none; padding-left: 0; line-height: 2.2;">
+            <li class="border-b pb-2 mb-2" style="border-bottom: 1px solid #f1f5f9;">
+              <i class="fa-solid fa-file-pdf text-primary mr-2"></i>
+              <a href="http://redelog.rj.gov.br/redelog/wp-content/uploads/2021/11/CadernoLogistico_2015-versao-final.pdf" target="_blank" rel="noopener noreferrer"><strong>Caderno Logístico 2015</strong></a>
+            </li>
+            <li class="border-b pb-2 mb-2" style="border-bottom: 1px solid #f1f5f9;">
+              <i class="fa-solid fa-file-pdf text-primary mr-2"></i>
+              <a href="http://redelog.rj.gov.br/redelog/wp-content/uploads/2021/11/Caderno_Logistico_2016_Vs_de_30-jun-2017_Final.pdf" target="_blank" rel="noopener noreferrer"><strong>Caderno Logístico 2016</strong></a>
+            </li>
+            <li class="border-b pb-2 mb-2" style="border-bottom: 1px solid #f1f5f9;">
+              <i class="fa-solid fa-file-pdf text-primary mr-2"></i>
+              <a href="http://redelog.rj.gov.br/redelog/wp-content/uploads/2021/11/Caderno_Logistico_2017-1.pdf" target="_blank" rel="noopener noreferrer"><strong>Caderno Logístico 2017 – 1</strong></a>
+            </li>
+            <li class="border-b pb-2 mb-2" style="border-bottom: 1px solid #f1f5f9;">
+              <i class="fa-solid fa-file-pdf text-primary mr-2"></i>
+              <a href="http://redelog.rj.gov.br/redelog/wp-content/uploads/2021/11/Caderno_Logistico_2017_2.pdf" target="_blank" rel="noopener noreferrer"><strong>Caderno Logístico 2017 – 2</strong></a>
+            </li>
+            <li>
+              <i class="fa-solid fa-file-pdf text-primary mr-2"></i>
+              <a href="http://redelog.rj.gov.br/redelog/wp-content/uploads/2021/11/Caderno_Logistico_2018_1.pdf" target="_blank" rel="noopener noreferrer"><strong>Caderno Logístico 2018</strong></a>
+            </li>
+          </ul>
         </div>
-      </div>
 
-      <!-- Grid de Cadernos Logísticos -->
-      <section class="content-section">
-        <div class="grid grid-3 gap-6" id="cadernos-grid">
-
-          <!-- 1. Limpeza e Conservação -->
-          <div class="card p-6 flex flex-col justify-between" data-category="limpeza conservacao predial servicos">
-            <div>
-              <div class="feature-icon mb-4"><i class="fa-solid fa-broom"></i></div>
-              <span class="badge-tag badge-gold mb-2">Caderno nº 01</span>
-              <h3 class="card-title">Limpeza e Conservação Predial</h3>
-              <p class="card-text mb-4">
-                Parâmetros de produtividade por área (m²), coeficientes de mão de obra, insumos de limpeza ecológicos e modelo de planilha de custos com dedicação de mão de obra exclusiva.
-              </p>
-            </div>
-            <a href="https://redelog.rj.gov.br/redelog/cadernos-de-logistica/" target="_blank" class="btn btn-outline btn-sm w-full"><i class="fa-solid fa-file-pdf"></i> Acessar Caderno Técnico</a>
-          </div>
-
-          <!-- 2. Vigilância Patrimonial -->
-          <div class="card p-6 flex flex-col justify-between" data-category="vigilancia seguranca armada patrimonial">
-            <div>
-              <div class="feature-icon mb-4"><i class="fa-solid fa-shield-halved"></i></div>
-              <span class="badge-tag badge-primary mb-2">Caderno nº 02</span>
-              <h3 class="card-title">Vigilância e Segurança Patrimonial</h3>
-              <p class="card-text mb-4">
-                Regras de contratação de postos armados e desarmados (12x36 diurno e noturno), requisitos de conformidade com o Departamento de Polícia Federal e diretrizes de armamento.
-              </p>
-            </div>
-            <a href="https://redelog.rj.gov.br/redelog/cadernos-de-logistica/" target="_blank" class="btn btn-outline btn-sm w-full"><i class="fa-solid fa-file-pdf"></i> Acessar Caderno Técnico</a>
-          </div>
-
-          <!-- 3. Apoio Administrativo -->
-          <div class="card p-6 flex flex-col justify-between" data-category="apoio administrativo recepcionista copeira">
-            <div>
-              <div class="feature-icon mb-4"><i class="fa-solid fa-users"></i></div>
-              <span class="badge-tag badge-gold mb-2">Caderno nº 03</span>
-              <h3 class="card-title">Serviços de Apoio Administrativo</h3>
-              <p class="card-text mb-4">
-                Diretrizes para postos de recepcionista, operador de telefonia, copeiragem e almoxarife, com foco em direitos trabalhistas e regras de fiscalização com conta vinculada.
-              </p>
-            </div>
-            <a href="https://redelog.rj.gov.br/redelog/cadernos-de-logistica/" target="_blank" class="btn btn-outline btn-sm w-full"><i class="fa-solid fa-file-pdf"></i> Acessar Caderno Técnico</a>
-          </div>
-
-          <!-- 4. Almoxarifado Virtual -->
-          <div class="card p-6 flex flex-col justify-between" data-category="almoxarifado virtual suprimentos compras">
-            <div>
-              <div class="feature-icon mb-4"><i class="fa-solid fa-cart-shopping"></i></div>
-              <span class="badge-tag badge-secondary mb-2">Caderno nº 04</span>
-              <h3 class="card-title">Almoxarifado Virtual e Consumo</h3>
-              <p class="card-text mb-4">
-                Manual operacional do modelo de fornecimento sob demanda, fluxo de pedidos no e-commerce estadual e critérios de controle para evitar desperdício de estoque físico.
-              </p>
-            </div>
-            <a href="../redelog/compras-centralizadas.html" class="btn btn-secondary btn-sm w-full"><i class="fa-solid fa-cart-flatbed-suitcase"></i> Ver Orientações de Compras</a>
-          </div>
-
-          <!-- 5. Gestão e Fiscalização de Contratos -->
-          <div class="card p-6 flex flex-col justify-between" data-category="fiscalizacao gestao contratos glosa">
-            <div>
-              <div class="feature-icon mb-4"><i class="fa-solid fa-file-signature"></i></div>
-              <span class="badge-tag badge-primary mb-2">Caderno nº 05</span>
-              <h3 class="card-title">Fiscalização de Contratos Administrativos</h3>
-              <p class="card-text mb-4">
-                Instrumento de Medição de Resultado (IMR), aplicação de glosas proporcionais a falhas no serviço, modelos de notificações formais e atesto eletrônico no SEI-RJ.
-              </p>
-            </div>
-            <a href="../base-de-conhecimento/gestao-contratual.html" class="btn btn-outline btn-sm w-full"><i class="fa-solid fa-book-open"></i> Acessar Guia de Gestão</a>
-          </div>
-
-          <!-- 6. Contratações Sustentáveis -->
-          <div class="card p-6 flex flex-col justify-between" data-category="sustentabilidade verde ambiental reciclagem">
-            <div>
-              <div class="feature-icon mb-4"><i class="fa-solid fa-leaf"></i></div>
-              <span class="badge-tag badge-gold mb-2">Caderno nº 06</span>
-              <h3 class="card-title">Contratações Públicas Sustentáveis</h3>
-              <p class="card-text mb-4">
-                Guia de critérios ambientais, rotulagem ecológica, descarte de resíduos eletrônicos, logística reversa de lâmpadas e cumprimento dos Objetivos de Desenvolvimento Sustentável (ODS).
-              </p>
-            </div>
-            <a href="https://redelog.rj.gov.br/redelog/cadernos-de-logistica/" target="_blank" class="btn btn-outline btn-sm w-full"><i class="fa-solid fa-file-pdf"></i> Acessar Caderno Técnico</a>
-          </div>
-
+        <!-- Navegação Entre Páginas Oficial -->
+        <div class="editorial-page-nav">
+          <a href="../biblioteca/sublog.html"><i class="fa-solid fa-arrow-left"></i> Sobre a Sublog</a>
+          <a href="../biblioteca/panorama.html">Panorama das Contratações Públicas <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-      </section>
 
-      <!-- Links de Recursos -->
-      <section class="links-resource-box">
-        <h3 class="links-resource-title"><i class="fa-solid fa-folder-open"></i> Outros Materiais de Apoio:</h3>
-        <ul class="resource-list">
-          <li class="resource-item">
-            <a href="../legislacao/licitacoes.html"><i class="fa-solid fa-scale-balanced"></i> Legislação e Decretos Regulamentadores do Estado do Rio de Janeiro</a>
-          </li>
-          <li class="resource-item">
-            <a href="../capacitacao/trilha-de-aprendizagem.html"><i class="fa-solid fa-graduation-cap"></i> Cursos e Treinamentos para Elaboradores de Termos de Referência</a>
-          </li>
-        </ul>
-      </section>
+      </div>
 
     </div>
   </main>

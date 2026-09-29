@@ -231,143 +231,91 @@
     </div>
   </div>
 
-  <!-- CONTEÚDO PRINCIPAL -->
-  <main id="conteudo-principal">
-    <div class="container section-padding">
+  <!-- CONTEÚDO PRINCIPAL (PADRÃO EDITORIAL REDEPLAN + CONTEÚDO OFICIAL REDELOG) -->
+  <main id="conteudo-principal" class="editorial-page-wrapper">
+    <div class="editorial-header">
+      <h1 class="editorial-title">CURSOS EXTERNOS</h1>
+      <div class="editorial-title-divider"></div>
+      <img src="../../assets/logos/redelog-icon.png" alt="REDELOG" class="editorial-logo">
+    </div>
 
+    <div class="editorial-body">
+      <p class="editorial-p">
+        A SEPLAG e a REDELOG indicam oportunidades de qualificação externa gratuitas oferecidas por conceituadas escolas de governo e órgãos de controle, voltadas ao aprimoramento dos servidores públicos nas áreas de compras, licitações, contratos e logística.
+      </p>
 
-      <!-- Cabeçalho da Página -->
-      <div class="page-header-block">
-        <h1 class="page-title">Cursos Externos Recomendados</h1>
-        <p class="page-subtitle">Oportunidades de formação continuada 100% gratuitas em escolas de governo federais e órgãos de controle externo para qualificação do servidor estadual.</p>
+      <h2 class="editorial-subtitle">INSTITUIÇÕES PARCEIRAS E CURSOS DISPONÍVEIS</h2>
+
+      <div class="editorial-grid-2">
+        <!-- ENAP -->
+        <div class="editorial-info-card">
+          <h4>Enap – Escola Nacional de Administração Pública</h4>
+          <p>
+            Instituição vinculada ao Ministério da Economia com a missão de desenvolver competências de servidores públicos para aumentar a capacidade de governo na gestão de políticas públicas.
+          </p>
+          <p class="editorial-p" style="font-size: 0.9rem; margin-top: 8px; color: var(--color-text-muted);">
+            <strong>Destaques:</strong> Sistema Eletrônico de Informações – SEI! USAR (20h), Contratações Públicas Sustentáveis (20h), Formação de Pregoeiros (20h/30h), Gestão e Fiscalização de Contratos Administrativos (40h).
+          </p>
+          <div style="margin-top: 12px;">
+            <a href="https://www.enap.gov.br/" target="_blank" rel="noopener noreferrer" class="editorial-action-btn">
+              Acessar Portal Enap <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ECG / TCE-RJ -->
+        <div class="editorial-info-card">
+          <h4>ECG – Escola de Contas e Gestão do TCE-RJ</h4>
+          <p>
+            Vinculada ao Tribunal de Contas do Estado do Rio de Janeiro, promove ensino e pesquisa voltados ao controle governamental, transparência e inovação na gestão pública.
+          </p>
+          <p class="editorial-p" style="font-size: 0.9rem; margin-top: 8px; color: var(--color-text-muted);">
+            <strong>Destaques:</strong> Noções Introdutórias de Licitação e Contratos (30h), Formação de Pregoeiro (30h), Termo de Referência e Projeto Básico (30h), Contratação Direta (10h).
+          </p>
+          <div style="margin-top: 12px;">
+            <a href="https://portal-br.tcerj.tc.br/web/ecg/principal" target="_blank" rel="noopener noreferrer" class="editorial-action-btn">
+              Acessar Portal ECG / TCE-RJ <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CEPERJ -->
+        <div class="editorial-info-card">
+          <h4>Fundação CEPERJ</h4>
+          <p>
+            Fundação Centro Estadual de Estatísticas, Pesquisas e Formação de Servidores Públicos do Rio de Janeiro, oferecendo ampla gama de cursos por meio da Escola de Gestão e Políticas Públicas (EGPP).
+          </p>
+          <p class="editorial-p" style="font-size: 0.9rem; margin-top: 8px; color: var(--color-text-muted);">
+            <strong>Destaques:</strong> Gestão do Ciclo das Licitações e Contratações Públicas (387h), Administração Pública (366h), Redação Oficial e Noções de SEI (10h).
+          </p>
+          <div style="margin-top: 12px;">
+            <a href="https://www.ceperj.rj.gov.br" target="_blank" rel="noopener noreferrer" class="editorial-action-btn">
+              Acessar Portal CEPERJ <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ISC / TCU -->
+        <div class="editorial-info-card">
+          <h4>ISC – Instituto Serzedello Corrêa (TCU)</h4>
+          <p>
+            Escola Superior do Tribunal de Contas da União, ofertando capacitações a distância de alto nível em governança e controle de aquisições públicas.
+          </p>
+          <p class="editorial-p" style="font-size: 0.9rem; margin-top: 8px; color: var(--color-text-muted);">
+            <strong>Destaques:</strong> Trilha de Aprendizagem em Compras Públicas – Pregão Eletrônico (25h), Elaboração de Plano de Logística Sustentável (40h).
+          </p>
+          <div style="margin-top: 12px;">
+            <a href="https://portal.tcu.gov.br/instituto-serzedello-correa/" target="_blank" rel="noopener noreferrer" class="editorial-action-btn">
+              Acessar Portal ISC / TCU <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
       </div>
 
-      <!-- Grade de Cursos Externos por Instituição -->
-      <section class="content-section">
-        <div class="grid grid-2 gap-8">
-
-          <!-- ENAP / EV.G -->
-          <div class="card p-6 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center gap-3 mb-4">
-                <div class="feature-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                <div>
-                  <span class="badge-tag badge-gold">Escola Virtual.Gov</span>
-                  <h3 class="card-title">ENAP - Escola Nacional de Administração Pública</h3>
-                </div>
-              </div>
-              <p class="card-text mb-4">
-                Plataforma com centenas de cursos autoinstrucionais gratuitos com certificação imediata.
-              </p>
-              <ul class="text-sm text-muted space-y-2 mb-6">
-                <li><i class="fa-solid fa-circle-check text-primary mr-2"></i> <strong>Nova Lei de Licitações (Lei 14.133/21):</strong> Visão Geral (20h)</li>
-                <li><i class="fa-solid fa-circle-check text-primary mr-2"></i> <strong>Elaboração de Termos de Referência:</strong> Passo a Passo (30h)</li>
-                <li><i class="fa-solid fa-circle-check text-primary mr-2"></i> <strong>Gestão e Fiscalização de Contratos Terceirizados</strong> (40h)</li>
-              </ul>
-            </div>
-            <a href="https://www.escolavirtual.gov.br/" target="_blank" class="btn btn-primary w-full">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar Catálogo da ENAP
-            </a>
-          </div>
-
-          <!-- TCE-RJ / ECG -->
-          <div class="card p-6 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center gap-3 mb-4">
-                <div class="feature-icon"><i class="fa-solid fa-scale-balanced"></i></div>
-                <div>
-                  <span class="badge-tag badge-primary">Controle Externo RJ</span>
-                  <h3 class="card-title">Escola de Contas e Gestão do TCE-RJ (ECG)</h3>
-                </div>
-              </div>
-              <p class="card-text mb-4">
-                Cursos focados na jurisprudência aplicável à administração estadual e municipal fluminense.
-              </p>
-              <ul class="text-sm text-muted space-y-2 mb-6">
-                <li><i class="fa-solid fa-circle-check text-primary mr-2"></i> <strong>Jurisprudência do TCE-RJ sobre Licitações:</strong> Orientações Práticas (24h)</li>
-                <li><i class="fa-solid fa-circle-check text-primary mr-2"></i> <strong>Controle Interno e Matriz de Riscos em Compras</strong> (20h)</li>
-                <li><i class="fa-solid fa-circle-check text-primary mr-2"></i> <strong>Execução Orçamentária e Restos a Pagar em Contratos</strong> (30h)</li>
-              </ul>
-            </div>
-            <a href="https://ecg.tcerj.tc.br/" target="_blank" class="btn btn-outline w-full">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar Portal da ECG / TCE-RJ
-            </a>
-          </div>
-
-          <!-- TCU / ISC -->
-          <div class="card p-6 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center gap-3 mb-4">
-                <div class="feature-icon"><i class="fa-solid fa-building-columns"></i></div>
-                <div>
-                  <span class="badge-tag badge-secondary">Tribunal de Contas da União</span>
-                  <h3 class="card-title">Instituto Serzedello Corrêa (ISC / TCU)</h3>
-                </div>
-              </div>
-              <p class="card-text mb-4">
-                Referência nacional em auditoria, governança e conformidade em contratações públicas.
-              </p>
-              <ul class="text-sm text-muted space-y-2 mb-6">
-                <li><i class="fa-solid fa-circle-check text-primary mr-2"></i> <strong>Governança das Contratações Públicas na Prática</strong> (30h)</li>
-                <li><i class="fa-solid fa-circle-check text-primary mr-2"></i> <strong>Pesquisa de Preços e Formação de Orçamento Estimativo</strong> (20h)</li>
-                <li><i class="fa-solid fa-circle-check text-primary mr-2"></i> <strong>Fraudes e Conluios em Licitações: Prevenção e Detecção</strong> (20h)</li>
-              </ul>
-            </div>
-            <a href="https://portal.tcu.gov.br/instituto-serzedello-correa/" target="_blank" class="btn btn-outline w-full">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar Cursos do TCU / ISC
-            </a>
-          </div>
-
-          <!-- ILB / Saberes -->
-          <div class="card p-6 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center gap-3 mb-4">
-                <div class="feature-icon"><i class="fa-solid fa-landmark"></i></div>
-                <div>
-                  <span class="badge-tag badge-gold">Senado Federal</span>
-                  <h3 class="card-title">Instituto Legislativo Brasileiro (ILB)</h3>
-                </div>
-              </div>
-              <p class="card-text mb-4">
-                Formação jurídica e administrativa com foco no processo legislativo e administrativo público.
-              </p>
-              <ul class="text-sm text-muted space-y-2 mb-6">
-                <li><i class="fa-solid fa-circle-check text-primary mr-2"></i> <strong>Direito Administrativo Aplicado ao Setor Público</strong> (40h)</li>
-                <li><i class="fa-solid fa-circle-check text-primary mr-2"></i> <strong>Ética e Administração Pública</strong> (20h)</li>
-                <li><i class="fa-solid fa-circle-check text-primary mr-2"></i> <strong>Gestão Estratégica com Foco em Resultados</strong> (40h)</li>
-              </ul>
-            </div>
-            <a href="https://saberes.senado.leg.br/" target="_blank" class="btn btn-outline w-full">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar Saberes / ILB
-            </a>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Orientações para Progressão Funcional -->
-      <section class="content-section">
-        <div class="editorial-box">
-          <h2 class="section-title mb-2">Aproveitamento de Horas para Progressão Funcional</h2>
-          <p>
-            Os servidores públicos efetivos do Estado do Rio de Janeiro podem requerer o cômputo das horas cursadas nessas instituições parceiras para fins de progressão por qualificação funcional, conforme as resoluções vigentes de cada plano de carreiras, bastando anexar o certificado digital expedido com código de autenticidade ao processo de progressão no SEI-RJ.
-          </p>
-        </div>
-      </section>
-
-      <!-- Links de Recursos -->
-      <section class="links-resource-box">
-        <h3 class="links-resource-title"><i class="fa-solid fa-folder-open"></i> Explore Também:</h3>
-        <ul class="resource-list">
-          <li class="resource-item">
-            <a href="../capacitacao/cursos-internos.html"><i class="fa-solid fa-chalkboard-user"></i> Cursos Internos Próprios da SUBLOG e Fundação CEPERJ</a>
-          </li>
-          <li class="resource-item">
-            <a href="../capacitacao/trilha-de-aprendizagem.html"><i class="fa-solid fa-graduation-cap"></i> Conheça a Trilha de Aprendizagem Oficial da REDELOG</a>
-          </li>
-        </ul>
-      </section>
-
+      <div class="editorial-page-nav">
+        <a href="cursos-internos.html" class="editorial-nav-prev"><i class="fa-solid fa-arrow-left"></i> Cursos Internos</a>
+        <a href="videos-tutoriais.html" class="editorial-nav-next">Vídeos Tutoriais <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
     </div>
   </main>
 

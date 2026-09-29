@@ -232,102 +232,47 @@
   </div>
 
   <!-- CONTEÚDO PRINCIPAL -->
-  <main id="conteudo-principal">
-    <div class="container section-padding">
+  <main id="conteudo-principal" class="editorial-page-wrapper">
+    <div class="container editorial-body">
 
-      <!-- Cabeçalho da Página -->
-      <div class="page-header-block">
-        <h1 class="page-title">Relatório Integrado das Redes da SEPLAG</h1>
-        <p class="page-subtitle">A atuação coordenada das quatro redes temáticas fluminenses: REDELOG, REDEPLAN, REDOR e REDINV a serviço da eficiência governamental.</p>
+      <!-- Cabeçalho Centralizado RedePlan -->
+      <header class="editorial-header">
+        <h1 class="editorial-title">RELATÓRIO REDES</h1>
+        <div class="editorial-title-divider divider-blue"></div>
+      </header>
+
+      <!-- Conteúdo Editorial Oficial -->
+      <div class="editorial-content">
+        <h2 class="editorial-subtitle">HISTÓRICO DE DOCUMENTOS:</h2>
+
+        <div class="editorial-info-card mb-6">
+          <ul style="list-style-type: none; padding-left: 0; line-height: 2.2;">
+            <li class="border-b pb-2 mb-2" style="border-bottom: 1px solid #f1f5f9;">
+              <i class="fa-solid fa-file-pdf text-primary mr-2"></i>
+              <a href="http://redelog.rj.gov.br/redelog/wp-content/uploads/2021/11/Relatorio-Anual-Redes-de-Logistica-e-Patrimonio-2017.pdf" target="_blank" rel="noopener noreferrer"><strong>Relatório Anual Redes de Logística e Patrimônio 2017</strong></a>
+            </li>
+            <li class="border-b pb-2 mb-2" style="border-bottom: 1px solid #f1f5f9;">
+              <i class="fa-solid fa-file-pdf text-primary mr-2"></i>
+              <a href="http://redelog.rj.gov.br/redelog/wp-content/uploads/2022/01/Relatorio-Anual-das-Redes-de-Logistica-2018-1.pdf" target="_blank" rel="noopener noreferrer"><strong>Relatório Anual das Redes de Logística 2018</strong></a>
+            </li>
+            <li>
+              <i class="fa-solid fa-file-pdf text-primary mr-2"></i>
+              <a href="http://redelog.rj.gov.br/redelog/wp-content/uploads/2022/01/Relatorio_Anual_das_Redes_de_Logistica_2019.pdf" target="_blank" rel="noopener noreferrer"><strong>Relatório Anual das Redes de Logística 2019</strong></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Navegação Entre Páginas Oficial -->
+        <div class="editorial-page-nav">
+          <a href="../biblioteca/audiencias-consultas.html"><i class="fa-solid fa-arrow-left"></i> Audiências e Consultas Públicas</a>
+          <a href="../base-de-conhecimento/index.html">Base de Conhecimento <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
       </div>
-
-      <!-- O Ecossistema de 4 Redes -->
-      <section class="content-section">
-        <h2 class="section-title">As 4 Redes Estruturantes da Gestão Fluminense</h2>
-        <div class="grid grid-2 gap-6">
-
-          <!-- REDELOG -->
-          <div class="card p-6 border-t-4 border-primary">
-            <div class="flex items-center gap-3 mb-3">
-              <span class="badge-tag badge-primary font-bold">REDELOG</span>
-              <h3 class="card-title">Rede de Logística</h3>
-            </div>
-            <p class="card-text mb-4">
-              Integração de compras públicas, governança de contratações, padronização no CatELogRj, gestão de contratos, patrimônio e frotas estaduais.
-            </p>
-            <a href="../redelog/sobre.html" class="btn btn-outline btn-sm"><i class="fa-solid fa-arrow-right"></i> Conhecer REDELOG</a>
-          </div>
-
-          <!-- REDEPLAN -->
-          <div class="card p-6 border-t-4 border-gold">
-            <div class="flex items-center gap-3 mb-3">
-              <span class="badge-tag badge-gold font-bold">REDEPLAN</span>
-              <h3 class="card-title">Rede de Planejamento</h3>
-            </div>
-            <p class="card-text mb-4">
-              Elaboração e monitoramento do Plano Plurianual (PPA), programas de governo, metas de secretarias e alinhamento estratégico das políticas estaduais.
-            </p>
-            <a href="https://redeplan.planejamento.rj.gov.br/" target="_blank" class="btn btn-outline btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar Portal REDEPLAN</a>
-          </div>
-
-          <!-- REDOR -->
-          <div class="card p-6 border-t-4 border-primary">
-            <div class="flex items-center gap-3 mb-3">
-              <span class="badge-tag badge-primary font-bold">REDOR</span>
-              <h3 class="card-title">Rede de Orçamento</h3>
-            </div>
-            <p class="card-text mb-4">
-              Articulação das assessorias de orçamento e finanças, Lei de Diretrizes Orçamentárias (LDO), Lei Orçamentária Anual (LOA) e créditos adicionais.
-            </p>
-            <a href="https://redor.planejamento.rj.gov.br/" target="_blank" class="btn btn-outline btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar Portal REDOR</a>
-          </div>
-
-          <!-- REDINV -->
-          <div class="card p-6 border-t-4 border-secondary">
-            <div class="flex items-center gap-3 mb-3">
-              <span class="badge-tag badge-secondary font-bold">REDINV</span>
-              <h3 class="card-title">Rede de Investimentos</h3>
-            </div>
-            <p class="card-text mb-4">
-              Captação de recursos da União via Transferegov, operações de crédito, convênios de infraestrutura e gestão de fundos estaduais.
-            </p>
-            <a href="https://redinv.planejamento.rj.gov.br/" target="_blank" class="btn btn-outline btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar Portal REDINV</a>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Relatório Anual para Download -->
-      <section class="content-section">
-        <div class="editorial-box">
-          <h2 class="section-title mb-2">Relatório de Atividades Integradas</h2>
-          <p class="mb-4">
-            O documento sintetiza as principais entregas coletivas das quatro redes: webinários conjuntos, capacitação de mais de 3.500 servidores públicos, harmonização dos cronogramas do PCA com o Orçamento e diretrizes unificadas de governança pública.
-          </p>
-          <a href="https://redelog.rj.gov.br/redelog/relatorio-redes/" target="_blank" class="btn btn-primary">
-            <i class="fa-solid fa-file-pdf"></i> Baixar Relatório Anual Integrado das Redes (PDF)
-          </a>
-        </div>
-      </section>
-
-      <!-- Links de Recursos -->
-      <section class="links-resource-box">
-        <h3 class="links-resource-title"><i class="fa-solid fa-folder-open"></i> Explore os Portais das Redes Irmãs:</h3>
-        <ul class="resource-list">
-          <li class="resource-item">
-            <a href="https://redeplan.planejamento.rj.gov.br/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Rede de Planejamento do Estado do Rio de Janeiro (REDEPLAN)</a>
-          </li>
-          <li class="resource-item">
-            <a href="https://redor.planejamento.rj.gov.br/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Rede de Orçamento do Estado do Rio de Janeiro (REDOR)</a>
-          </li>
-          <li class="resource-item">
-            <a href="https://redinv.planejamento.rj.gov.br/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Rede de Investimentos do Estado do Rio de Janeiro (REDINV)</a>
-          </li>
-        </ul>
-      </section>
 
     </div>
   </main>
+
 
   <!-- RODAPÉ INSTITUCIONAL (ESTILO REDELOG / REDEPLAN) -->
   <footer class="site-footer">
