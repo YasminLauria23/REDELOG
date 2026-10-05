@@ -3,9 +3,7 @@
  * Suporte a 1920px, 1440px, 1024px, 768px, 480px, 375px
  */
 
-/* ============================================================
-   1. TELAS GRANDES & NOTEBOOKS (MAX-WIDTH: 1200px)
-   ============================================================ */
+/* 1. TELAS GRANDES & NOTEBOOKS (MAX-WIDTH: 1200px) */
 @media screen and (max-width: 1200px) {
   .nav-link {
     padding: 0.5rem 0.65rem;
@@ -13,11 +11,11 @@
   }
 
   .partner-logo img {
-    height: 36px;
+    height: 62px;
   }
 
   .brand-logo img {
-    height: 40px;
+    height: 74px;
   }
 
   .networks-grid {
@@ -31,9 +29,7 @@
   }
 }
 
-/* ============================================================
-   2. TABLETS & TELAS MÉDIAS (MAX-WIDTH: 991px)
-   ============================================================ */
+/* 2. TABLETS & TELAS MÉDIAS (MAX-WIDTH: 991px) */
 @media screen and (max-width: 991px) {
   /* Ativação do Menu Mobile */
   .desktop-nav {
@@ -106,9 +102,7 @@
   }
 }
 
-/* ============================================================
-   3. SMARTPHONES & TELAS PEQUENAS (MAX-WIDTH: 768px)
-   ============================================================ */
+/* 3. SMARTPHONES & TELAS PEQUENAS (MAX-WIDTH: 768px) */
 @media screen and (max-width: 768px) {
   :root {
     --container-padding: 1rem;
@@ -123,7 +117,7 @@
   }
 
   .brand-logo img {
-    height: 38px;
+    height: 62px;
   }
 
   .news-grid {
@@ -160,9 +154,7 @@
   }
 }
 
-/* ============================================================
-   4. SMARTPHONES ULTRA-COMPACTOS (MAX-WIDTH: 480px)
-   ============================================================ */
+/* 4. SMARTPHONES ULTRA-COMPACTOS (MAX-WIDTH: 480px) */
 @media screen and (max-width: 480px) {
   .top-networks {
     display: none; /* Preserva os botões de acessibilidade */

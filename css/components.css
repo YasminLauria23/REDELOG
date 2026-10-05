@@ -3,9 +3,7 @@
  * Padrão fiel aos componentes da Redeplan
  */
 
-/* ============================================================
-   1. BOTÕES
-   ============================================================ */
+/* 1. BOTÕES */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -84,9 +82,7 @@
   font-size: 1.05rem;
 }
 
-/* ============================================================
-   2. BADGES & TAGS
-   ============================================================ */
+/* 2. BADGES & TAGS*/
 .badge-tag {
   display: inline-block;
   padding: 4px 10px;
@@ -119,9 +115,7 @@
   border: 1.5px solid var(--color-text-inverse);
 }
 
-/* ============================================================
-   3. HERO GRID PADRÃO REDEPLAN (.grid / .g1 / .g2 / .g3 / .g4)
-   ============================================================ */
+/* 3. HERO GRID PADRÃO REDEPLAN (.grid / .g1 / .g2 / .g3 / .g4)*/
 .hero-mosaic {
   display: grid;
   grid-template-columns: 1.35fr 1.65fr;
@@ -130,9 +124,7 @@
   min-height: 480px;
 }
 
-/* ============================================================
-   3. CARROSSEL INSTITUCIONAL HERO (LADO ESQUERDO)
-   ============================================================ */
+/* 3. CARROSSEL INSTITUCIONAL HERO (LADO ESQUERDO) */
 .hero-carousel-wrapper {
   height: 100%;
   min-height: 440px;
@@ -247,9 +239,7 @@
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
 }
 
-/* ============================================================
-   3.1 ÁREA DE ACESSOS RÁPIDOS (LADO DIREITO - PADRÃO REDEPLAN)
-   ============================================================ */
+/* 3.1 ÁREA DE ACESSOS RÁPIDOS (LADO DIREITO - PADRÃO REDEPLAN) */
 .hero-actions-column {
   display: flex;
   flex-direction: column;
@@ -548,9 +538,7 @@
   margin-bottom: 0;
 }
 
-/* ============================================================
-   4. CARDS DAS REDES FUNCIONAIS (REDEPREG, REDETRANS, ETC.)
-   ============================================================ */
+/*  4. CARDS DAS REDES FUNCIONAIS (REDEPREG, REDETRANS, ETC.) */
 .networks-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -647,9 +635,7 @@
   transform: translateX(3px);
 }
 
-/* ============================================================
-   5. CARDS DE NOTÍCIAS & INFORMES (PADRÃO REDEPLAN NOTICIAS-GRID)
-   ============================================================ */
+/*5. CARDS DE NOTÍCIAS & INFORMES (PADRÃO REDEPLAN NOTICIAS-GRID) */
 .news-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -739,9 +725,7 @@
   align-items: center;
 }
 
-/* ============================================================
-   6. BLOCOS DE DESTAQUE COM BOLINHA NUMERADA (.bolinha / .quadro)
-   ============================================================ */
+/* 6. BLOCOS DE DESTAQUE COM BOLINHA NUMERADA (.bolinha / .quadro) */
 .process-steps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -765,12 +749,12 @@
   border-color: var(--color-accent);
 }
 
-/* A bolinha numerada dourada idêntica à Redeplan */
+/* A bolinha numerada institucional REDELOG */
 .step-number-circle {
   width: 48px;
   height: 48px;
-  background-color: var(--color-gold);
-  color: #1a1a1a;
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
@@ -794,9 +778,7 @@
   margin-bottom: 0;
 }
 
-/* ============================================================
-   7. CAIXA DE LINKS ÚTEIS (PADRÃO REDEPLAN .varios-links / .boxes)
-   ============================================================ */
+/* 7. CAIXA DE LINKS ÚTEIS (PADRÃO REDEPLAN .varios-links / .boxes) */
 .links-resource-box {
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border);
@@ -839,9 +821,7 @@
   font-size: 0.85rem;
 }
 
-/* ============================================================
-   8. COMPONENTE ACCORDION (FAQ E LEGISLAÇÃO)
-   ============================================================ */
+/* 8. COMPONENTE ACCORDION (FAQ E LEGISLAÇÃO) */
 .accordion {
   display: flex;
   flex-direction: column;
@@ -921,9 +901,7 @@ button.accordion-header[aria-expanded="true"] .accordion-icon,
   display: block;
 }
 
-/* ============================================================
-   9. TABS NAVEGÁVEIS (CATEGORIAS E FASES)
-   ============================================================ */
+/* 9. TABS NAVEGÁVEIS (CATEGORIAS E FASES) */
 .tabs-container {
   margin: var(--spacing-xl) 0;
 }
@@ -967,9 +945,7 @@ button.accordion-header[aria-expanded="true"] .accordion-icon,
   display: block;
 }
 
-/* ============================================================
-   10. FILTRO DE BUSCA PARA LEGISLAÇÃO & DOCUMENTOS
-   ============================================================ */
+/* 10. FILTRO DE BUSCA PARA LEGISLAÇÃO & DOCUMENTOS */
 .filter-bar {
   display: flex;
   align-items: center;
@@ -1012,9 +988,7 @@ button.accordion-header[aria-expanded="true"] .accordion-icon,
   font-size: 0.9rem;
 }
 
-/* ============================================================
-   11. SEÇÃO APRESENTAÇÃO: O QUE É A REDELOG? (Estilo Redeplan)
-   ============================================================ */
+/* 11. SEÇÃO APRESENTAÇÃO: O QUE É A REDELOG? (Estilo Redeplan) */
 .about-redelog-section {
   padding: var(--spacing-xl) 0;
   margin-bottom: var(--spacing-2xl);

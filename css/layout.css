@@ -3,13 +3,11 @@
  * Baseado no layout canônico da Redeplan
  */
 
-/* ============================================================
-   1. TOPO INSTITUCIONAL (ECOSSISTEMA DE REDES & ACESSIBILIDADE)
-   ============================================================ */
+/* 1. TOPO INSTITUCIONAL (ECOSSISTEMA DE REDES & ACESSIBILIDADE) */
 .top-bar {
   background-color: var(--color-primary);
   color: var(--color-text-inverse);
-  padding: 0.35rem 0;
+  padding: 0.55rem 0;
   font-size: var(--font-size-xs);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
@@ -33,7 +31,7 @@
 .top-bar-systems a {
   color: var(--color-text-inverse);
   font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   transition: color var(--transition-fast);
   display: inline-flex;
   align-items: center;
@@ -58,7 +56,7 @@
 }
 
 .top-networks-label {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
   color: var(--color-accent);
   text-transform: uppercase;
@@ -125,8 +123,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 0.65rem;
-  padding-bottom: 0.65rem;
+  padding-top: 0.60rem;
+  padding-bottom: 0.60rem;
   gap: var(--spacing-md);
 }
 
@@ -143,7 +141,7 @@
 }
 
 .brand-logo img {
-  height: 46px;
+  height: 88px;
   width: auto;
   object-fit: contain;
 }
@@ -154,7 +152,7 @@
 }
 
 .partner-logo img {
-  height: 42px;
+  height: 72px;
   width: auto;
   object-fit: contain;
 }
@@ -259,10 +257,10 @@
 }
 
 .dropdown-item.active {
-  color: var(--color-accent);
+  color: var(--color-primary);
   font-weight: var(--font-weight-bold);
-  border-left-color: var(--color-accent);
-  background-color: var(--color-bg-surface);
+  border-left-color: var(--color-primary);
+  background-color: var(--color-primary-surface);
 }
 
 /* Botão Mobile Hamburger */
@@ -398,7 +396,7 @@
 }
 
 .mobile-submenu-item.active {
-  color: var(--color-accent);
+  color: var(--color-primary);
   font-weight: var(--font-weight-bold);
   background-color: var(--color-primary-surface);
 }
@@ -419,9 +417,7 @@
   color: var(--color-primary);
 }
 
-/* ============================================================
-   3. BREADCRUMBS (CAMINHO DE NAVEGAÇÃO)
-   ============================================================ */
+/* 3. BREADCRUMBS (CAMINHO DE NAVEGAÇÃO) */
 .breadcrumbs-bar {
   background-color: var(--color-bg-surface);
   border-bottom: 1px solid var(--color-border);
@@ -457,17 +453,13 @@
   font-weight: var(--font-weight-semibold);
 }
 
-/* ============================================================
-   4. CONTEÚDO PRINCIPAL
-   ============================================================ */
+/* 4. CONTEÚDO PRINCIPAL */
 .main-content {
   min-height: calc(100vh - 450px);
   padding: var(--spacing-2xl) 0;
 }
 
-/* ============================================================
-   5. RODAPÉ INSTITUCIONAL (PADRÃO REDEPLAN)
-   ============================================================ */
+/* 5. RODAPÉ INSTITUCIONAL (PADRÃO REDEPLAN) */
 .site-footer {
   width: 100%;
   background-color: var(--color-primary);
