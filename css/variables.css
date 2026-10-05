@@ -4,19 +4,20 @@
  */
 
 :root {
-  /* Paleta Primária & Institucional */
-  --color-primary: #21559b;        /* Azul Escuro Institucional SEPLAG */
-  --color-primary-dark: #153a6d;   /* Azul Profundo */
-  --color-primary-light: #569efe;  /* Azul Claro */
-  --color-primary-surface: #edf4fc;/* Azul Suave para fundos e destaques */
+  /* Paleta Primária & Institucional REDELOG */
+  --color-primary: #007dc7;        /* Azul Redelog Oficial */
+  --color-primary-dark: #0a2e5c;   /* Azul Escuro Institucional */
+  --color-primary-light: #23ade0;  /* Azul Claro / Cyan da Logo */
+  --color-primary-surface: #edf6fd;/* Azul Suave para fundos e destaques */
 
-  /* Paleta de Destaque */
-  --color-accent: #f28c50;         /* Laranja Redeplan/Redelog */
-  --color-accent-hover: #d9773b;   /* Laranja Escuro Hover */
-  --color-gold: #cc9900;           /* Dourado para badges e divisores */
-  --color-gold-light: #fef9e7;     /* Dourado suave */
-  --color-green: #009900;          /* Verde institucional */
-  --color-green-light: #5ca47a;    /* Verde suave */
+  /* Paleta de Destaque REDELOG */
+  --color-accent: #00a884;         /* Verde Redelog Oficial (nó/folha da logo) */
+  --color-accent-hover: #008769;   /* Verde Escuro Hover */
+  --color-accent-surface: #e8f8f4; /* Verde Suave para superfícies e badges */
+  --color-gold: #007dc7;           /* Adaptado para Azul Redelog */
+  --color-gold-light: #edf6fd;     /* Adaptado para Azul Suave */
+  --color-green: #00a884;          /* Verde institucional Redelog */
+  --color-green-light: #44c5a0;    /* Verde suave Redelog */
 
   /* Cores Neutras */
   --color-bg-body: #ffffff;
@@ -71,7 +72,7 @@
   --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
-  --shadow-hover: 0 12px 28px rgba(33, 85, 155, 0.18);
+  --shadow-hover: 0 12px 28px rgba(0, 125, 199, 0.18);
 
   /* Transições */
   --transition-fast: 0.15s ease;
