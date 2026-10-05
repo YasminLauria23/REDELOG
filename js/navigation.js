@@ -95,10 +95,23 @@
       }
     });
 
-    // Fechar gaveta ao redimensionar para desktop
-    window.addEventListener('resize', function () {
-      if (window.innerWidth > 991 && mobileNavDrawer && mobileNavDrawer.classList.contains('is-open')) {
-        closeMobileNav();
+    // 4. Rolar suavemente para o rodapé ao clicar no botão "Contatos"
+    const contactLinks = document.querySelectorAll('a.nav-link, a.mobile-nav-link');
+    contactLinks.forEach(function (link) {
+      const text = (link.textContent || '').trim().toUpperCase();
+      const href = (link.getAttribute('href') || '').toLowerCase();
+      if (text.startsWith('CONTATO') || href.includes('#contatos') || href.includes('contatos')) {
+        link.addEventListener('click', function (e) {
+          const footer = document.querySelector('footer.site-footer') || document.getElementById('contatos');
+          if (footer) {
+            e.preventDefault();
+            closeMobileNav();
+            footer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (window.history && window.history.pushState) {
+              window.history.pushState(null, null, '#contatos');
+            }
+          }
+        });
       }
     });
   }
