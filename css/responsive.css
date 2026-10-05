@@ -8,31 +8,17 @@
    ============================================================ */
 @media screen and (max-width: 1200px) {
   .nav-link {
-    padding: 0.4rem 0.6rem;
-    font-size: 0.8125rem;
-    gap: 4px;
-  }
-
-  .nav-pill-wrapper {
-    padding: 3px 6px;
-  }
-
-  .brand-logo img {
-    height: 42px;
+    padding: 0.5rem 0.65rem;
+    font-size: 0.825rem;
   }
 
   .partner-logo img {
     height: 36px;
   }
-}
 
-@media screen and (max-width: 1080px) and (min-width: 992px) {
-  .nav-link {
-    padding: 0.35rem 0.45rem;
-    font-size: 0.75rem;
-    gap: 3px;
+  .brand-logo img {
+    height: 40px;
   }
-}
 
   .networks-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -76,7 +62,6 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
-    height: auto;
   }
 
   .mosaic-item.item-large,
