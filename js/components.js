@@ -270,12 +270,49 @@
     startAutoplay();
   }
 
+  function initStructureToggles() {
+    const structureTriggers = document.querySelectorAll('.structure-trigger');
+    structureTriggers.forEach(function (trigger) {
+      trigger.addEventListener('click', function () {
+        const item = trigger.closest('.structure-item');
+        if (!item) return;
+        const isOpen = item.classList.contains('is-open');
+        item.classList.toggle('is-open', !isOpen);
+        trigger.setAttribute('aria-expanded', !isOpen);
+      });
+    });
+
+    const expandAllBtn = document.getElementById('expandAllStructure');
+    const collapseAllBtn = document.getElementById('collapseAllStructure');
+
+    if (expandAllBtn) {
+      expandAllBtn.addEventListener('click', function () {
+        document.querySelectorAll('.structure-item').forEach(function (item) {
+          item.classList.add('is-open');
+          const trigger = item.querySelector('.structure-trigger');
+          if (trigger) trigger.setAttribute('aria-expanded', 'true');
+        });
+      });
+    }
+
+    if (collapseAllBtn) {
+      collapseAllBtn.addEventListener('click', function () {
+        document.querySelectorAll('.structure-item').forEach(function (item) {
+          item.classList.remove('is-open');
+          const trigger = item.querySelector('.structure-trigger');
+          if (trigger) trigger.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  }
+
   function initComponents() {
     initAccordions();
     initTabs();
     initFilterSearch();
     initAccessibility();
     initHeroCarousel();
+    initStructureToggles();
   }
 
   if (document.readyState === 'loading') {

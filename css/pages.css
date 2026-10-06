@@ -584,3 +584,591 @@
 .editorial-page-nav a:hover {
   color: var(--color-accent, #00a884);
 }
+
+/* ==========================================================================
+   8. ESTILOS ESPECÍFICOS - PÁGINA SOBRE A SUBLOG (BIBLIOTECA)
+   ========================================================================== */
+
+/* Badge de Topo Institucional */
+.sublog-top-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-primary-surface, #edf4fc);
+  color: var(--color-primary, #21559b);
+  border: 1px solid rgba(33, 85, 155, 0.2);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.sublog-intro-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
+  border: 1px solid #e2e8f0;
+  border-left: 5px solid var(--color-primary, #21559b);
+  border-radius: 8px;
+  padding: 24px 28px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(33, 85, 155, 0.05);
+}
+
+.sublog-intro-card p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #1e293b;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Grid de Atribuições Estratégicas */
+.sublog-atribuicoes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.sublog-atribuicao-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-top: 4px solid var(--color-primary, #21559b);
+  border-radius: 8px;
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-top-color 0.2s ease;
+}
+
+.sublog-atribuicao-card:nth-child(2) {
+  border-top-color: var(--color-primary-light, #569efe);
+}
+
+.sublog-atribuicao-card:nth-child(3) {
+  border-top-color: var(--color-green, #009900);
+}
+
+.sublog-atribuicao-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(33, 85, 155, 0.08);
+}
+
+.sublog-atribuicao-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: var(--color-primary-surface, #edf4fc);
+  color: var(--color-primary, #21559b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  margin-bottom: 14px;
+}
+
+.sublog-atribuicao-card:nth-child(2) .sublog-atribuicao-icon {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+.sublog-atribuicao-card:nth-child(3) .sublog-atribuicao-icon {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.sublog-atribuicao-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-primary-dark, #153a6d);
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.sublog-atribuicao-text {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Nota de Decreto / Legislação */
+.sublog-decreto-note {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin: 1.5rem 0 2.5rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.875rem;
+  color: #475569;
+  line-height: 1.55;
+}
+
+.sublog-decreto-note i {
+  color: var(--color-primary, #21559b);
+  font-size: 1.15rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.sublog-decreto-note a {
+  color: var(--color-primary, #21559b);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.sublog-decreto-note a:hover {
+  color: var(--color-primary-dark, #153a6d);
+}
+
+/* Controles de Estrutura (Expandir/Recolher) */
+.structure-header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.structure-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: var(--color-primary, #21559b);
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.structure-action-btn:hover {
+  background-color: var(--color-primary-surface, #edf4fc);
+  border-color: var(--color-primary, #21559b);
+}
+
+/* Grupos da Estrutura */
+.structure-group {
+  margin-bottom: 2.25rem;
+}
+
+.structure-group-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary-dark, #153a6d);
+  background-color: var(--color-primary-surface, #edf4fc);
+  padding: 10px 16px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  border-left: 4px solid var(--color-primary, #21559b);
+}
+
+.structure-group-title i {
+  color: var(--color-primary, #21559b);
+}
+
+/* Itens da Estrutura (Accordions customizados) */
+.structure-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.structure-item:hover {
+  border-color: #cbd5e1;
+}
+
+.structure-item.is-open {
+  border-color: var(--color-primary, #21559b);
+  box-shadow: 0 2px 8px rgba(33, 85, 155, 0.06);
+}
+
+.structure-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.structure-trigger:hover {
+  background-color: #f8fafc;
+}
+
+.structure-item.is-open .structure-trigger {
+  background-color: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.structure-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.structure-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: var(--color-primary, #21559b);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.structure-badge.badge-sub {
+  background-color: #0284c7;
+}
+
+.structure-badge.badge-coord {
+  background-color: #475569;
+}
+
+.structure-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.4;
+}
+
+.structure-chevron {
+  font-size: 0.85rem;
+  color: var(--color-primary, #21559b);
+  transition: transform 0.25s ease;
+  margin-left: 12px;
+  flex-shrink: 0;
+}
+
+.structure-item.is-open .structure-chevron {
+  transform: rotate(180deg);
+}
+
+.structure-content {
+  display: none;
+  padding: 18px 22px;
+  background-color: #ffffff;
+}
+
+.structure-item.is-open .structure-content {
+  display: block;
+}
+
+.structure-duties-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.structure-duties-list li {
+  position: relative;
+  padding-left: 24px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #334155;
+  text-align: justify;
+}
+
+.structure-duties-list li::before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 0.85rem;
+  color: var(--color-primary, #21559b);
+}
+
+/* Timeline Histórica */
+.sublog-timeline {
+  position: relative;
+  margin: 2.5rem 0 3rem 0;
+  padding-left: 36px;
+}
+
+.sublog-timeline::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 6px;
+  bottom: 6px;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--color-primary, #21559b) 0%, var(--color-primary-light, #569efe) 100%);
+  border-radius: 2px;
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-step:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -36px;
+  top: 2px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid var(--color-primary, #21559b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 4px #edf4fc;
+}
+
+.timeline-dot i {
+  font-size: 0.65rem;
+  color: var(--color-primary, #21559b);
+}
+
+.timeline-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.timeline-card:hover {
+  transform: translateX(4px);
+  border-color: #cbd5e1;
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.timeline-year {
+  background-color: var(--color-primary, #21559b);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.timeline-milestone {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-primary-dark, #153a6d);
+}
+
+.timeline-desc {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #475569;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Tabela Histórica da Estrutura */
+.history-table-wrapper {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin: 1.5rem 0 3rem 0;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.history-table thead th {
+  background-color: var(--color-primary-dark, #153a6d);
+  color: #ffffff;
+  padding: 14px 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.8125rem;
+}
+
+.history-table thead th:first-child {
+  width: 140px;
+}
+
+.history-table tbody td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+  color: #334155;
+  line-height: 1.55;
+}
+
+.history-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.history-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.history-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+.history-table .history-year-tag {
+  display: inline-block;
+  background-color: var(--color-primary-surface, #edf4fc);
+  color: var(--color-primary, #21559b);
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+}
+
+.history-table .history-sector-title {
+  font-weight: 700;
+  color: var(--color-primary-dark, #153a6d);
+  margin-bottom: 3px;
+}
+
+.history-table .history-sec-sub {
+  color: #64748b;
+  font-size: 0.825rem;
+}
+
+/* Card de Contatos da SUBLOG */
+.sublog-contact-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-top: 4px solid var(--color-primary, #21559b);
+  border-radius: 8px;
+  padding: 26px 28px;
+  margin: 1.5rem 0 2rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sublog-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.sublog-contact-tile {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.sublog-contact-tile-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background-color: var(--color-primary-surface, #edf4fc);
+  color: var(--color-primary, #21559b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.sublog-contact-tile-content h4 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 4px 0;
+}
+
+.sublog-contact-tile-content p,
+.sublog-contact-tile-content a {
+  font-size: 0.95rem;
+  color: #1e293b;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 600;
+}
+
+.sublog-contact-tile-content a {
+  color: var(--color-primary, #21559b);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.sublog-contact-tile-content a:hover {
+  color: var(--color-primary-dark, #153a6d);
+}
+
+/* Responsividade SUBLOG */
+@media (max-width: 991px) {
+  .sublog-atribuicoes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sublog-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .structure-trigger {
+    padding: 12px 14px;
+  }
+
+  .structure-title-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .sublog-timeline {
+    padding-left: 28px;
+  }
+
+  .timeline-dot {
+    left: -28px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .sublog-intro-card {
+    padding: 18px 20px;
+  }
+}
