@@ -39,7 +39,7 @@
       <div class="top-bar-right">
         <div class="top-networks">
           <a href="../redelog/compras-centralizadas.html"><i class="fa-solid fa-cart-shopping"></i> Compras Centralizadas</a>
-          <a href="../redelog/logistica-em-dados.html"><i class="fa-solid fa-database"></i> Logística em Dados</a>
+        <a href="../redelog/logistica-em-dados.html"><i class="fa-solid fa-database"></i> Logística em Dados</a>
         </div>
       </div>
     </div>
@@ -48,12 +48,14 @@
   <!-- 2. CABEÇALHO PRINCIPAL E NAVBAR -->
   <header class="site-header">
     <div class="container header-container">
+      <!-- Logotipo Redelog -->
       <div class="brand-group">
         <a href="../../index.html" class="brand-logo" title="REDELOG - Início">
           <img src="../../assets/logos/redelog-logo.png" alt="Logotipo da REDELOG - Rede Logística do Estado do Rio de Janeiro">
         </a>
       </div>
 
+      <!-- Menu Desktop -->
       <nav class="desktop-nav" aria-label="Navegação Principal">
         <div class="nav-pill-wrapper">
           <ul class="nav-list">
@@ -61,6 +63,7 @@
               <a href="../../index.html" class="nav-link">INÍCIO</a>
             </li>
 
+            <!-- Dropdown REDELOG -->
             <li class="nav-item has-dropdown">
               <a href="../redelog/sobre.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                 REDELOG <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
@@ -69,11 +72,10 @@
                 <li><a class="dropdown-item" href="../redelog/sobre.html">Sobre a Redelog</a></li>
                 <li><a class="dropdown-item" href="../redelog/quem-somos.html">Quem Somos</a></li>
                 <li><a class="dropdown-item" href="../redelog/informes.html">Informes Oficiais</a></li>
-                <li><a class="dropdown-item" href="../redelog/compras-centralizadas.html">Compras Centralizadas</a></li>
-                <li><a class="dropdown-item" href="../redelog/logistica-em-dados.html">Logística em Dados</a></li>
               </ul>
             </li>
 
+            <!-- Dropdown BIBLIOTECA -->
             <li class="nav-item has-dropdown">
               <a href="../biblioteca/sublog.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                 BIBLIOTECA <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
@@ -87,6 +89,7 @@
               </ul>
             </li>
 
+            <!-- Dropdown BASE DE CONHECIMENTO -->
             <li class="nav-item has-dropdown">
               <a href="../base-de-conhecimento/index.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                 BASE DE CONHECIMENTO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
@@ -101,20 +104,22 @@
               </ul>
             </li>
 
+            <!-- Dropdown CAPACITAÇÃO -->
             <li class="nav-item has-dropdown">
               <a href="../capacitacao/trilha-de-aprendizagem.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                 CAPACITAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
               </a>
               <ul class="dropdown-menu" aria-label="Submenu Capacitação">
-                <li><a class="dropdown-item" href="../capacitacao/fique-por-dentro.html">Fique por Dentro</a></li>
                 <li><a class="dropdown-item" href="../capacitacao/trilha-de-aprendizagem.html">Trilha de Aprendizagem</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/fique-por-dentro.html">Capacitação continuada</a></li>
                 <li><a class="dropdown-item" href="../capacitacao/cursos-internos.html">Cursos Internos</a></li>
                 <li><a class="dropdown-item" href="../capacitacao/cursos-externos.html">Cursos Externos</a></li>
-                <li><a class="dropdown-item" href="../capacitacao/videos-tutoriais.html">Vídeos Tutoriais</a></li>
+
               </ul>
             </li>
 
-            <li class="nav-item has-dropdown active">
+            <!-- Dropdown LEGISLAÇÃO -->
+            <li class="nav-item has-dropdown">
               <a href="../legislacao/licitacoes.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                 LEGISLAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
               </a>
@@ -122,7 +127,7 @@
                 <li><a class="dropdown-item" href="../legislacao/licitacoes.html">Licitações (Lei 14.133/21)</a></li>
                 <li><a class="dropdown-item" href="../legislacao/contratos.html">Gestão Contratual</a></li>
                 <li><a class="dropdown-item" href="../legislacao/transportes.html">Transportes e Frotas</a></li>
-                <li><a class="dropdown-item active-dropdown" href="../legislacao/bens-moveis.html">Bens Móveis</a></li>
+                <li><a class="dropdown-item" href="../legislacao/bens-moveis.html">Bens Móveis</a></li>
                 <li><a class="dropdown-item" href="../legislacao/assuntos-diversos.html">Assuntos Diversos</a></li>
                 <li><a class="dropdown-item" href="../legislacao/compendio.html">Compêndio Completo</a></li>
               </ul>
@@ -139,12 +144,15 @@
         </div>
       </nav>
 
-      <button class="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-nav-panel">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <!-- Botão Mobile Hamburger -->
+        <button class="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-nav-panel">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
     </div>
+
+    <!-- Linha Decorativa do Governo -->
     <div class="divider-line"></div>
   </header>
 
@@ -213,14 +221,14 @@
         </li>
 
         <li class="mobile-nav-item">
-          <button class="mobile-nav-link mobile-submenu-toggle active" aria-expanded="true">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
             LEGISLAÇÃO <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <div class="mobile-submenu active">
+          <div class="mobile-submenu">
             <a href="../legislacao/licitacoes.html" class="mobile-submenu-item">Licitações (Lei 14.133/21)</a>
             <a href="../legislacao/contratos.html" class="mobile-submenu-item">Gestão Contratual</a>
             <a href="../legislacao/transportes.html" class="mobile-submenu-item">Transportes e Frotas</a>
-            <a href="../legislacao/bens-moveis.html" class="mobile-submenu-item active">Bens Móveis</a>
+            <a href="../legislacao/bens-moveis.html" class="mobile-submenu-item">Bens Móveis</a>
             <a href="../legislacao/assuntos-diversos.html" class="mobile-submenu-item">Assuntos Diversos</a>
             <a href="../legislacao/compendio.html" class="mobile-submenu-item">Compêndio Completo</a>
           </div>
@@ -231,6 +239,8 @@
       </ul>
     </div>
   </div>
+
+  
 
   <!-- CONTEÚDO PRINCIPAL -->
   <main id="conteudo-principal">
@@ -345,15 +355,25 @@
         <div class="footer-col">
           <h4 class="footer-col-title">REDELOG</h4>
           <ul class="footer-links-list">
-            <li class="footer-link-item"><a href="../redelog/sobre.html">Sobre a Rede</a></li>
+            <li class="footer-link-item"><a href="../redelog/sobre.html">Sobre a Redelog</a></li>
             <li class="footer-link-item"><a href="../redelog/quem-somos.html">Quem Somos</a></li>
-            <li class="footer-link-item"><a href="../redelog/informes.html">Informes</a></li>
-            <li class="footer-link-item"><a href="../redelog/compras-centralizadas.html">Compras Centralizadas</a></li>
-            <li class="footer-link-item"><a href="../biblioteca/sublog.html">Biblioteca_</a></li>
+            <li class="footer-link-item"><a href="../redelog/informes.html">Informes Oficiais</a></li>
           </ul>
         </div>
 
-        <!-- Coluna 3: BASE DE CONHECIMENTO -->
+        <!-- Coluna 3: BIBLIOTECA -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">BIBLIOTECA</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../biblioteca/sublog.html">Sobre a SUBLOG</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/cadernos-logisticos.html">Cadernos Logísticos</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/panorama.html">Panorama das Contratações</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/audiencias-consultas.html">Audiências e Consultas</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/relatorio-redes.html">Relatório Redes</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: BASE DE CONHECIMENTO -->
         <div class="footer-col">
           <h4 class="footer-col-title">BASE DE CONHECIMENTO</h4>
           <ul class="footer-links-list">
@@ -365,18 +385,18 @@
           </ul>
         </div>
 
-        <!-- Coluna 4: CAPACITAÇÃO -->
+        <!-- Coluna 5: CAPACITAÇÃO -->
         <div class="footer-col">
           <h4 class="footer-col-title">CAPACITAÇÃO</h4>
           <ul class="footer-links-list">
-            <li class="footer-link-item"><a href="../capacitacao/fique-por-dentro.html">Fique por Dentro</a></li>
             <li class="footer-link-item"><a href="../capacitacao/trilha-de-aprendizagem.html">Trilhas de Aprendizagem</a></li>
+            <li class="footer-link-item"><a href="../capacitacao/fique-por-dentro.html">Capacitação Continuada</a></li>
             <li class="footer-link-item"><a href="../capacitacao/cursos-internos.html">Cursos Internos</a></li>
             <li class="footer-link-item"><a href="../capacitacao/cursos-externos.html">Cursos Externos</a></li>
           </ul>
         </div>
 
-        <!-- Coluna 5: LEGISLAÇÃO -->
+        <!-- Coluna 6: LEGISLAÇÃO -->
         <div class="footer-col">
           <h4 class="footer-col-title">LEGISLAÇÃO</h4>
           <ul class="footer-links-list">
@@ -389,7 +409,7 @@
           </ul>
         </div>
 
-        <!-- Coluna 6: CONTATOS DA REDE -->
+        <!-- Coluna 7: CONTATOS DA REDE -->
         <div class="footer-col footer-col-contact">
           <h4 class="footer-col-title">CONTATOS DA REDE</h4>
           <ul class="footer-contact-list">
