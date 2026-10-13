@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plano de Contratações Anual (PCA) - Instrumento de governança e consolidação das previsões de contratações do Estado do Rio de Janeiro.">
+  <title>Plano de Contratações Anual (PCA) | Base de Conhecimento REDELOG RJ</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos Modulares Sem Frameworks -->
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/pages.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+
+  <link rel="icon" type="image/png" href="../../assets/logos/redelog-icon.png">
+</head>
+<body>
+
+  <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+  <!-- 1. TOPO INSTITUCIONAL DO ECOSSISTEMA -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-systems">
+        <a href="https://www.compras.rj.gov.br/mercatto/aplicacao/asp/seg/logon.asp?Sessao=S&Idioma=" target="_blank"><i class="fa-solid fa-boxes-stacked"></i> SIGA</a>
+        <a href="https://pca.rj.gov.br/login" target="_blank"><i class="fa-solid fa-chart-line"></i> PCA</a>
+      </div>
+
+      <div class="top-bar-right">
+        <div class="top-networks">
+          <a href="https://www.compras.rj.gov.br/" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Compras Rj</a>
+          <a href="../redelog/logistica-em-dados.html"><i class="fa-solid fa-database"></i> Logística em Dados</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. CABEÇALHO PRINCIPAL E NAVBAR -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Logotipo Redelog -->
+      <div class="brand-group">
+        <a href="../../index.html" class="brand-logo" title="REDELOG - Início">
+          <img src="../../assets/logos/redelog-logo.png" alt="Logotipo da REDELOG - Rede Logística do Estado do Rio de Janeiro">
+        </a>
+      </div>
+
+      <!-- Menu Desktop -->
+      <nav class="desktop-nav" aria-label="Navegação Principal">
+        <div class="nav-pill-wrapper">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="../../index.html" class="nav-link">INÍCIO</a>
+            </li>
+
+            <!-- Dropdown REDELOG -->
+            <li class="nav-item has-dropdown">
+              <a href="../redelog/sobre.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                REDELOG <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu REDELOG">
+                <li><a class="dropdown-item" href="../redelog/sobre.html">Sobre a Redelog</a></li>
+                <li><a class="dropdown-item" href="../redelog/quem-somos.html">Quem Somos</a></li>
+                <li><a class="dropdown-item" href="../redelog/informes.html">Informes Oficiais</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown BIBLIOTECA -->
+            <li class="nav-item has-dropdown">
+              <a href="../biblioteca/sublog.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                BIBLIOTECA <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Biblioteca">
+                <li><a class="dropdown-item" href="../biblioteca/sublog.html">Sobre a SUBLOG</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/cadernos-logisticos.html">Cadernos Logísticos</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/panorama.html">Panorama das Contratações</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/audiencias-consultas.html">Audiências e Consultas</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/relatorio-redes.html">Relatório Redes</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown BASE DE CONHECIMENTO -->
+            <li class="nav-item has-dropdown">
+              <a href="../base-de-conhecimento/index.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                BASE DE CONHECIMENTO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Base de Conhecimento">
+                <li><a class="dropdown-item" href="../base-de-conhecimento/index.html">Ciclo das Contratações</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-planejamento.html">Fase de Planejamento</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-preparatoria.html">Fase Preparatória</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-externa.html">Fase Externa</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/gestao-contratual.html">Gestão Contratual</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/gestao-bens-servicos.html">Gestão de Bens e Serviços</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown CAPACITAÇÃO -->
+            <li class="nav-item has-dropdown">
+              <a href="../capacitacao/trilha-de-aprendizagem.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                CAPACITAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Capacitação">
+                <li><a class="dropdown-item" href="../capacitacao/trilha-de-aprendizagem.html">Trilha de Aprendizagem</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/fique-por-dentro.html">Capacitação continuada</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/cursos-internos.html">Cursos Internos</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/cursos-externos.html">Cursos Externos</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown LEGISLAÇÃO -->
+            <li class="nav-item has-dropdown">
+              <a href="../legislacao/licitacoes.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                LEGISLAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Legislação">
+                <li><a class="dropdown-item" href="../legislacao/licitacoes.html">Licitações (Lei 14.133/21)</a></li>
+                <li><a class="dropdown-item" href="../legislacao/contratos.html">Gestão Contratual</a></li>
+                <li><a class="dropdown-item" href="../legislacao/transportes.html">Transportes e Frotas</a></li>
+                <li><a class="dropdown-item" href="../legislacao/bens-moveis.html">Bens Móveis</a></li>
+                <li><a class="dropdown-item" href="../legislacao/assuntos-diversos.html">Assuntos Diversos</a></li>
+                <li><a class="dropdown-item" href="../legislacao/compendio.html">Compêndio Completo</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contatos" class="nav-link">CONTATOS</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../ouvidoria/index.html" class="nav-link">OUVIDORIA</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Botão Mobile Hamburger -->
+      <button class="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Linha Decorativa do Governo -->
+    <div class="divider-line"></div>
+  </header>
+
+  <!-- GAVETA DE NAVEGAÇÃO MOBILE -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-panel" id="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <img src="../../assets/logos/redelog-logo.png" alt="REDELOG" style="height: 34px;">
+        <button class="mobile-close-btn" aria-label="Fechar menu">&times;</button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="../../index.html" class="mobile-nav-link">INÍCIO</a></li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            REDELOG <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../redelog/sobre.html" class="mobile-submenu-item">Sobre a Redelog</a>
+            <a href="../redelog/quem-somos.html" class="mobile-submenu-item">Quem Somos</a>
+            <a href="../redelog/informes.html" class="mobile-submenu-item">Informes Oficiais</a>
+            <a href="../redelog/compras-centralizadas.html" class="mobile-submenu-item">Compras Centralizadas</a>
+            <a href="../redelog/logistica-em-dados.html" class="mobile-submenu-item">Logística em Dados</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            BIBLIOTECA <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../biblioteca/sublog.html" class="mobile-submenu-item">Sobre a SUBLOG</a>
+            <a href="../biblioteca/cadernos-logisticos.html" class="mobile-submenu-item">Cadernos Logísticos</a>
+            <a href="../biblioteca/panorama.html" class="mobile-submenu-item">Panorama das Contratações</a>
+            <a href="../biblioteca/audiencias-consultas.html" class="mobile-submenu-item">Audiências e Consultas</a>
+            <a href="../biblioteca/relatorio-redes.html" class="mobile-submenu-item">Relatório Redes</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            BASE DE CONHECIMENTO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../base-de-conhecimento/index.html" class="mobile-submenu-item">Visão Geral do Ciclo</a>
+            <a href="../base-de-conhecimento/fase-planejamento.html" class="mobile-submenu-item">Fase de Planejamento</a>
+            <a href="../base-de-conhecimento/fase-preparatoria.html" class="mobile-submenu-item">Fase Preparatória</a>
+            <a href="../base-de-conhecimento/fase-externa.html" class="mobile-submenu-item">Fase Externa</a>
+            <a href="../base-de-conhecimento/gestao-contratual.html" class="mobile-submenu-item">Gestão Contratual</a>
+            <a href="../base-de-conhecimento/gestao-bens-servicos.html" class="mobile-submenu-item">Gestão de Bens e Serviços</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            CAPACITAÇÃO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../capacitacao/fique-por-dentro.html" class="mobile-submenu-item">Fique por Dentro</a>
+            <a href="../capacitacao/trilha-de-aprendizagem.html" class="mobile-submenu-item">Trilha de Aprendizagem</a>
+            <a href="../capacitacao/cursos-internos.html" class="mobile-submenu-item">Cursos Internos</a>
+            <a href="../capacitacao/cursos-externos.html" class="mobile-submenu-item">Cursos Externos</a>
+            <a href="../capacitacao/videos-tutoriais.html" class="mobile-submenu-item">Vídeos Tutoriais</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            LEGISLAÇÃO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../legislacao/licitacoes.html" class="mobile-submenu-item">Licitações (Lei 14.133/21)</a>
+            <a href="../legislacao/contratos.html" class="mobile-submenu-item">Gestão Contratual</a>
+            <a href="../legislacao/transportes.html" class="mobile-submenu-item">Transportes e Frotas</a>
+            <a href="../legislacao/bens-moveis.html" class="mobile-submenu-item">Bens Móveis</a>
+            <a href="../legislacao/assuntos-diversos.html" class="mobile-submenu-item">Assuntos Diversos</a>
+            <a href="../legislacao/compendio.html" class="mobile-submenu-item">Compêndio Completo</a>
+          </div>
+        </li>
+
+        <li><a href="#contatos" class="mobile-nav-link">CONTATOS DA REDE</a></li>
+        <li><a href="../ouvidoria/index.html" class="mobile-nav-link">OUVIDORIA INTERNA</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL (PLANO DE CONTRATAÇÕES ANUAL - PCA) -->
+  <main id="conteudo-principal" class="editorial-page-wrapper">
+    <header class="editorial-header">
+      <span class="sublog-top-badge"><i class="fa-solid fa-calendar-check"></i> Governança e Planejamento</span>
+      <h1 class="editorial-title">PLANO DE CONTRATAÇÕES ANUAL</h1>
+      <div class="editorial-title-divider divider-blue"></div>
+      <p style="font-weight: 600; color: #64748b; font-size: 0.95rem; margin-top: 12px; margin-bottom: 0;">
+        Fase de Planejamento &bull; Base de Conhecimento REDELOG RJ
+      </p>
+    </header>
+
+    <!-- Imagem Principal Original do PCA -->
+    <div style="max-width: 1024px; margin: 0 auto 1.5rem; padding: 0 1rem;">
+      <figure class="sublog-figure-card" style="max-width: 100%; margin: 0 auto; box-shadow: 0 4px 14px rgba(0,0,0,0.06); border-radius: 8px; overflow: hidden;">
+        <img src="../../assets/images/pca-banner-principal.png" 
+             alt="Banner Plano de Contratações Anual - Estado do Rio de Janeiro" 
+             title="Clique para ampliar" 
+             loading="lazy" 
+             data-lightbox="true"
+             style="width: 100%; height: auto; display: block;">
+        <figcaption class="sublog-figure-zoom-hint">
+          <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar a imagem
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="editorial-body">
+
+      <!-- Apresentação Geral -->
+      <div class="sublog-intro-card" style="margin-bottom: 2.25rem;">
+        <p style="font-size: 1.05rem; line-height: 1.7; margin: 0; color: #1e293b;">
+          Conheça o <strong>Plano de Contratações Anual do Estado do Rio de Janeiro</strong>. Um instrumento de governança e planejamento que consolida a previsão das contratações do Governo Estadual.
+        </p>
+      </div>
+
+      <!-- Seção Destaques (9 Itens Oficiais) -->
+      <section class="mb-8" aria-labelledby="destaques-pca-title">
+        <h2 id="destaques-pca-title" class="editorial-subtitle-blue">
+          <i class="fa-solid fa-star" style="color: var(--color-primary); margin-right: 8px;"></i> Destaques
+        </h2>
+        <p class="editorial-p" style="margin-bottom: 1.5rem;">
+          Consulte os normativos, sistemas de acesso, relatórios gerenciais e o histórico do Plano de Contratações Anual:
+        </p>
+
+        <div class="editorial-grid-2">
+          <!-- 1. Decreto Nº 48.760/23 -->
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-file-contract" style="color: var(--color-primary);"></i> Decreto Nº 48.760/23</h4>
+            <p>
+              Implementa o Plano de Contratações Anual (PCA) e institui o Sistema PCA RJ no âmbito da Administração Pública Estadual Direta, Autárquica e Fundacional.
+            </p>
+            <p style="margin-top: 10px;">
+              <a href="https://leisestaduais.com.br/rj/decreto-n-48760-2023-rio-de-janeiro-implementa-o-plano-de-contratacoes-anual-pca-e-institui-o-sistema-pca-rj-no-ambito-da-administracao-publica-estadual-direta-autarquica-e-fundacional?q=48760&origin=instituicao#" target="_blank" rel="noopener noreferrer">Acessar Decreto Nº 48.760/23 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </p>
+          </div>
+
+          <!-- 2. Decreto nº 49.129/24 -->
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-file-signature" style="color: var(--color-primary);"></i> Decreto nº 49.129/24</h4>
+            <p>
+              Altera o Decreto nº 48.760/2023, aperfeiçoando os prazos, procedimentos de governança e o calendário operacional do PCA.
+            </p>
+            <p style="margin-top: 10px;">
+              <a href="https://leisestaduais.com.br/rj/decreto-n-49129-2024-rio-de-janeiro-altera-o-decreto-no-48-760-de-23-de-outubro-de-2023-e-revoga-os-dispositivos-que-menciona?q=49129&origin=instituicao#" target="_blank" rel="noopener noreferrer">Acessar Decreto nº 49.129/24 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </p>
+          </div>
+
+          <!-- 3. Resolução SEPLAG N° 324/24 -->
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-file-lines" style="color: var(--color-primary);"></i> Resolução SEPLAG N° 324/24</h4>
+            <p>
+              Estabelece procedimentos complementares e o cronograma do PCA, além de indicar os elementos de despesa de registro obrigatório e as exceções.
+            </p>
+            <p style="margin-top: 10px;">
+              <a href="https://redelog.rj.gov.br/redelog/resolucao-seplag-no-324-de-27-de-agosto-de-2024/" target="_blank" rel="noopener noreferrer">Acessar Resolução SEPLAG N° 324/24 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </p>
+          </div>
+
+          <!-- 4. Conheça e acesse o Sistema PCA RJ (Link Interno Destaque) -->
+          <div class="editorial-info-card" style="border: 2px solid var(--color-primary, #21559b); background: #f0f7ff;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px;">
+              <h4 style="margin: 0; color: var(--color-primary-dark, #163e75);"><i class="fa-solid fa-laptop-code" style="color: var(--color-primary);"></i> Conheça e acesse o Sistema PCA RJ</h4>
+              <span class="badge badge-primary" style="font-size: 0.72rem; padding: 2px 8px; text-transform: uppercase;">Página Interna</span>
+            </div>
+            <p style="color: #334155;">
+              Acesse a página interna dedicada com apresentação completa, calendário oficial, botões de acesso, manuais, vídeos tutoriais e FAQ detalhado.
+            </p>
+            <p style="margin-top: 12px; margin-bottom: 0;">
+              <a href="sistema-pca-rj.html" class="editorial-action-btn" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700;">
+                <i class="fa-solid fa-arrow-right"></i> Conheça e acesse o Sistema PCA RJ
+              </a>
+            </p>
+          </div>
+
+          <!-- 5. Consulta ao PCA RJ publicado no PNCP -->
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-globe" style="color: var(--color-primary);"></i> Consulta ao PCA RJ publicado no PNCP</h4>
+            <p>
+              Acesso à consulta pública oficial das contratações do Estado do Rio de Janeiro consolidadas e publicadas no Portal Nacional de Contratações Públicas.
+            </p>
+            <p style="margin-top: 10px;">
+              <a href="https://pncp.gov.br/app/pca?pagina=1" target="_blank" rel="noopener noreferrer">Consultar PCA no PNCP <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </p>
+          </div>
+
+          <!-- 6. Modelos e relatórios sobre o PCA RJ -->
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-file-invoice" style="color: var(--color-primary);"></i> Modelos e relatórios sobre o PCA RJ</h4>
+            <p>
+              Documentos oficiais, relatórios gerenciais e orientações metodológicas para suporte aos gestores públicos e equipes de planejamento.
+            </p>
+            <p style="margin-top: 10px;">
+              <a href="https://redelog.rj.gov.br/redelog/modelos-e-relatorios-sobre-o-pca-rj/" target="_blank" rel="noopener noreferrer">Acessar Modelos e Relatórios <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </p>
+          </div>
+
+          <!-- 7. Extração da Base de Dados -->
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-database" style="color: var(--color-primary);"></i> Extração da Base de Dados</h4>
+            <p>
+              Base de dados aberta com as informações consolidadas dos Planos de Contratações Anuais para análise, controle social e transparência ativa.
+            </p>
+            <p style="margin-top: 10px;">
+              <a href="https://redelog.rj.gov.br/redelog/extracao-da-base-de-dados-pca-2024-e-2025" target="_blank" rel="noopener noreferrer">Acessar Extração da Base de Dados <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </p>
+          </div>
+
+          <!-- 8. Memória do PCA RJ nos Exercícios Anteriores -->
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-clock-rotate-left" style="color: var(--color-primary);"></i> Memória do PCA RJ nos Exercícios Anteriores</h4>
+            <p>
+              Histórico documental das edições anteriores do plano, registrando a evolução metodológica das previsões de contratações fluminenses.
+            </p>
+            <p style="margin-top: 10px;">
+              <a href="https://redelog.rj.gov.br/redelog/memoria-do-pca-rj-nos-exercicios-anteriores/" target="_blank" rel="noopener noreferrer">Acessar Memória do PCA RJ <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </p>
+          </div>
+
+          <!-- 9. Acervo -->
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-box-archive" style="color: var(--color-primary);"></i> Acervo</h4>
+            <p>
+              Repositório histórico com cadernos, informativos e materiais normativos relacionados ao planejamento logístico estadual.
+            </p>
+            <p style="margin-top: 10px;">
+              <a href="https://redelog.rj.gov.br/redelog/acervo/" target="_blank" rel="noopener noreferrer">Acessar Acervo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MODELOS E DOCUMENTOS DO PLANO DE CONTRATAÇÕES ANUAL -->
+      <section class="editorial-download-section" style="margin-top: 2.75rem; margin-bottom: 2.5rem; background: #ffffff; border: 2px solid #bae6fd; border-radius: 12px; padding: 2.25rem 2rem; box-shadow: 0 4px 18px rgba(2, 132, 199, 0.08);">
+        <div style="text-align: center; margin-bottom: 1.75rem;">
+          <div style="display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background-color: var(--color-primary-surface, #edf4fc); color: var(--color-primary, #21559b); border-radius: 50%; font-size: 1.75rem; margin-bottom: 1rem; border: 1px solid #bfdbfe;">
+            <i class="fa-solid fa-file-excel"></i>
+          </div>
+          <h3 style="color: var(--color-primary-dark, #163e75); font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px;">
+            MODELOS E PLANILHAS PARA DOWNLOAD DO PCA
+          </h3>
+          <p style="color: #475569; font-size: 0.98rem; max-width: 680px; margin: 0 auto; line-height: 1.6;">
+            Baixe os modelos oficiais de planilhas, mapeamentos e guias de capacitação da Subsecretaria de Logística (SUBLOG/SEPLAG-RJ) para estruturação do Plano de Contratações Anual do seu órgão:
+          </p>
+        </div>
+
+        <div class="editorial-grid-2">
+          <!-- Card Modelo de Planilha PCA -->
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <i class="fa-solid fa-file-excel" style="color: #107c41; font-size: 1.35rem;"></i>
+                <strong style="color: #1e293b; font-size: 1.05rem;">Modelo de Planilha do PCA</strong>
+              </div>
+              <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 16px; line-height: 1.5;">
+                Planilha padronizada (.xlsx) para cadastramento e consolidação de demandas setoriais de compras no Estado.
+              </p>
+            </div>
+            <a href="../../assets/docs/Modelo-Planilha-PCA.xlsx" download="Modelo-Planilha-PCA.xlsx" class="btn" style="background-color: #107c41; color: #ffffff; padding: 10px 18px; font-weight: 600; font-size: 0.9rem; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; box-shadow: 0 2px 8px rgba(16, 124, 65, 0.2);">
+              <i class="fa-solid fa-download"></i> BAIXAR MODELO DE PLANILHA
+            </a>
+          </div>
+
+          <!-- Card Agrupamento de Subelementos e Classes -->
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <i class="fa-solid fa-file-excel" style="color: #107c41; font-size: 1.35rem;"></i>
+                <strong style="color: #1e293b; font-size: 1.05rem;">Agrupamento de Classes e Subelementos</strong>
+              </div>
+              <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 16px; line-height: 1.5;">
+                Mapeamento das classes do catálogo SIGA com os subelementos orçamentários estadual para planejamento.
+              </p>
+            </div>
+            <a href="../../assets/docs/Agrupamento-Classes-PCA.xlsx" download="Agrupamento-Classes-PCA.xlsx" class="btn" style="background-color: #107c41; color: #ffffff; padding: 10px 18px; font-weight: 600; font-size: 0.9rem; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; box-shadow: 0 2px 8px rgba(16, 124, 65, 0.2);">
+              <i class="fa-solid fa-download"></i> BAIXAR TABELA DE CLASSES
+            </a>
+          </div>
+
+          <!-- Card Guia e Treinamento PCA -->
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <i class="fa-solid fa-file-pdf" style="color: #e11d48; font-size: 1.35rem;"></i>
+                <strong style="color: #1e293b; font-size: 1.05rem;">Apostila de Treinamento do PCA</strong>
+              </div>
+              <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 16px; line-height: 1.5;">
+                Material de capacitação conceitual e prático para servidores responsáveis pelo preenchimento do plano.
+              </p>
+            </div>
+            <a href="../../assets/docs/Treinamento-PCA.pdf" download="Treinamento-PCA.pdf" class="btn" style="background-color: var(--color-primary, #21559b); color: #ffffff; padding: 10px 18px; font-weight: 600; font-size: 0.9rem; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; box-shadow: 0 2px 8px rgba(33, 85, 155, 0.2);">
+              <i class="fa-solid fa-download"></i> BAIXAR APOSTILA (PDF)
+            </a>
+          </div>
+
+          <!-- Card Modelo de DFD Relacionado -->
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <i class="fa-solid fa-file-word" style="color: #2b579a; font-size: 1.35rem;"></i>
+                <strong style="color: #1e293b; font-size: 1.05rem;">Modelo de DFD (Setor Requisitante)</strong>
+              </div>
+              <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 16px; line-height: 1.5;">
+                Documento de Formalização de Demanda utilizado para inclusão das necessidades prévias no PCA.
+              </p>
+            </div>
+            <a href="../../assets/docs/Modelo-DFD.docx" download="Modelo-DFD.docx" class="btn" style="background-color: #2b579a; color: #ffffff; padding: 10px 18px; font-weight: 600; font-size: 0.9rem; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; box-shadow: 0 2px 8px rgba(43, 87, 154, 0.2);">
+              <i class="fa-solid fa-download"></i> BAIXAR MODELO DE DFD
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navegação Entre Páginas Editorial -->
+      <div class="editorial-page-nav">
+        <a href="catalogo-materiais-servicos.html" class="editorial-nav-prev"><i class="fa-solid fa-arrow-left"></i> Catálogo de Materiais e Serviços</a>
+        <a href="fase-planejamento.html" class="editorial-nav-prev" style="margin: 0 10px;"><i class="fa-solid fa-house"></i> Fase de Planejamento</a>
+        <a href="equipe-planejamento.html" class="editorial-nav-next">Equipe de Planejamento <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+
+    <!-- Modal Lightbox de Ampliação de Imagem -->
+    <div id="imageLightboxModal" class="image-lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Visualização ampliada da imagem">
+      <div class="image-lightbox-dialog">
+        <button type="button" class="image-lightbox-close" aria-label="Fechar ampliação">&times;</button>
+        <img src="" alt="" class="image-lightbox-img">
+        <div class="image-lightbox-caption"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- RODAPÉ INSTITUCIONAL (PADRONIZADO REDELOG) -->
+  <footer class="site-footer" id="contatos">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <!-- Coluna 1: Identidade da Redelog e Redes Sociais -->
+        <div class="footer-col-brand">
+          <h3 class="footer-brand-title">REDELOG - Rede Logística</h3>
+          <p class="footer-desc">
+            Secretaria de Planejamento e Gestão do Estado do Rio de Janeiro
+          </p>
+          <div class="footer-social-links" aria-label="Redes sociais da Redelog">
+            <a href="https://www.youtube.com/@redelog/videos" target="_blank" class="footer-social-icon" title="Canal YouTube da Redelog" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/seplagrj/" target="_blank" class="footer-social-icon" title="Instagram SEPLAG RJ" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://t.me/redelog" target="_blank" class="footer-social-icon" title="Telegram Redelog" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="http://linkedin.com/in/comprascentraisrj" target="_blank" class="footer-social-icon" title="LinkedIn Compras Centralizadas" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: REDELOG -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">REDELOG</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../redelog/sobre.html">Sobre a Redelog</a></li>
+            <li class="footer-link-item"><a href="../redelog/quem-somos.html">Quem Somos</a></li>
+            <li class="footer-link-item"><a href="../redelog/informes.html">Informes Oficiais</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: BIBLIOTECA -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">BIBLIOTECA</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../biblioteca/sublog.html">Sobre a SUBLOG</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/cadernos-logisticos.html">Cadernos Logísticos</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/panorama.html">Panorama das Contratações</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/audiencias-consultas.html">Audiências e Consultas</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/relatorio-redes.html">Relatório Redes</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: BASE DE CONHECIMENTO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">BASE DE CONHECIMENTO</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../base-de-conhecimento/fase-planejamento.html">Fase de Planejamento</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/fase-preparatoria.html">Fase Preparatória</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/fase-externa.html">Fase Externa</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/gestao-contratual.html">Gestão Contratual</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/gestao-bens-servicos.html">Gestão de Bens e Serviços</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 5: CAPACITAÇÃO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">CAPACITAÇÃO</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../capacitacao/trilha-de-aprendizagem.html">Trilhas de Aprendizagem</a></li>
+            <li class="footer-link-item"><a href="../capacitacao/fique-por-dentro.html">Capacitação Continuada</a></li>
+            <li class="footer-link-item"><a href="../capacitacao/cursos-internos.html">Cursos Internos</a></li>
+            <li class="footer-link-item"><a href="../capacitacao/cursos-externos.html">Cursos Externos</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 6: LEGISLAÇÃO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">LEGISLAÇÃO</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../legislacao/licitacoes.html">Licitações</a></li>
+            <li class="footer-link-item"><a href="../legislacao/contratos.html">Gestão Contratual</a></li>
+            <li class="footer-link-item"><a href="../legislacao/transportes.html">Transportes</a></li>
+            <li class="footer-link-item"><a href="../legislacao/bens-moveis.html">Bens Móveis</a></li>
+            <li class="footer-link-item"><a href="../legislacao/assuntos-diversos.html">Assuntos Diversos</a></li>
+            <li class="footer-link-item"><a href="../legislacao/compendio.html">Compêndio</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 7: CONTATOS DA REDE -->
+        <div class="footer-col footer-col-contact">
+          <h4 class="footer-col-title">CONTATOS DA REDE</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Av. Erasmo Braga, nº 118 – 8º andar</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:redelog@planejamento.rj.gov.br">redelog@planejamento.rj.gov.br</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:sublog.seplag@planejamento.rj.gov.br">sublog.seplag@planejamento.rj.gov.br</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Linha de Direitos Autorais -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="current-year">2026</span> Rede de Logística do Estado do Rio de Janeiro (REDELOG) | SEPLAG-RJ. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Vanilla JS -->
+  <script src="../../js/navigation.js"></script>
+  <script src="../../js/components.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>

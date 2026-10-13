@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Documento de Formalização de Demanda (DFD) - Ponto de partida das contratações públicas no Estado do Rio de Janeiro.">
+  <title>Documento de Formalização de Demanda (DFD) | Base de Conhecimento REDELOG RJ</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos Modulares Sem Frameworks -->
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/pages.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+
+  <link rel="icon" type="image/png" href="../../assets/logos/redelog-icon.png">
+</head>
+<body>
+
+  <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+  <!-- 1. TOPO INSTITUCIONAL DO ECOSSISTEMA -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-systems">
+        <a href="https://www.compras.rj.gov.br/mercatto/aplicacao/asp/seg/logon.asp?Sessao=S&Idioma=" target="_blank"><i class="fa-solid fa-boxes-stacked"></i> SIGA</a>
+        <a href="https://pca.rj.gov.br/login" target="_blank"><i class="fa-solid fa-chart-line"></i> PCA</a>
+      </div>
+
+      <div class="top-bar-right">
+        <div class="top-networks">
+          <a href="https://www.compras.rj.gov.br/" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Compras Rj</a>
+          <a href="../redelog/logistica-em-dados.html"><i class="fa-solid fa-database"></i> Logística em Dados</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. CABEÇALHO PRINCIPAL E NAVBAR -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Logotipo Redelog -->
+      <div class="brand-group">
+        <a href="../../index.html" class="brand-logo" title="REDELOG - Início">
+          <img src="../../assets/logos/redelog-logo.png" alt="Logotipo da REDELOG - Rede Logística do Estado do Rio de Janeiro">
+        </a>
+      </div>
+
+      <!-- Menu Desktop -->
+      <nav class="desktop-nav" aria-label="Navegação Principal">
+        <div class="nav-pill-wrapper">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="../../index.html" class="nav-link">INÍCIO</a>
+            </li>
+
+            <!-- Dropdown REDELOG -->
+            <li class="nav-item has-dropdown">
+              <a href="../redelog/sobre.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                REDELOG <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu REDELOG">
+                <li><a class="dropdown-item" href="../redelog/sobre.html">Sobre a Redelog</a></li>
+                <li><a class="dropdown-item" href="../redelog/quem-somos.html">Quem Somos</a></li>
+                <li><a class="dropdown-item" href="../redelog/informes.html">Informes Oficiais</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown BIBLIOTECA -->
+            <li class="nav-item has-dropdown">
+              <a href="../biblioteca/sublog.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                BIBLIOTECA <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Biblioteca">
+                <li><a class="dropdown-item" href="../biblioteca/sublog.html">Sobre a SUBLOG</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/cadernos-logisticos.html">Cadernos Logísticos</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/panorama.html">Panorama das Contratações</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/audiencias-consultas.html">Audiências e Consultas</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/relatorio-redes.html">Relatório Redes</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown BASE DE CONHECIMENTO -->
+            <li class="nav-item has-dropdown">
+              <a href="../base-de-conhecimento/index.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                BASE DE CONHECIMENTO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Base de Conhecimento">
+                <li><a class="dropdown-item" href="../base-de-conhecimento/index.html">Ciclo das Contratações</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-planejamento.html">Fase de Planejamento</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-preparatoria.html">Fase Preparatória</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-externa.html">Fase Externa</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/gestao-contratual.html">Gestão Contratual</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/gestao-bens-servicos.html">Gestão de Bens e Serviços</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown CAPACITAÇÃO -->
+            <li class="nav-item has-dropdown">
+              <a href="../capacitacao/trilha-de-aprendizagem.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                CAPACITAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Capacitação">
+                <li><a class="dropdown-item" href="../capacitacao/trilha-de-aprendizagem.html">Trilha de Aprendizagem</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/fique-por-dentro.html">Capacitação continuada</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/cursos-internos.html">Cursos Internos</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/cursos-externos.html">Cursos Externos</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown LEGISLAÇÃO -->
+            <li class="nav-item has-dropdown">
+              <a href="../legislacao/licitacoes.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                LEGISLAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Legislação">
+                <li><a class="dropdown-item" href="../legislacao/licitacoes.html">Licitações (Lei 14.133/21)</a></li>
+                <li><a class="dropdown-item" href="../legislacao/contratos.html">Gestão Contratual</a></li>
+                <li><a class="dropdown-item" href="../legislacao/transportes.html">Transportes e Frotas</a></li>
+                <li><a class="dropdown-item" href="../legislacao/bens-moveis.html">Bens Móveis</a></li>
+                <li><a class="dropdown-item" href="../legislacao/assuntos-diversos.html">Assuntos Diversos</a></li>
+                <li><a class="dropdown-item" href="../legislacao/compendio.html">Compêndio Completo</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contatos" class="nav-link">CONTATOS</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../ouvidoria/index.html" class="nav-link">OUVIDORIA</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Botão Mobile Hamburger -->
+      <button class="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Linha Decorativa do Governo -->
+    <div class="divider-line"></div>
+  </header>
+
+  <!-- GAVETA DE NAVEGAÇÃO MOBILE -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-panel" id="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <img src="../../assets/logos/redelog-logo.png" alt="REDELOG" style="height: 34px;">
+        <button class="mobile-close-btn" aria-label="Fechar menu">&times;</button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="../../index.html" class="mobile-nav-link">INÍCIO</a></li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            REDELOG <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../redelog/sobre.html" class="mobile-submenu-item">Sobre a Redelog</a>
+            <a href="../redelog/quem-somos.html" class="mobile-submenu-item">Quem Somos</a>
+            <a href="../redelog/informes.html" class="mobile-submenu-item">Informes Oficiais</a>
+            <a href="../redelog/compras-centralizadas.html" class="mobile-submenu-item">Compras Centralizadas</a>
+            <a href="../redelog/logistica-em-dados.html" class="mobile-submenu-item">Logística em Dados</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            BIBLIOTECA <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../biblioteca/sublog.html" class="mobile-submenu-item">Sobre a SUBLOG</a>
+            <a href="../biblioteca/cadernos-logisticos.html" class="mobile-submenu-item">Cadernos Logísticos</a>
+            <a href="../biblioteca/panorama.html" class="mobile-submenu-item">Panorama das Contratações</a>
+            <a href="../biblioteca/audiencias-consultas.html" class="mobile-submenu-item">Audiências e Consultas</a>
+            <a href="../biblioteca/relatorio-redes.html" class="mobile-submenu-item">Relatório Redes</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            BASE DE CONHECIMENTO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../base-de-conhecimento/index.html" class="mobile-submenu-item">Visão Geral do Ciclo</a>
+            <a href="../base-de-conhecimento/fase-planejamento.html" class="mobile-submenu-item">Fase de Planejamento</a>
+            <a href="../base-de-conhecimento/fase-preparatoria.html" class="mobile-submenu-item">Fase Preparatória</a>
+            <a href="../base-de-conhecimento/fase-externa.html" class="mobile-submenu-item">Fase Externa</a>
+            <a href="../base-de-conhecimento/gestao-contratual.html" class="mobile-submenu-item">Gestão Contratual</a>
+            <a href="../base-de-conhecimento/gestao-bens-servicos.html" class="mobile-submenu-item">Gestão de Bens e Serviços</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            CAPACITAÇÃO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../capacitacao/fique-por-dentro.html" class="mobile-submenu-item">Fique por Dentro</a>
+            <a href="../capacitacao/trilha-de-aprendizagem.html" class="mobile-submenu-item">Trilha de Aprendizagem</a>
+            <a href="../capacitacao/cursos-internos.html" class="mobile-submenu-item">Cursos Internos</a>
+            <a href="../capacitacao/cursos-externos.html" class="mobile-submenu-item">Cursos Externos</a>
+            <a href="../capacitacao/videos-tutoriais.html" class="mobile-submenu-item">Vídeos Tutoriais</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            LEGISLAÇÃO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../legislacao/licitacoes.html" class="mobile-submenu-item">Licitações (Lei 14.133/21)</a>
+            <a href="../legislacao/contratos.html" class="mobile-submenu-item">Gestão Contratual</a>
+            <a href="../legislacao/transportes.html" class="mobile-submenu-item">Transportes e Frotas</a>
+            <a href="../legislacao/bens-moveis.html" class="mobile-submenu-item">Bens Móveis</a>
+            <a href="../legislacao/assuntos-diversos.html" class="mobile-submenu-item">Assuntos Diversos</a>
+            <a href="../legislacao/compendio.html" class="mobile-submenu-item">Compêndio Completo</a>
+          </div>
+        </li>
+
+        <li><a href="#contatos" class="mobile-nav-link">CONTATOS DA REDE</a></li>
+        <li><a href="../ouvidoria/index.html" class="mobile-nav-link">OUVIDORIA INTERNA</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL (DOCUMENTO DE FORMALIZAÇÃO DE DEMANDA - DFD) -->
+  <main id="conteudo-principal" class="editorial-page-wrapper">
+    <!-- Cabeçalho Institucional -->
+    <header class="editorial-header">
+      <span class="sublog-top-badge"><i class="fa-solid fa-clipboard-check"></i> Instrumento Inicial de Contratação</span>
+      <h1 class="editorial-title">DOCUMENTO DE FORMALIZAÇÃO DE DEMANDA (DFD)</h1>
+      <div class="editorial-title-divider divider-blue"></div>
+      <p style="font-weight: 600; color: #64748b; font-size: 0.95rem; margin-top: 12px; margin-bottom: 0;">
+        Fase de Planejamento &bull; Base de Conhecimento REDELOG RJ
+      </p>
+    </header>
+
+    <div class="editorial-body">
+
+      <!-- Apresentação Geral -->
+      <div class="sublog-intro-card">
+        <p>
+          O <strong>Documento de Formalização de Demanda – DFD</strong> é o ponto de partida de qualquer contratação pública. Deve ser elaborado pelo setor demandante e precisa demonstrar claramente:
+        </p>
+        <ul style="margin-top: 12px; margin-bottom: 12px; padding-left: 20px; line-height: 1.7; color: #1e293b;">
+          <li>A necessidade identificada;</li>
+          <li>Como essa necessidade se traduz numa demanda de contratação;</li>
+          <li>Quais os resultados esperados; e</li>
+          <li>Como o setor requisitante pode contribuir para a fase interna do processo de contratação e para a fiscalização do contrato (quando aplicável).</li>
+        </ul>
+        <p style="margin-bottom: 0;">
+          As informações do DFD servirão como subsídio direto para a elaboração do <a href="pca.html" style="color: var(--color-primary); font-weight: 600; text-decoration: underline;">Plano de Contratações Anual – PCA</a>.
+        </p>
+      </div>
+
+      <p class="editorial-p">
+        Os DFDs são elaborados previamente à <a href="fase-planejamento.html">Fase de Planejamento</a>, ou seja, são anteriores até mesmo à abertura formal dos processos de contratação. Uma vez definida e aprovada a demanda, a mesma será incluída no PCA e, após isso, haverá a abertura de um ou mais processos de contratação para atendimento da necessidade apontada no DFD.
+      </p>
+
+      <!-- Imagem Ilustrativa: Planejamento e Elaboração do DFD -->
+      <figure class="sublog-figure-card" style="max-width: 680px;">
+        <img src="../../assets/images/k-s2-rob-12345_1-600x379.jpg" 
+             alt="Reunião de alinhamento estratégico da demanda e planejamento das contratações públicas" 
+             title="Clique para ampliar" 
+             loading="lazy" 
+             data-lightbox="true">
+        <figcaption class="sublog-figure-zoom-hint">
+          <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar a imagem
+        </figcaption>
+      </figure>
+
+      <h2 class="editorial-subtitle-blue">
+        <i class="fa-solid fa-pen-to-square" style="color: var(--color-primary); margin-right: 8px;"></i> PREENCHENDO O DFD
+      </h2>
+      <p class="editorial-p">
+        Em seguida são apresentadas as recomendações gerais e detalhadas para o preenchimento de cada tópico do documento:
+      </p>
+
+      <!-- Tópico 1 -->
+      <div class="editorial-info-card">
+        <h3>1. Identificação do Demandante</h3>
+        <p>
+          Neste tópico, o ponto focal do setor demandante informará seus dados institucionais e meios de contato para facilitar o diálogo com as demais áreas envolvidas no processo de contratação:
+        </p>
+        <ul style="margin: 10px 0; padding-left: 20px; color: #334155; line-height: 1.6;">
+          <li><strong>Órgão/Entidade:</strong> UG – Nome – SIGLA</li>
+          <li><strong>Setor Demandante:</strong> Nome – SIGLA</li>
+          <li><strong>Responsável pela Demanda:</strong> Nome completo</li>
+          <li><strong>Matrícula / ID Funcional:</strong> Número de identificação</li>
+          <li><strong>Telefone:</strong> (___) _____-_______</li>
+          <li><strong>E-mail institucional:</strong> endereco@orgao.rj.gov.br</li>
+        </ul>
+      </div>
+
+      <!-- Tópico 2 -->
+      <div class="editorial-info-card">
+        <h3>2. Identificação e Justificativa da Necessidade/Demanda</h3>
+        <p>
+          Esses são os tópicos mais importantes do DFD. Primeiro, deve-se descrever a necessidade ou demanda com o maior nível de detalhamento possível.
+        </p>
+        <p>
+          Uma <strong>necessidade</strong> pode ser compreendida a partir de um problema que a área demandante enfrente quando da execução de suas atividades. Já a <strong>demanda</strong> é uma possível solução para esse problema.
+        </p>
+
+        <div style="background-color: #f8fafc; border-left: 4px solid var(--color-primary); padding: 14px 18px; border-radius: 6px; margin: 15px 0;">
+          <h4 style="color: var(--color-primary-dark); margin-bottom: 8px; font-size: 0.95rem;">Exemplo Prático de Compreensão:</h4>
+          <ul style="padding-left: 18px; margin: 0; line-height: 1.6; font-size: 0.92rem; color: #334155;">
+            <li><strong>Problema enfrentado / Necessidade:</strong> Considerando a mudança de endereço programada para meados do próximo ano, nosso órgão não contará mais com os sistemas de vigilância do atual condomínio, o que colocará em risco o patrimônio e os servidores que trabalham presencialmente.</li>
+            <li><strong>Demanda:</strong> Contratação de um serviço que ofereça a segurança necessária para o órgão.</li>
+            <li><strong>Justificativa:</strong> A falta de segurança levará à interrupção dos serviços, causando prejuízos para a sociedade.</li>
+            <li><strong>Possíveis Soluções:</strong> Contratação de empresa de vigilância, instalação de sistema de vigilância eletrônica, adesão ao PROEIS, ou uma combinação desses elementos.</li>
+          </ul>
+        </div>
+
+        <p>
+          A proposta é que os requisitantes consigam especificar a necessidade ou demanda com clareza, mas será na fase de elaboração do <a href="fase-preparatoria.html">Estudo Técnico Preliminar (ETP)</a> que o escopo da contratação tomará forma para se chegar à melhor solução disponível no mercado. Isso porque é a <a href="equipe-planejamento.html">Equipe de Planejamento da Contratação</a> que possuirá os conhecimentos de compras públicas necessários para desenhar esse escopo (e que também contará com a participação dos servidores indicados pela área demandante).
+        </p>
+      </div>
+
+      <!-- Exemplos de Preenchimento -->
+      <h3 style="font-size: 1.15rem; color: var(--color-primary-dark); font-weight: 700; margin-top: 1.75rem; margin-bottom: 0.75rem;">
+        Exemplos de Preenchimento nos Órgãos Estaduais
+      </h3>
+
+      <div class="editorial-grid-2">
+        <div class="editorial-info-card">
+          <h4 style="color: var(--color-primary); font-size: 1rem;"><i class="fa-solid fa-shield-halved"></i> Segurança Física</h4>
+          <p><strong>Identificação:</strong> Considerando a mudança de endereço programada para meados do próximo ano, nosso órgão não contará mais com os sistemas de vigilância do atual condomínio, o que colocará em risco o patrimônio e os servidores que trabalham presencialmente. Por esse motivo, entendemos como necessária uma contratação de serviço que possa atender aos requisitos de segurança das novas instalações (prédio com duas entradas independentes na Rua X, bairro Y).</p>
+          <p><strong>Justificativa:</strong> A falta de segurança no imóvel colocará em risco o patrimônio público e a integridade física dos servidores. Consequentemente, os serviços serão interrompidos, gerando prejuízos imediatos para o atendimento das demandas da sociedade.</p>
+        </div>
+
+        <div class="editorial-info-card">
+          <h4 style="color: var(--color-primary); font-size: 1rem;"><i class="fa-solid fa-print"></i> Papel A4 e Materiais de Escritório</h4>
+          <p><strong>Identificação:</strong> Tendo em vista as atividades rotineiras de emissão de documentos físicos para o público atendido, precisamos manter estoques constantes de papel A4 e demais materiais de consumo de escritório.</p>
+          <p><strong>Justificativa:</strong> O atendimento prestado diretamente à sociedade e aos cidadãos depende da disponibilidade de papel para impressão de certidões, processos e documentos oficiais.</p>
+        </div>
+
+        <div class="editorial-info-card">
+          <h4 style="color: var(--color-primary); font-size: 1rem;"><i class="fa-solid fa-broom"></i> Serviços de Limpeza e Conservação</h4>
+          <p><strong>Identificação:</strong> Os ambientes de trabalho recebem serviços de limpeza sob o Contrato vigente nº xx/aaaa, com término previsto para o mês de xxxxx. O modelo atual tem atendido às expectativas e não se vislumbra alteração no escopo da demanda.</p>
+          <p><strong>Justificativa:</strong> A manutenção da salubridade e higiene local é indispensável para a preservação do ambiente de trabalho e cumprimento das normas regulamentadoras de saúde ocupacional.</p>
+        </div>
+
+        <div class="editorial-info-card">
+          <h4 style="color: var(--color-primary); font-size: 1rem;"><i class="fa-solid fa-laptop"></i> Aquisição ou Locação de Computadores</h4>
+          <p><strong>Identificação:</strong> Execução do projeto de ampliação das atividades institucionais. Na etapa Y, haverá ingresso de dez novos servidores que necessitarão de estações de trabalho completas para desempenho de suas funções.</p>
+          <p><strong>Justificativa:</strong> A ausência dos equipamentos inviabilizará o cumprimento do cronograma de trabalho e o atingimento das metas do projeto governamental.</p>
+        </div>
+      </div>
+
+      <!-- Tópicos 3 a 6 -->
+      <div class="editorial-info-card">
+        <h3>3. Previsão de Data de Início da Prestação dos Serviços / Entrega dos Materiais</h3>
+        <p>Informar expressamente o mês e o ano de início efetivo previsto para o fornecimento dos bens ou o início da execução dos serviços contratados.</p>
+      </div>
+
+      <div class="editorial-info-card">
+        <h3>4. Possibilidade de Prorrogação de Contrato em Vigor</h3>
+        <p>Indicar qual instrumento contratual vigente poderia ser renovado para suprir a demanda identificada. Caso não haja tal hipótese, consignar que não há contrato em vigor apto a prorrogação.</p>
+      </div>
+
+      <div class="editorial-info-card">
+        <h3>5. Indicação de Servidores para Integrar a Equipe de Planejamento da Contratação</h3>
+        <p>
+          A participação de servidores da área demandante na <a href="equipe-planejamento.html">Equipe de Planejamento da Contratação</a> é essencial para que a formatação da solução atenda com fidelidade à necessidade real, evitando vácuos de responsabilidade.
+        </p>
+        <p>
+          O responsável pela demanda não necessita deter conhecimento profundo de compras públicas ou da legislação licitatória; por outro lado, o setor de licitações não tem como dominar as particularidades operacionais de todos os setores. Com a equipe multidisciplinar reunida, a responsabilidade é compartilhada e minimizam-se riscos de contratações ineficazes.
+        </p>
+      </div>
+
+      <div class="editorial-info-card">
+        <h3>6. Indicação de Servidores para Integrar a Comissão de Fiscalização do Contrato</h3>
+        <p>
+          O ideal é que a área demandante aponte, desde a elaboração do DFD, quem poderá futuramente fiscalizar a execução. Como os usuários diretos possuem a visão prática mais apurada para o acompanhamento diário, é salutar planejar essa indicação precocemente.
+        </p>
+        <p>
+          Os fiscais indicados não precisam ser os mesmos servidores da Equipe de Planejamento. Enquanto a equipe de planejamento se beneficia da visão tática/estratégica, a fiscalização requer atenção operacional constante aos níveis de serviço entregues.
+        </p>
+      </div>
+
+      <!-- MODELO DE DOCUMENTO DE FORMALIZAÇÃO DE DEMANDA -->
+      <section class="editorial-download-section" style="margin-top: 2.75rem; margin-bottom: 2.5rem; background: #ffffff; border: 2px solid #bae6fd; border-radius: 12px; padding: 2.25rem 2rem; text-align: center; box-shadow: 0 4px 18px rgba(2, 132, 199, 0.08);">
+        <div style="display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background-color: var(--color-primary-surface, #edf4fc); color: var(--color-primary, #21559b); border-radius: 50%; font-size: 1.75rem; margin-bottom: 1.25rem; border: 1px solid #bfdbfe;">
+          <i class="fa-solid fa-file-word"></i>
+        </div>
+        <h3 style="color: var(--color-primary-dark, #163e75); font-size: 1.35rem; font-weight: 700; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px;">
+          MODELO DE DOCUMENTO DE FORMALIZAÇÃO DE DEMANDA
+        </h3>
+        <p style="color: #475569; font-size: 0.98rem; max-width: 680px; margin: 0 auto 1.5rem; line-height: 1.6;">
+          Utilize o modelo oficial editável padronizado pela Subsecretaria de Logística (SUBLOG/SEPLAG-RJ) como referência para formalizar com clareza as necessidades de contratação do seu setor demandante.
+        </p>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 14px; flex-wrap: wrap;">
+          <a href="../../assets/docs/Modelo-DFD.docx" download="Modelo-DFD.docx" class="btn" style="background-color: var(--color-primary, #21559b); color: #ffffff; padding: 13px 30px; font-weight: 700; font-size: 0.95rem; border-radius: 6px; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 12px rgba(33, 85, 155, 0.25); text-decoration: none; transition: all 0.2s ease;">
+            <i class="fa-solid fa-download"></i> BAIXAR MODELO DE DFD
+          </a>
+        </div>
+      </section>
+
+      <!-- Links e Navegação de Retorno -->
+      <div class="editorial-page-nav">
+        <a href="fase-planejamento.html" class="editorial-nav-prev"><i class="fa-solid fa-arrow-left"></i> Voltar à Fase de Planejamento</a>
+        <a href="catalogo-materiais-servicos.html" class="editorial-nav-next">Catálogo de Materiais e Serviços <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+
+    <!-- Modal Lightbox de Ampliação de Imagem -->
+    <div id="imageLightboxModal" class="image-lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Visualização ampliada da imagem">
+      <div class="image-lightbox-dialog">
+        <button type="button" class="image-lightbox-close" aria-label="Fechar ampliação">&times;</button>
+        <img src="" alt="" class="image-lightbox-img">
+        <div class="image-lightbox-caption"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- RODAPÉ INSTITUCIONAL (PADRONIZADO REDELOG) -->
+  <footer class="site-footer" id="contatos">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <!-- Coluna 1: Identidade da Redelog e Redes Sociais -->
+        <div class="footer-col-brand">
+          <h3 class="footer-brand-title">REDELOG - Rede Logística</h3>
+          <p class="footer-desc">
+            Secretaria de Planejamento e Gestão do Estado do Rio de Janeiro
+          </p>
+          <div class="footer-social-links" aria-label="Redes sociais da Redelog">
+            <a href="https://www.youtube.com/@redelog/videos" target="_blank" class="footer-social-icon" title="Canal YouTube da Redelog" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/seplagrj/" target="_blank" class="footer-social-icon" title="Instagram SEPLAG RJ" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://t.me/redelog" target="_blank" class="footer-social-icon" title="Telegram Redelog" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="http://linkedin.com/in/comprascentraisrj" target="_blank" class="footer-social-icon" title="LinkedIn Compras Centralizadas" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: REDELOG -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">REDELOG</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../redelog/sobre.html">Sobre a Redelog</a></li>
+            <li class="footer-link-item"><a href="../redelog/quem-somos.html">Quem Somos</a></li>
+            <li class="footer-link-item"><a href="../redelog/informes.html">Informes Oficiais</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: BIBLIOTECA -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">BIBLIOTECA</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../biblioteca/sublog.html">Sobre a SUBLOG</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/cadernos-logisticos.html">Cadernos Logísticos</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/panorama.html">Panorama das Contratações</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/audiencias-consultas.html">Audiências e Consultas</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/relatorio-redes.html">Relatório Redes</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: BASE DE CONHECIMENTO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">BASE DE CONHECIMENTO</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../base-de-conhecimento/fase-planejamento.html">Fase de Planejamento</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/fase-preparatoria.html">Fase Preparatória</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/fase-externa.html">Fase Externa</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/gestao-contratual.html">Gestão Contratual</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/gestao-bens-servicos.html">Gestão de Bens e Serviços</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 5: CAPACITAÇÃO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">CAPACITAÇÃO</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../capacitacao/trilha-de-aprendizagem.html">Trilhas de Aprendizagem</a></li>
+            <li class="footer-link-item"><a href="../capacitacao/fique-por-dentro.html">Capacitação Continuada</a></li>
+            <li class="footer-link-item"><a href="../capacitacao/cursos-internos.html">Cursos Internos</a></li>
+            <li class="footer-link-item"><a href="../capacitacao/cursos-externos.html">Cursos Externos</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 6: LEGISLAÇÃO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">LEGISLAÇÃO</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../legislacao/licitacoes.html">Licitações</a></li>
+            <li class="footer-link-item"><a href="../legislacao/contratos.html">Gestão Contratual</a></li>
+            <li class="footer-link-item"><a href="../legislacao/transportes.html">Transportes</a></li>
+            <li class="footer-link-item"><a href="../legislacao/bens-moveis.html">Bens Móveis</a></li>
+            <li class="footer-link-item"><a href="../legislacao/assuntos-diversos.html">Assuntos Diversos</a></li>
+            <li class="footer-link-item"><a href="../legislacao/compendio.html">Compêndio</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 7: CONTATOS DA REDE -->
+        <div class="footer-col footer-col-contact">
+          <h4 class="footer-col-title">CONTATOS DA REDE</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Av. Erasmo Braga, nº 118 – 8º andar</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:redelog@planejamento.rj.gov.br">redelog@planejamento.rj.gov.br</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:sublog.seplag@planejamento.rj.gov.br">sublog.seplag@planejamento.rj.gov.br</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Linha de Direitos Autorais -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="current-year">2026</span> Rede de Logística do Estado do Rio de Janeiro (REDELOG) | SEPLAG-RJ. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Vanilla JS -->
+  <script src="../../js/navigation.js"></script>
+  <script src="../../js/components.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>

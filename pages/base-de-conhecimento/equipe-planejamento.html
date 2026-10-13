@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Equipe de Planejamento da Contratação - Atribuições, competências, composição multidisciplinar e governança no Estado do Rio de Janeiro.">
+  <title>Equipe de Planejamento da Contratação | Base de Conhecimento REDELOG RJ</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos Modulares Sem Frameworks -->
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/pages.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+
+  <link rel="icon" type="image/png" href="../../assets/logos/redelog-icon.png">
+</head>
+<body>
+
+  <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+  <!-- 1. TOPO INSTITUCIONAL DO ECOSSISTEMA -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-systems">
+        <a href="https://www.compras.rj.gov.br/mercatto/aplicacao/asp/seg/logon.asp?Sessao=S&Idioma=" target="_blank"><i class="fa-solid fa-boxes-stacked"></i> SIGA</a>
+        <a href="https://pca.rj.gov.br/login" target="_blank"><i class="fa-solid fa-chart-line"></i> PCA</a>
+      </div>
+
+      <div class="top-bar-right">
+        <div class="top-networks">
+          <a href="https://www.compras.rj.gov.br/" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Compras Rj</a>
+          <a href="../redelog/logistica-em-dados.html"><i class="fa-solid fa-database"></i> Logística em Dados</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. CABEÇALHO PRINCIPAL E NAVBAR -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Logotipo Redelog -->
+      <div class="brand-group">
+        <a href="../../index.html" class="brand-logo" title="REDELOG - Início">
+          <img src="../../assets/logos/redelog-logo.png" alt="Logotipo da REDELOG - Rede Logística do Estado do Rio de Janeiro">
+        </a>
+      </div>
+
+      <!-- Menu Desktop -->
+      <nav class="desktop-nav" aria-label="Navegação Principal">
+        <div class="nav-pill-wrapper">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="../../index.html" class="nav-link">INÍCIO</a>
+            </li>
+
+            <!-- Dropdown REDELOG -->
+            <li class="nav-item has-dropdown">
+              <a href="../redelog/sobre.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                REDELOG <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu REDELOG">
+                <li><a class="dropdown-item" href="../redelog/sobre.html">Sobre a Redelog</a></li>
+                <li><a class="dropdown-item" href="../redelog/quem-somos.html">Quem Somos</a></li>
+                <li><a class="dropdown-item" href="../redelog/informes.html">Informes Oficiais</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown BIBLIOTECA -->
+            <li class="nav-item has-dropdown">
+              <a href="../biblioteca/sublog.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                BIBLIOTECA <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Biblioteca">
+                <li><a class="dropdown-item" href="../biblioteca/sublog.html">Sobre a SUBLOG</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/cadernos-logisticos.html">Cadernos Logísticos</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/panorama.html">Panorama das Contratações</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/audiencias-consultas.html">Audiências e Consultas</a></li>
+                <li><a class="dropdown-item" href="../biblioteca/relatorio-redes.html">Relatório Redes</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown BASE DE CONHECIMENTO -->
+            <li class="nav-item has-dropdown">
+              <a href="../base-de-conhecimento/index.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                BASE DE CONHECIMENTO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Base de Conhecimento">
+                <li><a class="dropdown-item" href="../base-de-conhecimento/index.html">Ciclo das Contratações</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-planejamento.html">Fase de Planejamento</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-preparatoria.html">Fase Preparatória</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/fase-externa.html">Fase Externa</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/gestao-contratual.html">Gestão Contratual</a></li>
+                <li><a class="dropdown-item" href="../base-de-conhecimento/gestao-bens-servicos.html">Gestão de Bens e Serviços</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown CAPACITAÇÃO -->
+            <li class="nav-item has-dropdown">
+              <a href="../capacitacao/trilha-de-aprendizagem.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                CAPACITAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Capacitação">
+                <li><a class="dropdown-item" href="../capacitacao/trilha-de-aprendizagem.html">Trilha de Aprendizagem</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/fique-por-dentro.html">Capacitação continuada</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/cursos-internos.html">Cursos Internos</a></li>
+                <li><a class="dropdown-item" href="../capacitacao/cursos-externos.html">Cursos Externos</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown LEGISLAÇÃO -->
+            <li class="nav-item has-dropdown">
+              <a href="../legislacao/licitacoes.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                LEGISLAÇÃO <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+              </a>
+              <ul class="dropdown-menu" aria-label="Submenu Legislação">
+                <li><a class="dropdown-item" href="../legislacao/licitacoes.html">Licitações (Lei 14.133/21)</a></li>
+                <li><a class="dropdown-item" href="../legislacao/contratos.html">Gestão Contratual</a></li>
+                <li><a class="dropdown-item" href="../legislacao/transportes.html">Transportes e Frotas</a></li>
+                <li><a class="dropdown-item" href="../legislacao/bens-moveis.html">Bens Móveis</a></li>
+                <li><a class="dropdown-item" href="../legislacao/assuntos-diversos.html">Assuntos Diversos</a></li>
+                <li><a class="dropdown-item" href="../legislacao/compendio.html">Compêndio Completo</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contatos" class="nav-link">CONTATOS</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../ouvidoria/index.html" class="nav-link">OUVIDORIA</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Botão Mobile Hamburger -->
+      <button class="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Linha Decorativa do Governo -->
+    <div class="divider-line"></div>
+  </header>
+
+  <!-- GAVETA DE NAVEGAÇÃO MOBILE -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-panel" id="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <img src="../../assets/logos/redelog-logo.png" alt="REDELOG" style="height: 34px;">
+        <button class="mobile-close-btn" aria-label="Fechar menu">&times;</button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="../../index.html" class="mobile-nav-link">INÍCIO</a></li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            REDELOG <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../redelog/sobre.html" class="mobile-submenu-item">Sobre a Redelog</a>
+            <a href="../redelog/quem-somos.html" class="mobile-submenu-item">Quem Somos</a>
+            <a href="../redelog/informes.html" class="mobile-submenu-item">Informes Oficiais</a>
+            <a href="../redelog/compras-centralizadas.html" class="mobile-submenu-item">Compras Centralizadas</a>
+            <a href="../redelog/logistica-em-dados.html" class="mobile-submenu-item">Logística em Dados</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            BIBLIOTECA <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../biblioteca/sublog.html" class="mobile-submenu-item">Sobre a SUBLOG</a>
+            <a href="../biblioteca/cadernos-logisticos.html" class="mobile-submenu-item">Cadernos Logísticos</a>
+            <a href="../biblioteca/panorama.html" class="mobile-submenu-item">Panorama das Contratações</a>
+            <a href="../biblioteca/audiencias-consultas.html" class="mobile-submenu-item">Audiências e Consultas</a>
+            <a href="../biblioteca/relatorio-redes.html" class="mobile-submenu-item">Relatório Redes</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            BASE DE CONHECIMENTO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../base-de-conhecimento/index.html" class="mobile-submenu-item">Visão Geral do Ciclo</a>
+            <a href="../base-de-conhecimento/fase-planejamento.html" class="mobile-submenu-item">Fase de Planejamento</a>
+            <a href="../base-de-conhecimento/fase-preparatoria.html" class="mobile-submenu-item">Fase Preparatória</a>
+            <a href="../base-de-conhecimento/fase-externa.html" class="mobile-submenu-item">Fase Externa</a>
+            <a href="../base-de-conhecimento/gestao-contratual.html" class="mobile-submenu-item">Gestão Contratual</a>
+            <a href="../base-de-conhecimento/gestao-bens-servicos.html" class="mobile-submenu-item">Gestão de Bens e Serviços</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            CAPACITAÇÃO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../capacitacao/fique-por-dentro.html" class="mobile-submenu-item">Fique por Dentro</a>
+            <a href="../capacitacao/trilha-de-aprendizagem.html" class="mobile-submenu-item">Trilha de Aprendizagem</a>
+            <a href="../capacitacao/cursos-internos.html" class="mobile-submenu-item">Cursos Internos</a>
+            <a href="../capacitacao/cursos-externos.html" class="mobile-submenu-item">Cursos Externos</a>
+            <a href="../capacitacao/videos-tutoriais.html" class="mobile-submenu-item">Vídeos Tutoriais</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link mobile-submenu-toggle" aria-expanded="false">
+            LEGISLAÇÃO <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../legislacao/licitacoes.html" class="mobile-submenu-item">Licitações (Lei 14.133/21)</a>
+            <a href="../legislacao/contratos.html" class="mobile-submenu-item">Gestão Contratual</a>
+            <a href="../legislacao/transportes.html" class="mobile-submenu-item">Transportes e Frotas</a>
+            <a href="../legislacao/bens-moveis.html" class="mobile-submenu-item">Bens Móveis</a>
+            <a href="../legislacao/assuntos-diversos.html" class="mobile-submenu-item">Assuntos Diversos</a>
+            <a href="../legislacao/compendio.html" class="mobile-submenu-item">Compêndio Completo</a>
+          </div>
+        </li>
+
+        <li><a href="#contatos" class="mobile-nav-link">CONTATOS DA REDE</a></li>
+        <li><a href="../ouvidoria/index.html" class="mobile-nav-link">OUVIDORIA INTERNA</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL (EQUIPE DE PLANEJAMENTO DA CONTRATAÇÃO) -->
+  <main id="conteudo-principal" class="editorial-page-wrapper">
+    <header class="editorial-header">
+      <span class="sublog-top-badge"><i class="fa-solid fa-users-gear"></i> Governança das Contratações</span>
+      <h1 class="editorial-title">EQUIPE DE PLANEJAMENTO DA CONTRATAÇÃO</h1>
+      <div class="editorial-title-divider divider-blue"></div>
+      <p style="font-weight: 600; color: #64748b; font-size: 0.95rem; margin-top: 12px; margin-bottom: 0;">
+        Fase de Planejamento &bull; Base de Conhecimento REDELOG RJ
+      </p>
+    </header>
+
+    <div class="editorial-body">
+
+      <!-- 1. Imagem Conceitual: Atuação Integrada e Multidisciplinar (Topo da Página) -->
+      <figure class="sublog-figure-card" style="max-width: 720px; margin-bottom: 2rem;">
+        <img src="../../assets/images/equipe-planejamento-engrenagens.jpg" 
+             alt="Equipe multidisciplinar trabalhando no alinhamento de engrenagens de planejamento" 
+             title="Clique para ampliar" 
+             loading="lazy" 
+             data-lightbox="true">
+        <figcaption class="sublog-figure-zoom-hint">
+          <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar a imagem
+        </figcaption>
+      </figure>
+
+      <!-- Apresentação Geral -->
+      <div class="sublog-intro-card">
+        <p>
+          A <strong>Equipe de Planejamento da Contratação</strong> está inserida dentro de um contexto que visa trazer Governança para as contratações públicas, instituída e definida pelo <strong>Decreto Estadual nº 48.650, de 23 de agosto de 2023</strong>, que dispõe sobre a Governança Logística e a Governança das Contratações no âmbito da Administração Pública Estadual Direta, Autárquica e Fundacional.
+        </p>
+      </div>
+
+      <!-- 2. Imagem: Definição da Equipe de Planejamento -->
+      <figure class="sublog-figure-card" style="max-width: 820px; margin-top: 1.5rem;">
+        <img src="../../assets/images/equipe-planejamento-definicao.jpg" 
+             alt="Definição da Equipe de Planejamento da Contratação - Decreto Estadual nº 48.650/2023" 
+             title="Clique para ampliar" 
+             loading="lazy" 
+             data-lightbox="true">
+        <figcaption class="sublog-figure-zoom-hint">
+          <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar a imagem
+        </figcaption>
+      </figure>
+
+      <!-- 3. Imagem: Principais Objetivos das Contratações Públicas -->
+      <figure class="sublog-figure-card" style="max-width: 820px; margin-top: 1.5rem; margin-bottom: 2.5rem;">
+        <img src="../../assets/images/equipe-planejamento-objetivos.jpg" 
+             alt="Principais Objetivos das Contratações Públicas - Governança e Eficiência" 
+             title="Clique para ampliar" 
+             loading="lazy" 
+             data-lightbox="true">
+        <figcaption class="sublog-figure-zoom-hint">
+          <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar a imagem
+        </figcaption>
+      </figure>
+
+      <!-- SEÇÃO 1: Para que Serve a Equipe de Planejamento -->
+      <section class="mb-8">
+        <h2 class="editorial-subtitle-blue">
+          <i class="fa-solid fa-list-check" style="color: var(--color-primary); margin-right: 8px;"></i> Para que Serve a Equipe de Planejamento
+        </h2>
+
+        <p class="editorial-p">
+          A equipe de planejamento da contratação atuará diretamente na fase preparatória e é responsável por elaborar e assinar o Estudo Técnico Preliminar (ETP), o Termo de Referência (TR), o orçamento estimado e o Mapa de Riscos dos processos de contratação de bens e serviços. Além disso, essa equipe desempenha um papel fundamental no planejamento de todas as contratações a serem realizadas, abrangendo todas as modalidades de licitação, contratação direta, contratação por ata de registro de preços (seja como participante ou por adesão) e demais procedimentos auxiliares, como o credenciamento.
+        </p>
+
+        <div class="editorial-grid-2" style="margin: 1.5rem 0;">
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-file-signature" style="color: var(--color-primary);"></i> Elaboração e Assinatura Técnica</h4>
+            <p>
+              Elaborar e assinar os principais artefatos que fundamentam a futura licitação ou contratação direta:
+            </p>
+            <ul style="padding-left: 18px; margin: 8px 0; line-height: 1.6; color: #334155;">
+              <li><strong>Estudo Técnico Preliminar (ETP);</strong></li>
+              <li><strong>Termo de Referência (TR) ou Projeto Básico;</strong></li>
+              <li><strong>Orçamento Estimado;</strong></li>
+              <li><strong>Mapa de Riscos da contratação.</strong></li>
+            </ul>
+          </div>
+
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-compass" style="color: var(--color-primary);"></i> Abrangência Procedimental</h4>
+            <p>
+              Desempenha papel fundamental no planejamento de <strong>todas as contratações a serem realizadas</strong> pelo órgão ou entidade:
+            </p>
+            <ul style="padding-left: 18px; margin: 8px 0; line-height: 1.6; color: #334155;">
+              <li>Todas as modalidades licitatórias (Pregão, Concorrência, etc.);</li>
+              <li>Contratações diretas (Dispensas e Inexigibilidades);</li>
+              <li>Atas de Registro de Preços (como participante ou por adesão);</li>
+              <li>Procedimentos auxiliares (como credenciamento).</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 4. Imagem: Importância da Equipe de Planejamento -->
+        <figure class="sublog-figure-card" style="max-width: 820px; margin: 1.75rem auto;">
+          <img src="../../assets/images/equipe-planejamento-importancia.jpg" 
+               alt="Importância da Equipe de Planejamento: Padronização, Racionalização, Aperfeiçoamento, Concentração e Otimização" 
+               title="Clique para ampliar" 
+               loading="lazy" 
+               data-lightbox="true">
+          <figcaption class="sublog-figure-zoom-hint">
+            <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar a imagem
+          </figcaption>
+        </figure>
+
+        <p class="editorial-p">
+          Cabe, ainda, à equipe de planejamento, a verificação do enquadramento dos bens de consumo nas categorias de qualidade <em>comum</em> e de <em>luxo</em>. A <a href="http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14133.htm" target="_blank" rel="noopener"><strong>Lei nº 14.133/2021</strong></a>, a Lei de Licitações e Contratos Administrativos, veda a aquisição de artigos de luxo na forma da regulamentação.
+        </p>
+
+        <!-- Vedação a Artigos de Luxo (Destaque Visual) -->
+        <div class="sublog-decreto-note" style="margin: 1.25rem 0;">
+          <i class="fa-solid fa-gem" aria-hidden="true"></i>
+          <div>
+            <strong>Enquadramento e Vedação a Artigos de Luxo:</strong>
+            Cabe à equipe de planejamento a rigorosa verificação do enquadramento dos bens de consumo nas categorias de qualidade <em>comum</em> e de <em>luxo</em>. A <strong>Lei Federal nº 14.133/2021</strong> (Lei de Licitações e Contratos Administrativos) veda terminantemente a aquisição de artigos de luxo, nos termos da regulamentação estadual vigente.
+          </div>
+        </div>
+
+        <!-- 5. Imagem: Diretrizes da Governança nas Contratações Públicas -->
+        <figure class="sublog-figure-card" style="max-width: 820px; margin: 1.75rem auto 2.5rem;">
+          <img src="../../assets/images/equipe-planejamento-diretrizes-governanca.jpg" 
+               alt="Diretrizes da Governança nas Contratações Públicas no Estado do Rio de Janeiro" 
+               title="Clique para ampliar" 
+               loading="lazy" 
+               data-lightbox="true">
+          <figcaption class="sublog-figure-zoom-hint">
+            <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar a imagem
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- SEÇÃO 2: Quem Deve Integrar a Equipe de Planejamento? -->
+      <section class="mb-8">
+        <h2 class="editorial-subtitle-blue">
+          <i class="fa-solid fa-user-group" style="color: var(--color-primary); margin-right: 8px;"></i> Quem Deve Integrar a Equipe de Planejamento?
+        </h2>
+
+        <p class="editorial-p">
+          É importante que a equipe de planejamento seja composta por agentes que contem com as competências necessárias para a execução das atividades inerentes à contratação. Tais atividades podem ser divididas em três enfoques principais:
+        </p>
+
+        <!-- 6. Imagem: Estrutura Administrativa (Área Administrativa | Setor Demandante | Setor Técnico) -->
+        <figure class="sublog-figure-card" style="max-width: 820px; margin: 1.75rem auto;">
+          <img src="../../assets/images/equipe-planejamento-estrutura-administrativa.jpg" 
+               alt="Estrutura Administrativa da Equipe de Planejamento: Área Administrativa, Setor Demandante e Setor Técnico" 
+               title="Clique para ampliar" 
+               loading="lazy" 
+               data-lightbox="true">
+          <figcaption class="sublog-figure-zoom-hint">
+            <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar a imagem
+          </figcaption>
+        </figure>
+
+        <div class="editorial-grid-2" style="margin: 1.5rem 0;">
+          <!-- Integrante Requisitante -->
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-hand-holding-hand" style="color: var(--color-primary);"></i> 1. Integrante Requisitante / Demandante</h4>
+            <p>
+              Servidor representante da área que vivencia a necessidade real do órgão. Contribui com o detalhamento dos problemas enfrentados, rotinas de trabalho, quantidades estimadas e níveis de serviço esperados.
+            </p>
+          </div>
+
+          <!-- Integrante Técnico -->
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-screwdriver-wrench" style="color: var(--color-primary);"></i> 2. Integrante Técnico</h4>
+            <p>
+              Profissional que detém o conhecimento específico do mercado fornecedor e do objeto a ser contratado (ex.: engenheiros, técnicos de T.I., farmacêuticos, especialistas em transporte ou infraestrutura).
+            </p>
+          </div>
+
+          <!-- Integrante Administrativo -->
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-scale-balanced" style="color: var(--color-primary);"></i> 3. Integrante Administrativo</h4>
+            <p>
+              Agente lotado no setor de licitações e contratações, com expertise nas normas processuais, jurisprudência, elaboração de minutas e modelagem orçamentária.
+            </p>
+          </div>
+
+          <!-- Capacitação e Integração ao PCA -->
+          <div class="editorial-info-card">
+            <h4><i class="fa-solid fa-graduation-cap" style="color: var(--color-primary);"></i> Capacitação e Colaboração com o PCA</h4>
+            <p>
+              É dever da Administração assegurar a contínua capacitação dos membros da equipe por meio das trilhas de formação da REDELOG (<a href="../capacitacao/trilha-de-aprendizagem.html">Capacitação</a>). Sob orientação do gestor setorial, a equipe colabora no levantamento de dados para o <a href="pca.html">PCA</a>.
+            </p>
+          </div>
+        </div>
+
+        <p class="editorial-p">
+          Em alguns casos um mesmo agente pode atuar em mais de um papel. Ele pode, por exemplo, ser da área requisitante e, ao mesmo tempo, atuar no setor de contratações. No exemplo da T.I., a área técnica pode especificar um equipamento para seu próprio uso como área demandante.
+        </p>
+
+        <p class="editorial-p">
+          É responsabilidade da administração empenhar-se para assegurar que seus servidores que compõem a equipe de planejamento possuam a capacidade técnica e a qualificação adequada para atender as necessidades demandadas. Para os integrantes da área administrativa que atuam com licitações e contratações há variedade de cursos e demais iniciativas de formação indicadas no Portal da Redelog, em <a href="../capacitacao/trilha-de-aprendizagem.html" style="color: var(--color-primary); font-weight: 600; text-decoration: underline;">Capacitação</a>.
+        </p>
+
+        <p class="editorial-p">
+          A equipe de planejamento, sob orientação do gestor setorial da Redelog, deverá, ainda, colaborar no levantamento das informações necessárias para a elaboração do <a href="pca.html" style="color: var(--color-primary); font-weight: 600; text-decoration: underline;">Plano de Contratações Anual – PCA</a>.
+        </p>
+
+        <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px 22px; margin: 1.25rem 0;">
+          <h4 style="color: var(--color-primary-dark); margin-bottom: 8px; font-size: 0.95rem;">Sobreposição de Papéis e Segregação de Funções:</h4>
+          <p style="margin: 0; font-size: 0.92rem; color: #475569; line-height: 1.6;">
+            Em alguns casos um mesmo agente público pode atuar em mais de um papel – como na área de Tecnologia da Informação (T.I.), em que a unidade técnica pode especificar um servidor ou link de comunicação para o seu próprio setor. Todavia, a equipe compartilhada garante que nenhuma etapa fique desassistida e que o princípio da segregação de funções seja plenamente preservado.
+          </p>
+        </div>
+
+        <!-- 7. Imagem: Fique Atento!!!!! (Designação da Equipe de Planejamento) -->
+        <figure class="sublog-figure-card" style="max-width: 780px; margin: 2rem auto 1.5rem;">
+          <img src="../../assets/images/equipe-planejamento-fique-atento.jpg" 
+               alt="Fique Atento: A designação da Equipe de Planejamento ocorre no momento da oficialização da demanda e esses deverão tomar a devida ciência" 
+               title="Clique para ampliar" 
+               loading="lazy" 
+               data-lightbox="true">
+          <figcaption class="sublog-figure-zoom-hint">
+            <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar a imagem
+          </figcaption>
+        </figure>
+
+        <!-- 8. Imagem: Importante!!! (Assinatura do ETP, TR, Orçamento e Mapa de Riscos) -->
+        <figure class="sublog-figure-card" style="max-width: 780px; margin: 1.5rem auto 2.5rem;">
+          <img src="../../assets/images/equipe-planejamento-importante.jpg" 
+               alt="Importante: A equipe de planejamento da contratação assina o Estudo Técnico Preliminar - ETP, o Termo de Referência - TR, o orçamento estimado e o Mapa de Riscos" 
+               title="Clique para ampliar" 
+               loading="lazy" 
+               data-lightbox="true">
+          <figcaption class="sublog-figure-zoom-hint">
+            <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar a imagem
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Navegação Entre Páginas Editorial -->
+      <div class="editorial-page-nav">
+        <a href="pca.html" class="editorial-nav-prev"><i class="fa-solid fa-arrow-left"></i> Plano de Contratações Anual</a>
+        <a href="fase-planejamento.html" class="editorial-nav-prev" style="margin: 0 10px;"><i class="fa-solid fa-house"></i> Fase de Planejamento</a>
+        <a href="fase-preparatoria.html" class="editorial-nav-next">Fase Preparatória <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+
+    <!-- Modal Lightbox de Ampliação de Imagem -->
+    <div id="imageLightboxModal" class="image-lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Visualização ampliada da imagem">
+      <div class="image-lightbox-dialog">
+        <button type="button" class="image-lightbox-close" aria-label="Fechar ampliação">&times;</button>
+        <img src="" alt="" class="image-lightbox-img">
+        <div class="image-lightbox-caption"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- RODAPÉ INSTITUCIONAL (PADRONIZADO REDELOG) -->
+  <footer class="site-footer" id="contatos">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <!-- Coluna 1: Identidade da Redelog e Redes Sociais -->
+        <div class="footer-col-brand">
+          <h3 class="footer-brand-title">REDELOG - Rede Logística</h3>
+          <p class="footer-desc">
+            Secretaria de Planejamento e Gestão do Estado do Rio de Janeiro
+          </p>
+          <div class="footer-social-links" aria-label="Redes sociais da Redelog">
+            <a href="https://www.youtube.com/@redelog/videos" target="_blank" class="footer-social-icon" title="Canal YouTube da Redelog" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/seplagrj/" target="_blank" class="footer-social-icon" title="Instagram SEPLAG RJ" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://t.me/redelog" target="_blank" class="footer-social-icon" title="Telegram Redelog" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="http://linkedin.com/in/comprascentraisrj" target="_blank" class="footer-social-icon" title="LinkedIn Compras Centralizadas" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: REDELOG -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">REDELOG</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../redelog/sobre.html">Sobre a Redelog</a></li>
+            <li class="footer-link-item"><a href="../redelog/quem-somos.html">Quem Somos</a></li>
+            <li class="footer-link-item"><a href="../redelog/informes.html">Informes Oficiais</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: BIBLIOTECA -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">BIBLIOTECA</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../biblioteca/sublog.html">Sobre a SUBLOG</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/cadernos-logisticos.html">Cadernos Logísticos</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/panorama.html">Panorama das Contratações</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/audiencias-consultas.html">Audiências e Consultas</a></li>
+            <li class="footer-link-item"><a href="../biblioteca/relatorio-redes.html">Relatório Redes</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: BASE DE CONHECIMENTO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">BASE DE CONHECIMENTO</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../base-de-conhecimento/fase-planejamento.html">Fase de Planejamento</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/fase-preparatoria.html">Fase Preparatória</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/fase-externa.html">Fase Externa</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/gestao-contratual.html">Gestão Contratual</a></li>
+            <li class="footer-link-item"><a href="../base-de-conhecimento/gestao-bens-servicos.html">Gestão de Bens e Serviços</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 5: CAPACITAÇÃO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">CAPACITAÇÃO</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../capacitacao/trilha-de-aprendizagem.html">Trilhas de Aprendizagem</a></li>
+            <li class="footer-link-item"><a href="../capacitacao/fique-por-dentro.html">Capacitação Continuada</a></li>
+            <li class="footer-link-item"><a href="../capacitacao/cursos-internos.html">Cursos Internos</a></li>
+            <li class="footer-link-item"><a href="../capacitacao/cursos-externos.html">Cursos Externos</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 6: LEGISLAÇÃO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">LEGISLAÇÃO</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="../legislacao/licitacoes.html">Licitações</a></li>
+            <li class="footer-link-item"><a href="../legislacao/contratos.html">Gestão Contratual</a></li>
+            <li class="footer-link-item"><a href="../legislacao/transportes.html">Transportes</a></li>
+            <li class="footer-link-item"><a href="../legislacao/bens-moveis.html">Bens Móveis</a></li>
+            <li class="footer-link-item"><a href="../legislacao/assuntos-diversos.html">Assuntos Diversos</a></li>
+            <li class="footer-link-item"><a href="../legislacao/compendio.html">Compêndio</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 7: CONTATOS DA REDE -->
+        <div class="footer-col footer-col-contact">
+          <h4 class="footer-col-title">CONTATOS DA REDE</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Av. Erasmo Braga, nº 118 – 8º andar</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:redelog@planejamento.rj.gov.br">redelog@planejamento.rj.gov.br</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:sublog.seplag@planejamento.rj.gov.br">sublog.seplag@planejamento.rj.gov.br</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Linha de Direitos Autorais -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="current-year">2026</span> Rede de Logística do Estado do Rio de Janeiro (REDELOG) | SEPLAG-RJ. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Vanilla JS -->
+  <script src="../../js/navigation.js"></script>
+  <script src="../../js/components.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>
