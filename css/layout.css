@@ -39,7 +39,8 @@
 }
 
 .top-bar-systems a:hover {
-  color: var(--color-accent);
+  color: #dbeafe;
+  text-decoration: underline;
 }
 
 .top-bar-right {
@@ -58,7 +59,7 @@
 .top-networks-label {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
-  color: var(--color-accent);
+  color: #e0f2fe;
   text-transform: uppercase;
   margin-right: 4px;
 }
@@ -77,12 +78,12 @@
 }
 
 .network-badge-link:hover {
-  background: var(--color-accent);
+  background: var(--color-primary-light);
   color: var(--color-text-inverse);
 }
 
 .network-badge-link.active-network {
-  background: var(--color-accent);
+  background: var(--color-primary-light);
   color: var(--color-text-inverse);
 }
 
@@ -106,7 +107,7 @@
 }
 
 .a11y-btn:hover {
-  background: var(--color-accent);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 /* 2. CABEÇALHO PRINCIPAL & NAVBAR*/
@@ -196,8 +197,8 @@
 .nav-link:hover,
 .nav-link:focus,
 .nav-item.active .nav-link {
-  color: var(--color-accent);
-  background-color: var(--color-bg-body);
+  color: var(--color-primary);
+  background-color: var(--color-primary-surface);
   box-shadow: var(--shadow-xs);
 }
 
@@ -251,7 +252,7 @@
 .dropdown-item:focus {
   background-color: var(--color-primary-surface);
   color: var(--color-primary);
-  border-left-color: var(--color-accent);
+  border-left-color: var(--color-primary);
   font-weight: var(--font-weight-semibold);
   padding-left: 1.45rem;
 }
@@ -440,7 +441,8 @@
 }
 
 .breadcrumb-item a:hover {
-  color: var(--color-accent);
+  color: var(--color-primary-light);
+  text-decoration: underline;
 }
 
 .breadcrumb-separator {

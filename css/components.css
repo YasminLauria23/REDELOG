@@ -35,15 +35,15 @@
 }
 
 .btn-accent {
-  background-color: var(--color-accent);
+  background-color: var(--color-primary);
   color: var(--color-text-inverse);
-  border: 2px solid var(--color-accent);
+  border: 2px solid var(--color-primary);
 }
 
 .btn-accent:hover,
 .btn-accent:focus {
-  background-color: var(--color-accent-hover);
-  border-color: var(--color-accent-hover);
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
   color: var(--color-text-inverse);
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
@@ -95,7 +95,7 @@
 }
 
 .badge-accent {
-  background-color: var(--color-accent);
+  background-color: var(--color-primary-light);
   color: var(--color-text-inverse);
 }
 
@@ -272,7 +272,7 @@
   display: inline-block;
   width: 4px;
   height: 18px;
-  background-color: var(--color-accent);
+  background-color: var(--color-primary);
   border-radius: 2px;
 }
 
@@ -622,7 +622,7 @@
 }
 
 .network-card:hover .network-link {
-  color: var(--color-accent);
+  color: var(--color-primary-light);
   gap: 9px;
 }
 
@@ -705,7 +705,7 @@
 }
 
 .news-card:hover .news-title {
-  color: var(--color-accent);
+  color: var(--color-primary-light);
 }
 
 .news-excerpt {
@@ -746,7 +746,7 @@
 .process-step-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-sm);
-  border-color: var(--color-accent);
+  border-color: var(--color-primary-light);
 }
 
 /* A bolinha numerada institucional REDELOG */
@@ -812,12 +812,12 @@
 }
 
 .resource-item a:hover {
-  color: var(--color-accent);
+  color: var(--color-primary-light);
   padding-left: 4px;
 }
 
 .resource-item a i {
-  color: var(--color-accent);
+  color: var(--color-primary);
   font-size: 0.85rem;
 }
 
@@ -928,7 +928,7 @@ button.accordion-header[aria-expanded="true"] .accordion-icon,
 }
 
 .tab-btn:hover {
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 .tab-btn.is-active {

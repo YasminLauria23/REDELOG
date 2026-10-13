@@ -4,16 +4,26 @@
  */
 
 :root {
-  /* Paleta Primária & Institucional */
-  --color-primary: #21559b;        /* Azul Escuro Institucional SEPLAG */
-  --color-primary-dark: #153a6d;   /* Azul Profundo */
-  --color-primary-light: #569efe;  /* Azul Claro */
+  /* Paleta Primária & Institucional Redelog */
+  --color-primary: #21559b;        /* Azul Escuro Institucional Redelog / SEPLAG */
+  --color-primary-dark: #163e75;   /* Azul Profundo Redelog */
+  --color-primary-light: #2563eb;  /* Azul Vívido de Destaque */
   --color-primary-surface: #edf4fc;/* Azul Suave para fundos e destaques */
 
-  /* Paleta de Destaque */
-  --color-accent: #f28c50;         /* Laranja Redeplan/Redelog */
-  --color-accent-hover: #d9773b;   /* Laranja Escuro Hover */
-  --color-gold: #cc9900;           /* Dourado para badges e divisores */
+  /* Cores Oficiais Institucionais Redelog */
+  --redelog-primary: #21559b;
+  --redelog-primary-dark: #163e75;
+  --redelog-primary-light: #3b82f6;
+  --redelog-secondary: #0284c7;
+  --redelog-background: #f8fafc;
+  --redelog-text: #1e293b;
+  --redelog-border: #e2e8f0;
+  --redelog-hover: #1d4ed8;
+
+  /* Paleta de Destaque e Ações (Sem Laranja) */
+  --color-accent: #2563eb;         /* Azul Vívido Redelog para Destaques e Foco */
+  --color-accent-hover: #1d4ed8;   /* Azul Royal Hover Redelog */
+  --color-gold: #cc9900;           /* Dourado Oficial RJ para badges e divisores */
   --color-gold-light: #fef9e7;     /* Dourado suave */
   --color-green: #009900;          /* Verde institucional */
   --color-green-light: #5ca47a;    /* Verde suave */
