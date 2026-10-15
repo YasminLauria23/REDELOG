@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pesquisa de preços – página de etapa (protótipo)</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div style="font-family: Montserrat, system-ui, sans-serif; color: #1B2A41; background: #FFFFFF; font-size: 16px; line-height: 1.6">
+<div style="background: #FFF4E5; border-bottom: 1px solid #F0C48A; padding: 10px 24px; text-align: center; font-size: 15px; color: #6B3A00">
+<strong>Protótipo para discussão.</strong> Não é o portal oficial. O conteúdo é ilustrativo; o que está entre colchetes depende de validação técnica. Logotipos, cores e elementos gráficos conforme o manual de marca da RedeLOG.
+</div>
+<div style="background: #1A4581; color: #FFFFFF; font-size: 13px; font-weight: 600">
+<div style="max-width: 1200px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px 24px">
+<nav aria-label="Sistemas" style="display: flex; flex-wrap: wrap; gap: 4px 18px">
+<a href="#" style="color: #FFFFFF; text-decoration: none">SIGA</a>
+<a href="sistema.html" style="color: #FFFFFF; text-decoration: none">Sistema PCA RJ</a>
+<a href="#" style="color: #FFFFFF; text-decoration: none">SEI</a>
+<a href="#" style="color: #FFFFFF; text-decoration: none">Ajuda e contatos</a>
+</nav>
+<nav aria-label="Redes da SEPLAG" style="display: flex; flex-wrap: wrap; gap: 4px 18px; align-items: center">
+<span style="opacity: 0.75; font-weight: 500">Redes da SEPLAG:</span>
+<a href="#" style="color: #FFFFFF; text-decoration: none">RedePlan</a>
+<a href="#" style="color: #FFFFFF; text-decoration: none">Redor</a>
+<a href="#" style="color: #FFFFFF; text-decoration: none">Redinv</a>
+<span aria-current="page" style="background: #FFFFFF; color: #1A4581; padding: 2px 10px; border-radius: 999px">RedeLOG</span>
+</nav>
+</div>
+</div>
+<header style="background: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px">
+<a href="index.html" style="text-decoration: none; display: flex; align-items: center">
+<img alt="RedeLOG – Rede Logística, página inicial" src="assets/img/logo-redelog.png" style="height: 58px; width: auto; display: block"/>
+</a>
+<nav aria-label="Menu principal" style="background: #EEF1F5; border-radius: 999px; padding: 6px 10px; display: flex; flex-wrap: wrap; gap: 2px; font-size: 14px; font-weight: 600">
+<a href="comece-aqui.html" style="color: #1B2A41; text-decoration: none; padding: 8px 12px; border-radius: 999px">Comece aqui</a>
+<a aria-current="page" href="contratar.html" style="color: #FFFFFF; background: #1A4581; text-decoration: none; padding: 8px 12px; border-radius: 999px">Contratar</a>
+<a href="compras.html" style="color: #1B2A41; text-decoration: none; padding: 8px 12px; border-radius: 999px">Compras centralizadas</a>
+<a href="bens-transportes.html" style="color: #1B2A41; text-decoration: none; padding: 8px 12px; border-radius: 999px">Bens e transportes</a>
+<a href="sistema.html" style="color: #1B2A41; text-decoration: none; padding: 8px 12px; border-radius: 999px">Sistemas</a>
+<a href="documentos.html" style="color: #1B2A41; text-decoration: none; padding: 8px 12px; border-radius: 999px">Documentos e normas</a>
+<a href="#" style="color: #1B2A41; text-decoration: none; padding: 8px 12px; border-radius: 999px">Aprender</a>
+<a href="rede.html" style="color: #1B2A41; text-decoration: none; padding: 8px 12px; border-radius: 999px">Redes</a>
+</nav>
+<img alt="Secretaria de Planejamento e Gestão – Governo do Estado do Rio de Janeiro" src="assets/img/logo-seplag-governo-rj.png" style="height: 44px; width: auto; display: block"/>
+</div>
+<div aria-hidden="true" style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); height: 6px">
+<span style="background: #1A4581"></span><span style="background: #0A6EB4"></span><span style="background: #2B90AF"></span><span style="background: #4BB1A4"></span><span style="background: #8DCFAE"></span>
+</div>
+</header>
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px 0">
+<nav aria-label="Você está em" style="font-size: 15px; color: #4A5568; display: flex; flex-wrap: wrap; gap: 6px">
+<a href="index.html">Início</a><span aria-hidden="true">›</span><a href="contratar.html">Contratar passo a passo</a><span aria-hidden="true">›</span><a href="#">Preparar</a><span aria-hidden="true">›</span><span style="color: #1A2433">Pesquisa de preços</span>
+</nav>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px 0">
+<ol aria-label="Etapas da contratação" style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px">
+<li style="background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 8px; padding: 12px 16px"><a href="#" style="text-decoration: none; display: flex; flex-direction: column"><span style="font-size: 14px; color: #4A5568">Etapa 1</span><strong style="color: #1A4581">Planejar</strong></a></li>
+<li aria-current="step" style="background: #1A4581; border: 1px solid #1A4581; border-radius: 8px; padding: 12px 16px; color: #FFFFFF; display: flex; flex-direction: column"><span style="font-size: 14px; color: #E3ECF8">Etapa 2 · você está aqui</span><strong>Preparar</strong></li>
+<li style="background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 8px; padding: 12px 16px"><a href="#" style="text-decoration: none; display: flex; flex-direction: column"><span style="font-size: 14px; color: #4A5568">Etapa 3</span><strong style="color: #1A4581">Escolher o fornecedor</strong></a></li>
+<li style="background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 8px; padding: 12px 16px"><a href="#" style="text-decoration: none; display: flex; flex-direction: column"><span style="font-size: 14px; color: #4A5568">Etapa 4</span><strong style="color: #1A4581">Acompanhar o contrato</strong></a></li>
+</ol>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px 64px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+<nav aria-label="Nesta etapa" style="flex: 1 1 240px; min-width: 0; background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 10px; padding: 20px">
+<h2 style="margin: 0 0 10px; font-size: 15px; letter-spacing: 0.6px; color: #4A5568">ETAPA 2 · PREPARAR</h2>
+<ol style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 6px; font-size: 16px">
+<li><a href="#">Abrir o processo (DOD)</a></li>
+<li><a href="#">Estudo técnico preliminar</a></li>
+<li><a href="#">Mapa de riscos</a></li>
+<li><a href="#">Termo de referência</a></li>
+<li><strong style="color: #1A2433">Pesquisa de preços</strong></li>
+<li><a href="#">Reserva orçamentária</a></li>
+<li><a href="#">Edital ou aviso</a></li>
+<li><a href="#">Parecer jurídico</a></li>
+<li><a href="#">Aprovação</a></li>
+</ol>
+<p style="margin: 16px 0 0; padding-top: 14px; border-top: 1px solid #E6EBF1; font-size: 15px; color: #4A5568">Vai usar registro de preços? Veja <a href="#">Registro de preços</a>.</p>
+</nav>
+<main style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<h1 style="margin: 0; font-family: Montserrat, sans-serif; font-size: 36px; line-height: 1.2; color: #13305E">Fazer a pesquisa de preços</h1>
+<span aria-hidden="true" style="display: block; width: 56px; height: 4px; background: linear-gradient(90deg, #1A4581, #2B90AF, #8DCFAE); border-radius: 2px; margin-top: -4px"></span>
+<div style="background: #EEF3FA; border-radius: 10px; padding: 20px 24px">
+<h2 style="margin: 0 0 6px; font-size: 15px; letter-spacing: 0.6px; color: #13305E">EM RESUMO</h2>
+<p style="margin: 0">A pesquisa de preços mostra quanto o mercado cobra pelo que você vai contratar. É com ela que o órgão define o valor estimado da contratação. Ela é feita depois do termo de referência e antes da reserva orçamentária.</p>
+</div>
+</div>
+<section style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-size: 24px; color: #13305E">O que fazer</h2>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+<li style="display: flex; gap: 14px; background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 10px; padding: 14px 18px"><span style="flex: 0 0 32px; height: 32px; border-radius: 16px; background: #1A4581; color: #FFFFFF; font-weight: 700; display: flex; align-items: center; justify-content: center">1</span><span>Use a descrição do objeto que está no termo de referência. Pesquise sempre o mesmo item, na mesma unidade e quantidade.</span></li>
+<li style="display: flex; gap: 14px; background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 10px; padding: 14px 18px"><span style="flex: 0 0 32px; height: 32px; border-radius: 16px; background: #1A4581; color: #FFFFFF; font-weight: 700; display: flex; align-items: center; justify-content: center">2</span><span>Busque preços em mais de uma fonte: sistemas oficiais de preços, contratações parecidas de outros órgãos, mídia especializada e consulta direta a fornecedores. [A ordem e o mínimo de fontes seguem o decreto estadual.]</span></li>
+<li style="display: flex; gap: 14px; background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 10px; padding: 14px 18px"><span style="flex: 0 0 32px; height: 32px; border-radius: 16px; background: #1A4581; color: #FFFFFF; font-weight: 700; display: flex; align-items: center; justify-content: center">3</span><span>Guarde a prova de cada preço: print, cópia do contrato ou proposta do fornecedor, sempre com data.</span></li>
+<li style="display: flex; gap: 14px; background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 10px; padding: 14px 18px"><span style="flex: 0 0 32px; height: 32px; border-radius: 16px; background: #1A4581; color: #FFFFFF; font-weight: 700; display: flex; align-items: center; justify-content: center">4</span><span>Analise os preços encontrados e retire os que estiverem muito acima ou muito abaixo dos demais, explicando o motivo.</span></li>
+<li style="display: flex; gap: 14px; background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 10px; padding: 14px 18px"><span style="flex: 0 0 32px; height: 32px; border-radius: 16px; background: #1A4581; color: #FFFFFF; font-weight: 700; display: flex; align-items: center; justify-content: center">5</span><span>Calcule o valor estimado com o método indicado no guia.</span></li>
+<li style="display: flex; gap: 14px; background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 10px; padding: 14px 18px"><span style="flex: 0 0 32px; height: 32px; border-radius: 16px; background: #1A4581; color: #FFFFFF; font-weight: 700; display: flex; align-items: center; justify-content: center">6</span><span>Registre tudo no relatório da pesquisa de preços (RAPP), no SEI, e junte ao processo.</span></li>
+</ol>
+</section>
+<section style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-size: 24px; color: #13305E">Sua situação muda o procedimento?</h2>
+<p style="margin: 0">Não. O procedimento é o mesmo nas situações abaixo. Muda apenas quem faz a pesquisa.</p>
+<div style="overflow-x: auto; background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 10px">
+<sc-raw-table style="width: 100%; border-collapse: collapse; font-size: 16px; min-width: 520px">
+<sc-raw-thead><sc-raw-tr style="background: #EEF3FA; text-align: left"><sc-raw-th scope="col" style="padding: 12px 16px">Sua situação</sc-raw-th><sc-raw-th scope="col" style="padding: 12px 16px">Quem faz a pesquisa</sc-raw-th></sc-raw-tr></sc-raw-thead>
+<sc-raw-tbody>
+<sc-raw-tr style="border-top: 1px solid #E6EBF1"><sc-raw-td style="padding: 12px 16px">Licitação</sc-raw-td><sc-raw-td style="padding: 12px 16px">[A validar]</sc-raw-td></sc-raw-tr>
+<sc-raw-tr style="border-top: 1px solid #E6EBF1"><sc-raw-td style="padding: 12px 16px">Contratação direta (dispensa ou inexigibilidade)</sc-raw-td><sc-raw-td style="padding: 12px 16px">[A validar]</sc-raw-td></sc-raw-tr>
+<sc-raw-tr style="border-top: 1px solid #E6EBF1"><sc-raw-td style="padding: 12px 16px">Prorrogação de contrato</sc-raw-td><sc-raw-td style="padding: 12px 16px">[A validar]</sc-raw-td></sc-raw-tr>
+<sc-raw-tr style="border-top: 1px solid #E6EBF1"><sc-raw-td style="padding: 12px 16px">Registro de preços: órgão gerenciador</sc-raw-td><sc-raw-td style="padding: 12px 16px">[A validar]</sc-raw-td></sc-raw-tr>
+<sc-raw-tr style="border-top: 1px solid #E6EBF1"><sc-raw-td style="padding: 12px 16px">Registro de preços: órgão participante</sc-raw-td><sc-raw-td style="padding: 12px 16px">[A validar]</sc-raw-td></sc-raw-tr>
+<sc-raw-tr style="border-top: 1px solid #E6EBF1"><sc-raw-td style="padding: 12px 16px">Adesão a uma ata de outro órgão</sc-raw-td><sc-raw-td style="padding: 12px 16px">[A validar]</sc-raw-td></sc-raw-tr>
+</sc-raw-tbody>
+</sc-raw-table>
+</div>
+<p style="margin: 0; font-size: 15px; color: #4A5568">No portal atual, essa informação ocupa sete parágrafos quase iguais.</p>
+</section>
+<section style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-size: 24px; color: #13305E">Documentos e modelos</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px">
+<a href="documento.html" style="background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 10px; padding: 16px 18px; text-decoration: none; display: flex; gap: 14px; align-items: flex-start">
+<svg aria-hidden="true" fill="none" height="28" stroke="#1A4581" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24" width="28"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><path d="M14 3v6h6M12 12v6M9 15l3 3 3-3"></path></svg>
+<span style="display: flex; flex-direction: column"><strong style="color: #1A4581">Guia de pesquisa de preços</strong><span style="font-size: 15px; color: #4A5568">PDF · [tamanho] · versão [n] de [mm/aaaa]</span></span>
+</a>
+<div style="background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 10px; padding: 16px 18px; display: flex; gap: 14px; align-items: flex-start">
+<svg aria-hidden="true" fill="none" height="28" stroke="#1A4581" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24" width="28"><rect height="16" rx="1.5" width="18" x="3" y="4"></rect><path d="M7 9h10M7 13h10M7 17h6"></path></svg>
+<span style="display: flex; flex-direction: column"><strong>Relatório da pesquisa de preços (RAPP)</strong><span style="font-size: 15px; color: #4A5568">Modelo no SEI. Tipo documental: [nome exato no SEI]</span></span>
+</div>
+</div>
+</section>
+<section style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-size: 24px; color: #13305E">Quem faz</h2>
+<ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 6px">
+<li><strong>[Setor responsável]:</strong> faz a pesquisa e preenche o RAPP.</li>
+<li><strong>[Setor responsável]:</strong> confere o relatório antes da reserva orçamentária.</li>
+</ul>
+</section>
+<section style="background: #FFF8EE; border: 1px solid #F0C48A; border-radius: 10px; padding: 20px 24px; display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-size: 20px; color: #6B3A00">Atenção</h2>
+<ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 6px">
+<li>Um preço sem prova ou sem data não pode ser usado.</li>
+<li>Não retire um preço da análise sem registrar o motivo.</li>
+<li>[Outros erros comuns, indicados pela área técnica.]</li>
+</ul>
+</section>
+<section style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-size: 20px; color: #13305E">Base legal</h2>
+<ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px">
+<li><a href="#">Lei nº 14.133/2021, art. 23</a>: como definir o valor estimado da contratação.</li>
+<li><a href="#">Decreto estadual nº [número], arts. 28 a 43</a>: regras da pesquisa de preços no Estado.</li>
+</ul>
+<p style="margin: 0; font-size: 15px; color: #4A5568">Os links levam ao texto oficial. Esta página resume; não substitui a norma.</p>
+</section>
+<section style="background: #13305E; color: #FFFFFF; border-radius: 10px; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: center; justify-content: space-between">
+<div style="flex: 999 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 14px; font-weight: 700; letter-spacing: 0.6px; color: #8DCFAE">APROFUNDE NA REDE</span>
+<strong style="font-size: 19px">[Rede responsável pelo tema]: exemplos resolvidos e vídeos sobre pesquisa de preços</strong>
+</div>
+<a href="#" style="flex: 0 0 auto; background: #FFFFFF; color: #13305E; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 8px">Ir para a rede</a>
+</section>
+<nav aria-label="Navegação entre passos" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+<a href="#" style="background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 10px; padding: 14px 18px; text-decoration: none; display: flex; flex-direction: column"><span style="font-size: 14px; color: #4A5568">← Passo anterior</span><strong>Termo de referência</strong></a>
+<a href="#" style="background: #FFFFFF; border: 1px solid #DCE3EC; border-radius: 10px; padding: 14px 18px; text-decoration: none; display: flex; flex-direction: column; text-align: right"><span style="font-size: 14px; color: #4A5568">Próximo passo →</span><strong>Reserva orçamentária</strong></a>
+</nav>
+<div style="border-top: 1px solid #DCE3EC; padding-top: 18px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between; align-items: center; font-size: 15px; color: #4A5568">
+<span>Atualizado em [dd/mm/aaaa] · Responsável: [unidade da SUBLOG] · Próxima revisão: [mm/aaaa]</span>
+<span style="display: flex; gap: 10px; align-items: center">Esta página ajudou?
+<button style="min-height: 44px; padding: 0 18px; border: 1px solid #1A4581; background: #FFFFFF; color: #1A4581; border-radius: 8px; font-weight: 700; font-family: inherit; font-size: 15px" type="button">Sim</button>
+<button style="min-height: 44px; padding: 0 18px; border: 1px solid #1A4581; background: #FFFFFF; color: #1A4581; border-radius: 8px; font-weight: 700; font-family: inherit; font-size: 15px" type="button">Não</button>
+</span>
+</div>
+</main>
+</div>
+<footer style="background: #1A4581; color: #E3ECF8; font-size: 14px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<img alt="RedeLOG" src="assets/img/logo-redelog-branco.png" style="height: 44px; width: auto; display: block; align-self: flex-start"/>
+<span style="display: flex; gap: 10px">
+<a aria-label="YouTube" href="#" style="width: 36px; height: 36px; border-radius: 18px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" fill="none" height="18" stroke="#FFFFFF" stroke-width="2" viewBox="0 0 24 24" width="18"><rect height="14" rx="4" width="20" x="2" y="5"></rect><path d="M10 9l5 3-5 3z"></path></svg></a>
+<a aria-label="Instagram" href="#" style="width: 36px; height: 36px; border-radius: 18px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" fill="none" height="18" stroke="#FFFFFF" stroke-width="2" viewBox="0 0 24 24" width="18"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle></svg></a>
+<a aria-label="LinkedIn" href="#" style="width: 36px; height: 36px; border-radius: 18px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" fill="none" height="18" stroke="#FFFFFF" stroke-width="2" viewBox="0 0 24 24" width="18"><rect height="18" rx="3" width="18" x="3" y="3"></rect><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4"></path></svg></a>
+</span>
+</div>
+<nav aria-label="A rede" style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #FFFFFF; margin-bottom: 4px">A rede</strong><a href="#" style="color: #E3ECF8">Sobre a RedeLOG</a><a href="comece-aqui.html" style="color: #E3ECF8">Gestores setoriais</a><a href="rede.html" style="color: #E3ECF8">As cinco redes</a><a href="#" style="color: #E3ECF8">Avisos</a></nav>
+<nav aria-label="Links" style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #FFFFFF; margin-bottom: 4px">Links</strong><a href="#" style="color: #E3ECF8">Ouvidoria</a><a href="#" style="color: #E3ECF8">Acessibilidade</a><a href="#" style="color: #E3ECF8">Política de privacidade</a><a href="#" style="color: #E3ECF8">Portal da SEPLAG</a></nav>
+<div style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #FFFFFF; margin-bottom: 4px">Contato</strong><span>Av. Erasmo Braga, 118 – 8º andar<br/>Centro, Rio de Janeiro</span><a href="#" style="color: #FFFFFF">redelog@planejamento.rj.gov.br</a></div>
+</div>
+</footer>
+</div>
+</body>
+</html>
